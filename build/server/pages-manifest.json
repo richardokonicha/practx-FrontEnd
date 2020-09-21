@@ -1,0 +1,14 @@
+{
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
+  "/auth/LogIn": "pages/auth/LogIn.html",
+  "/auth/forgot-password": "pages/auth/forgot-password.html",
+  "/auth/logout": "pages/auth/logout.html",
+  "/auth/noauth": "pages/auth/noauth.html",
+  "/auth/register": "pages/auth/register.html",
+  "/dashboard/dashboard": "pages/dashboard/dashboard.html",
+  "/": "pages/index.html",
+  "/_document": "pages/_document.js"
+}
