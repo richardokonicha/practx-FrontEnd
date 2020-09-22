@@ -36,7 +36,7 @@ const Sidebar = () => {
   
     return (
         
-        <div className={styles.sidebar} >
+        <div className={styles.sidebar} style={{scrollbarWidth:"none"}} >
 
             <div className={styles.profile}>
                 <img src="/images/users/avatar-1.jpg" className={styles.profilepic} />
@@ -87,6 +87,21 @@ const Sidebar = () => {
                     <ListGroupItem className={styles.listlist}>Chat History</ListGroupItem>
                 </ListGroup>
             </Collapse>
+
+
+{/* ----------------------------------------------- NEXT ITEM ----------------------- */}
+
+            <Button className={styles.sidebarbutton} >
+                <Alarm size={19} className={styles.sidebarIcon} /> 
+                Notifications
+                
+                <div  className={styles.sidebarIcon2}>
+
+                <ArrowRight size={20} className={styles.sidebarIcon2} />
+                    
+
+                </div>
+            </Button>
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
@@ -154,19 +169,7 @@ const Sidebar = () => {
                 </ListGroup>
             </Collapse>
 
-{/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
-            <Button className={styles.sidebarbutton} >
-                <Alarm size={19} className={styles.sidebarIcon} /> 
-                Notifications
-                
-                <div  className={styles.sidebarIcon2}>
-
-                <ArrowRight size={20} className={styles.sidebarIcon2} />
-                    
-
-                </div>
-            </Button>
 
 
         </div>

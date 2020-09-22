@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import {useEffect, useState} from 'react';
-import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, 
-	Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon, Breadcrumb, BreadcrumbItem 
+import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, CardHeader, CardTitle, CardText, CardFooter,
+		Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon, Breadcrumb, BreadcrumbItem 
 } from 'reactstrap';
 
 import { useFormik } from 'formik';
@@ -10,14 +10,15 @@ import Link from 'next/link';
 import styles from './dashboard.module.scss';
 
 import { Email, Assignment, Person, Group, Accessibility, Alarm, 
-    Message, ArrowRight, ArrowDropDown, Home
+    	Message, ArrowRight, ArrowDropDown, Home, Repeat, Close,
 } from '@styled-icons/material';
 
 import DashboardLayout from "../../layouts/DashboardLayout";
 import Titlebar from "../../components/Titlebar";
 import UsersList from "../../components/UsersList";
-import MyResponsiveBar from "../../components/MyChart";
-import MyResponsivePie from "../../components/MyPieChart";
+import BarChart from "../../components/BarChart";
+import DoughnutChart from "../../components/DoughnutChart";
+import MyCardContainer from "../../components/MyCardContainer";
 
 
 
@@ -27,12 +28,54 @@ export default function Dashboard() {
 
 		<DashboardLayout>
 			<React.Fragment>
-			
-				<Titlebar title="Dashboard" crumb={["Home", "Dashboard"]}/>
 
-			
+				<Row>
+					<Col>
 
-				<UsersList />
+						<Titlebar title="Dashboard" crumb={["Home", "Dashboard"]}/>
+						
+					</Col>
+				</Row>
+
+				<Row className={"mt-3"}>
+					<Col sm="7">
+
+						<MyCardContainer headingText="HOSPITAL SURVEY">
+
+							<BarChart />
+
+						</MyCardContainer>
+						
+					</Col>
+
+					<Col sm="5">
+
+						<MyCardContainer headingText="HOSPITAL SURVEY">
+
+							<DoughnutChart />
+
+						</MyCardContainer>
+						
+					</Col>
+				</Row>
+
+				<Row className={"mt-3"}>
+
+					<Col >
+
+						<MyCardContainer headingText="Patients List" buttonText="Add Patient">
+
+							<UsersList />
+
+						</MyCardContainer>
+						
+					</Col>
+				</Row>
+			
+				
+
+				
+				
 
 			</React.Fragment>
 

@@ -1,10 +1,35 @@
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+  height: 190px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+  background: #353c48;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #353c48;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+
 .sidebar{
     color: #eee;
     width: 16vw;
     height: 100vh;
     background-color: #353c48;
     margin-left: -15px;
-    padding:1vw 0px 0px 1vw;
+    padding:4vw 0px 0px 1vw;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .profile{
     display: flex;

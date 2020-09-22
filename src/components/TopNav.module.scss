@@ -3,6 +3,8 @@
     box-shadow: 0 2px 5px rgba(2, 2, 2, 0.3);
     position: relative;
     z-index: 10000;
+    position: fixed;
+    width: 100vw;
 }
 .brand{
     width: 205px;

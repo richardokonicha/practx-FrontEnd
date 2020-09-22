@@ -14,7 +14,7 @@ const UsersList = ({title, crumb}) => {
   
     return (
         
-        <div class={styles.tableresponsive}>
+        <div>
 			<Table striped hover responsive dark bordered>
 				<thead>
 					<tr>

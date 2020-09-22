@@ -42,12 +42,12 @@ export default function DashboardLayout({ children }) {
             <TopNav />
 
             <Container fluid className={styles.container}>
-                <Row>
+                <Row sm="2">
 
-                    <Col xs="auto"><Sidebar /></Col>
+                    <Col sm="2"><Sidebar /></Col>
                     
                     
-                    <Col xs="auto">
+                    <Col sm="10" style={{paddingTop: "8vh"}}>
                     <main className={styles.maincontent} >
                             
                         {children}
