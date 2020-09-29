@@ -95,7 +95,7 @@
     opacity: 1; /* Firefox */
 }
 
-.input:focus, .input:active, .input::selection{
+.input:focus, .input:active, .input::select{
     background-color: #999;
 }
 .searchicon{

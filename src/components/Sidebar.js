@@ -50,58 +50,72 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-
+            <Link href="/">
             
-            <Button className={styles.sidebarbutton} >
+                <Button className={styles.sidebarbutton} >
 
-                <Dashboard size={19} className={styles.sidebarIcon} /> 
+                    <Dashboard size={19} className={styles.sidebarIcon} /> 
 
-                Dashboard 
+                    Dashboard 
 
-                <ArrowRight size={20} className={styles.sidebarIcon2} />
-                    
+                    <ArrowRight size={20} className={styles.sidebarIcon2} />
+                        
 
-            </Button>
-            
+                </Button>
+            </Link>
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
+            <Link href="/dashboard/chat">
 
-
-            <Button id="toggler" className={styles.sidebarbutton} onClick={toggleMessage}>
+            <Button id="toggler" className={styles.sidebarbutton}>
                 <Email size={19} className={styles.sidebarIcon} /> 
 
-                Messages
+                Chat
 
                 <div  className={styles.sidebarIcon2}>
                 {messages >= 0 && <Badge color="success"  className={styles.sidebadge} pill>2</Badge>}
 
-                {!isOpenMessage ? <ArrowRight size={20} className={styles.sidebarIcon2} />
-                    : <ArrowDropDown size={20} className={styles.sidebarIcon2} />}
+                <ArrowRight size={20} className={styles.sidebarIcon2} />
 
                 </div>
             </Button>
-            <Collapse isOpen={isOpenMessage}>
-                <ListGroup >
-                    <ListGroupItem className={styles.listlist}>Chat Groups</ListGroupItem>
-                    <ListGroupItem className={styles.listlist}>Chat History</ListGroupItem>
-                </ListGroup>
-            </Collapse>
+            </Link>
+
+
+{/* ----------------------------------------------- NEXT ITEM ----------------------- */}
+            <Link href="/dashboard/profile">
+
+                <Button id="toggler" className={styles.sidebarbutton}>
+                    <Email size={19} className={styles.sidebarIcon} /> 
+
+                    Profile
+
+                    <div  className={styles.sidebarIcon2}>
+                    
+
+                    <ArrowRight size={20} className={styles.sidebarIcon2} />
+
+                    </div>
+                </Button>
+            </Link>
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
-            <Button className={styles.sidebarbutton} >
-                <Alarm size={19} className={styles.sidebarIcon} /> 
-                Notifications
-                
-                <div  className={styles.sidebarIcon2}>
-
-                <ArrowRight size={20} className={styles.sidebarIcon2} />
+            <Link href="/dashboard/notification">
+                <Button className={styles.sidebarbutton} >
+                    <Alarm size={19} className={styles.sidebarIcon} /> 
+                    Notifications
                     
+                    <div  className={styles.sidebarIcon2}>
 
-                </div>
-            </Button>
+                    <ArrowRight size={20} className={styles.sidebarIcon2} />
+                        
+
+                    </div>
+                </Button>
+            </Link>
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
@@ -118,10 +132,25 @@ const Sidebar = () => {
                 </div>
             </Button>
             <Collapse isOpen={isOpenUser}>
+
                 <ListGroup >
-                    <ListGroupItem className={styles.listlist}>Add User</ListGroupItem>
-                    <ListGroupItem className={styles.listlist}>Edit User</ListGroupItem>
-                    <ListGroupItem className={styles.listlist}>Users List</ListGroupItem>
+
+                    <Link href="/dashboard/adduser">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                Add User
+                                
+                        </ListGroupItem>
+                    </Link>
+                    
+                    
+                    <Link href="/dashboard/userslist">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                Users List
+                                
+                        </ListGroupItem>
+                    </Link>
                 </ListGroup>
             </Collapse>
 
@@ -141,9 +170,27 @@ const Sidebar = () => {
             </Button>
             <Collapse isOpen={isOpenAppointment}>
                 <ListGroup >
-                    <ListGroupItem className={styles.listlist}>Pending Appointments</ListGroupItem>
-                    <ListGroupItem className={styles.listlist}>All Appointments</ListGroupItem>
-                    <ListGroupItem className={styles.listlist}>Appointment History</ListGroupItem>
+                <Link href="/dashboard/appointments">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                Pending Appointments
+                                
+                        </ListGroupItem>
+                    </Link>
+                    <Link href="/dashboard/appointments-all">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                All Appointments
+                                
+                        </ListGroupItem>
+                    </Link>
+                    <Link href="/dashboard/appointments-history">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                Appointments history
+                                
+                        </ListGroupItem>
+                    </Link>
                 </ListGroup>
             </Collapse>
 
@@ -164,8 +211,23 @@ const Sidebar = () => {
             </Button>
             <Collapse isOpen={isOpenGroup}>
                 <ListGroup >
-                    <ListGroupItem className={styles.listlist}> Add Group</ListGroupItem>
-                    <ListGroupItem className={styles.listlist}>View all Groups</ListGroupItem>
+
+                    <Link href="/dashboard/addgroup">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                Add Group
+                                
+                        </ListGroupItem>
+                    </Link>
+                    
+                    
+                    <Link href="/dashboard/grouplist">
+                        <ListGroupItem className={styles.listlist}>
+                            
+                                All Groups List
+                                
+                        </ListGroupItem>
+                    </Link>
                 </ListGroup>
             </Collapse>
 

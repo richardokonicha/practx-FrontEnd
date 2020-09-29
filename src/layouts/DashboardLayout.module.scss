@@ -1,8 +1,9 @@
 .container{
     background-color: #3c4452 !important;
+	position: relative;
+	min-height: 100vh;
 }
 
 .maincontent{
 	padding: 2vw 1vw;
-	color: #eee;
-}
+	color: rgba(255,255,255, 0.7);}

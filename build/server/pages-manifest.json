@@ -8,7 +8,15 @@
   "/auth/logout": "pages/auth/logout.html",
   "/auth/noauth": "pages/auth/noauth.html",
   "/auth/register": "pages/auth/register.html",
+  "/dashboard/addgroup": "pages/dashboard/addgroup.html",
+  "/dashboard/adduser": "pages/dashboard/adduser.html",
+  "/dashboard/appointments": "pages/dashboard/appointments.html",
+  "/dashboard/chat": "pages/dashboard/chat.html",
   "/dashboard/dashboard": "pages/dashboard/dashboard.html",
+  "/dashboard/grouplist": "pages/dashboard/grouplist.html",
+  "/dashboard/notification": "pages/dashboard/notification.html",
+  "/dashboard/profile": "pages/dashboard/profile.html",
+  "/dashboard/userslist": "pages/dashboard/userslist.html",
   "/": "pages/index.html",
   "/_document": "pages/_document.js"
 }
