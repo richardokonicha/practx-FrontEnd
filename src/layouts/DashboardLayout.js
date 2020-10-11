@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import { Container, Row, Col, Card, CardBody,Collapse, 
+import { Container, Row, Col, Card, CardBody,Collapse,
         FormGroup, Alert, Form, Input, Button, FormFeedback,
         Label, InputGroup, InputGroupAddon, Nav, Navbar, NavItem,
         UncontrolledDropdown,DropdownToggle, DropdownMenu, DropdownItem,
@@ -35,21 +35,21 @@ export default function DashboardLayout({ children }) {
                 <meta content="ReverSoftwares" name="author" />
 
                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-                
+
 
             </Head>
 
             <TopNav />
 
             <Container fluid className={styles.container}>
-                <Row sm="2">
+                <Row sm="2" noGutters>
 
                     <Col sm="2"><Sidebar /></Col>
-                    
-                    
-                    <Col sm="10" style={{paddingTop: "8vh"}}>
+
+
+                    <Col sm="10" style={{paddingTop: "12vh"}}>
                     <main className={styles.maincontent} >
-                            
+
                         {children}
 
                     </main>

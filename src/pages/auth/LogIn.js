@@ -1,4 +1,6 @@
 import {useEffect, useState} from 'react';
+import {useSelector, useDispatch} from "react-redux";
+import {useRouter} from "next/router";
 import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon } from 'reactstrap';
 import { connect } from 'react-redux';
 import { useFormik } from 'formik';
@@ -9,36 +11,73 @@ import styles from './login.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 
 import AuthLayout from "../../layouts/AuthLayout";
-//i18n
-import { useTranslation } from 'react-i18next';
+import * as t from "../../redux/constants";
+import * as Api from '../../redux/Api.js';
+
 
 //redux store
 //import { loginUser, apiError } from '../../redux/actions';
 
-//Import Images
-
-
-
-
-
-
 export default function LogIn(props) {
-    
+
+	const dispatch = useDispatch();
+	const user = useSelector(state=>state.auth.user);
+	const [isLoading, setIsLoading] = useState(false);
+
+	const router = useRouter();
+
     const formik = useFormik({
         initialValues: {
-            email: 'admin@practx.com',
-            password: '123456'
+            email: '',
+            password: ''
         },
         validationSchema: Yup.object({
             email: Yup.string().required('Please Enter Your Username'),
             password: Yup.string().required('Please Enter Your Password')
         }),
-        onSubmit: values => {
-            props.loginUser(values.email, values.password, props.history);
+        onSubmit:async values => {
+			try{
+				await dispatch({type: "RLOGIN", payload:{
+					email:values.email,
+					password: values.password,
+					history: router
+				}});
+
+			}catch(e){
+				console.log(e, "HOO HOO HOO")
+			}
+
+
         },
     });
-  
-    return (
+
+
+
+    return isLoading?
+	(
+		<React.Fragment>
+
+			<div className="account-pages my-5 pt-sm-5">
+				<Container>
+					<Row className="justify-content-center">
+						<Col md={8} lg={6} xl={5} >
+							<div className="text-center mb-4">
+
+
+								Loading...
+
+							</div>
+
+
+
+						</Col>
+					</Row>
+				</Container>
+			</div>
+
+		</React.Fragment>
+	)
+	:(
 
         <React.Fragment>
 
@@ -54,7 +93,7 @@ export default function LogIn(props) {
                                 <h4 className="mt-3">Sign in</h4>
 
                                 <p className="text-muted mb-4"> Sign in to continue to Practx. </p>
-                                
+
                             </div>
 
 
@@ -64,9 +103,9 @@ export default function LogIn(props) {
                                             props.error && <Alert color="danger">{props.error}</Alert>
                                         }
                                 <div className="p-3">
-                                        
+
                                     <Form onSubmit={formik.handleSubmit}>
-    
+
                                         <FormGroup>
                                             <Label> Email </Label>
                                             <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
@@ -76,7 +115,7 @@ export default function LogIn(props) {
                                                     </span>
                                                 </InputGroupAddon>
                                                 <Input
-                                                    type="text"
+                                                    type="email"
                                                     id="email"
                                                     name="email"
                                                     className="form-control bg-soft-light border-light"
@@ -117,7 +156,7 @@ export default function LogIn(props) {
                                                 {formik.touched.password && formik.errors.password ? (
                                                     <FormFeedback type="invalid">{formik.errors.password}</FormFeedback>
                                                 ) : null}
-                                                
+
                                             </InputGroup>
                                         </FormGroup>
 
@@ -140,7 +179,7 @@ export default function LogIn(props) {
                             <p>© 2020 PRACTX. Crafted with <i className="mdi mdi-heart text-danger"></i> by ReverSoft </p>
                         </div>
 
-                            
+
 
                         </Col>
                     </Row>

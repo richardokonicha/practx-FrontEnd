@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import {useEffect, useState} from 'react';
+import {useSelector, useDispatch} from "react-redux";
+import {useRouter} from "next/router";
 import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, CardHeader, CardTitle, CardText, CardFooter,
-		Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon, Breadcrumb, BreadcrumbItem 
+		Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon, Breadcrumb, BreadcrumbItem
 } from 'reactstrap';
 
 import { useFormik } from 'formik';
@@ -9,7 +11,7 @@ import * as Yup from 'yup';
 import Link from 'next/link';
 import styles from './dashboard.module.scss';
 
-import { Email, Assignment, Person, Group, Accessibility, Alarm, 
+import { Email, Assignment, Person, Group, Accessibility, Alarm,
     	Message, ArrowRight, ArrowDropDown, Home, Repeat, Close,
 } from '@styled-icons/material';
 
@@ -21,23 +23,27 @@ import DoughnutChart from "../../components/DoughnutChart";
 import MyCardContainer from "../../components/MyCardContainer";
 
 
+function Dashboard() {
 
-export default function Dashboard() {
+	const dispatch = useDispatch();
+	const user = useSelector(state=>state.auth.user);
+	console.log(user);
+	
 	return (
 
 
 		<DashboardLayout>
 			<React.Fragment>
 
-				<Row>
+				<Row >
 					<Col>
 
 						<Titlebar title="Dashboard" crumb={["Home", "Dashboard"]}/>
-						
+
 					</Col>
 				</Row>
 
-				<Row className={"mt-3"}>
+				<Row className={"mt-3"} >
 					<Col sm="7">
 
 						<MyCardContainer headingText="HOSPITAL SURVEY">
@@ -45,7 +51,7 @@ export default function Dashboard() {
 							<BarChart />
 
 						</MyCardContainer>
-						
+
 					</Col>
 
 					<Col sm="5">
@@ -55,7 +61,7 @@ export default function Dashboard() {
 							<DoughnutChart />
 
 						</MyCardContainer>
-						
+
 					</Col>
 				</Row>
 
@@ -68,14 +74,14 @@ export default function Dashboard() {
 							<UsersList />
 
 						</MyCardContainer>
-						
+
 					</Col>
 				</Row>
-			
-				
 
-				
-				
+
+
+
+
 
 			</React.Fragment>
 
@@ -83,3 +89,19 @@ export default function Dashboard() {
 
 	)
 }
+
+// export async function getStaticProps() {
+//   // Call an external API endpoint to get posts
+//   const res = await fetch('https://.../posts')
+//   const posts = await res.json()
+//
+//   // By returning { props: posts }, the Blog component
+//   // will receive `posts` as a prop at build time
+//   return {
+//     props: {
+//       posts,
+//     },
+//   }
+// }
+
+export default Dashboard;

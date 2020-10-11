@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
 
-
-
-
-
 const DoughnutChart = () => {
 
     const [data, setData] = useState({

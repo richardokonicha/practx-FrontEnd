@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import { Dashboard, Email, Assignment, Person, Group, Accessibility, Alarm, 
+import { Dashboard, Email, Assignment, Person, Group, Accessibility, Alarm,
     Message, ArrowRight, ArrowDropDown,
 } from '@styled-icons/material';
 
@@ -33,9 +33,9 @@ const Sidebar = () => {
 
     const [isOpenNotif, setIsOpenNotif] = useState(false);
     const toggleNotif = () => setIsOpenNotif(!isOpenNotif);
-  
+
     return (
-        
+
         <div className={styles.sidebar} style={{scrollbarWidth:"none"}} >
 
             <div className={styles.profile}>
@@ -45,21 +45,21 @@ const Sidebar = () => {
                     <p className={styles.username}> Dr Kirican Palma</p>
                     <span color="success" className={styles.badgestatus} > </span> <span>Online</span>
                 </div>
-                
+
             </div>
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
             <Link href="/">
-            
+
                 <Button className={styles.sidebarbutton} >
 
-                    <Dashboard size={19} className={styles.sidebarIcon} /> 
+                    <Dashboard size={19} className={styles.sidebarIcon} />
 
-                    Dashboard 
+                    Dashboard
 
                     <ArrowRight size={20} className={styles.sidebarIcon2} />
-                        
+
 
                 </Button>
             </Link>
@@ -69,7 +69,7 @@ const Sidebar = () => {
             <Link href="/dashboard/chat">
 
             <Button id="toggler" className={styles.sidebarbutton}>
-                <Email size={19} className={styles.sidebarIcon} /> 
+                <Email size={19} className={styles.sidebarIcon} />
 
                 Chat
 
@@ -87,12 +87,12 @@ const Sidebar = () => {
             <Link href="/dashboard/profile">
 
                 <Button id="toggler" className={styles.sidebarbutton}>
-                    <Email size={19} className={styles.sidebarIcon} /> 
+                    <Email size={19} className={styles.sidebarIcon} />
 
                     Profile
 
                     <div  className={styles.sidebarIcon2}>
-                    
+
 
                     <ArrowRight size={20} className={styles.sidebarIcon2} />
 
@@ -105,13 +105,13 @@ const Sidebar = () => {
 
             <Link href="/dashboard/notification">
                 <Button className={styles.sidebarbutton} >
-                    <Alarm size={19} className={styles.sidebarIcon} /> 
+                    <Alarm size={19} className={styles.sidebarIcon} />
                     Notifications
-                    
+
                     <div  className={styles.sidebarIcon2}>
 
                     <ArrowRight size={20} className={styles.sidebarIcon2} />
-                        
+
 
                     </div>
                 </Button>
@@ -121,9 +121,9 @@ const Sidebar = () => {
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
             <Button id="toggler" className={styles.sidebarbutton} onClick={toggleUser}>
-                <Person size={19} className={styles.sidebarIcon} /> 
+                <Person size={19} className={styles.sidebarIcon} />
                 Users
-                
+
                 <div  className={styles.sidebarIcon2}>
 
                 {!isOpenUser ? <ArrowRight size={20} className={styles.sidebarIcon2} />
@@ -137,18 +137,18 @@ const Sidebar = () => {
 
                     <Link href="/dashboard/adduser">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 Add User
-                                
+
                         </ListGroupItem>
                     </Link>
-                    
-                    
+
+
                     <Link href="/dashboard/userslist">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 Users List
-                                
+
                         </ListGroupItem>
                     </Link>
                 </ListGroup>
@@ -157,9 +157,9 @@ const Sidebar = () => {
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
             <Button id="toggler" className={styles.sidebarbutton} onClick={toggleAppointment}>
-                <Assignment size={19} className={styles.sidebarIcon} /> 
+                <Assignment size={19} className={styles.sidebarIcon} />
                 Appointments
-                
+
                 <div  className={styles.sidebarIcon2}>
                 {appointments >= 0 && <Badge color="danger"  className={styles.sidebadge} pill>2</Badge>}
 
@@ -172,23 +172,23 @@ const Sidebar = () => {
                 <ListGroup >
                 <Link href="/dashboard/appointments">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 Pending Appointments
-                                
+
                         </ListGroupItem>
                     </Link>
                     <Link href="/dashboard/appointments-all">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 All Appointments
-                                
+
                         </ListGroupItem>
                     </Link>
                     <Link href="/dashboard/appointments-history">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 Appointments history
-                                
+
                         </ListGroupItem>
                     </Link>
                 </ListGroup>
@@ -199,9 +199,9 @@ const Sidebar = () => {
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
             <Button id="toggler" className={styles.sidebarbutton} onClick={toggleGroup}>
-                <Group size={19} className={styles.sidebarIcon} /> 
-                Groups 
-                
+                <Group size={19} className={styles.sidebarIcon} />
+                Groups
+
                 <div  className={styles.sidebarIcon2}>
 
                 {!isOpenGroup ? <ArrowRight size={20} className={styles.sidebarIcon2} />
@@ -214,22 +214,34 @@ const Sidebar = () => {
 
                     <Link href="/dashboard/addgroup">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 Add Group
-                                
+
                         </ListGroupItem>
                     </Link>
-                    
-                    
+
+
                     <Link href="/dashboard/grouplist">
                         <ListGroupItem className={styles.listlist}>
-                            
+
                                 All Groups List
-                                
+
                         </ListGroupItem>
                     </Link>
                 </ListGroup>
             </Collapse>
+
+			{/* ----------------------------------------------- NEXT ITEM ----------------------- */}
+
+
+			                <Button className={styles.sidebarbutton} >
+
+			                    <Person size={19} className={styles.sidebarIcon} />
+
+			                    	Logout
+
+			                </Button>
+
 
 
 
@@ -237,10 +249,7 @@ const Sidebar = () => {
         </div>
 
     );
-  
+
 }
 
 export default Sidebar;
-
-
-
