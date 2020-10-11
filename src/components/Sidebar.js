@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
+import {useSelector, useDispatch} from "react-redux";
+import {useRouter} from "next/router";
 import { Dashboard, Email, Assignment, Person, Group, Accessibility, Alarm,
     Message, ArrowRight, ArrowDropDown,
 } from '@styled-icons/material';
@@ -15,6 +17,12 @@ import Link from 'next/link';
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
+	const dispatch = useDispatch();
+	const user = useSelector(state=>state.auth.user);
+	console.log(user);
+	const logout = () => {
+		router.push("/")
+	}
     const [messages, setMessages] = useState(0);
     const [appointments, setAppointments] = useState(0);
 
@@ -234,7 +242,7 @@ const Sidebar = () => {
 			{/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
 
-			                <Button className={styles.sidebarbutton} >
+			                <Button className={styles.sidebarbutton} onClick={logout}>
 
 			                    <Person size={19} className={styles.sidebarIcon} />
 
