@@ -6,7 +6,9 @@ import { Phone} from '@styled-icons/material';
 
 
 
-export default function UserComponent() {
+export default function UserComponent({practice, approve}) {
+
+
 	return (
 
 
@@ -22,13 +24,20 @@ export default function UserComponent() {
 
 				<CardText className={"text-center"}>
 
-					<h4 className={"text-primary"}>Dr Karen Patel</h4>
-					<p> Cardiology</p>
-					<address> A-103, Shyam gokul, Mahatma Road <br/>
-					Mumbai </address>
+					<h4 className={"text-primary"}>{ practice.practiceName}</h4>
+					<p> { practice.specialty }</p>
+					<address> {practice.address} </address>
 
-					<Phone size={16} color="white"/> <span>(123)456-7890</span> <br/>
-					<p className={"mt-2"}> <Button color="danger" danger rounded> Read More </Button></p>
+					<Phone size={16} color="white"/> <span> {practice.mobileNo} </span> <br/>
+					<p className={"mt-2"}> 
+
+						{
+							practice.approvalStatus === "approved" ? (<Button color="success" danger rounded> Approved </Button>)
+							: (<Button color="danger" danger rounded onClick={()=>approve(practice.id)} > Click to Approve Practice </Button>)
+
+						}
+						
+					</p>
 
 
 				</CardText>							

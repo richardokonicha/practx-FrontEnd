@@ -18,6 +18,15 @@ import UserComponent from "../../components/UserComponent";
 
 
 export default function AddGroup() {
+
+	const handleSubmit = (e) => {
+		const data = e.target;
+		const fd = new FormData(data);
+
+		conslole.log(data);
+	}
+
+
 	return (
 
 
@@ -48,87 +57,85 @@ export default function AddGroup() {
 									
 									<Col md={{size: 6, offset: 3}} >
 
+										<iframe name="dummyframe" id="dummyframe" style={{display: "none"}}></iframe>
 
-										<Form >
+
+										<Form name="addpractice" method="POST" 
+											action="http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/auth/practices/signup"
+											target="dummyframe">
 
 											<FormGroup row>
-										        <Label for="firstname" sm={5}>First Name</Label>
+										        <Label for="practiceName" sm={5}>Practice Name</Label>
 										        <Col sm={7}>
-										          <Input type="text" name="firstname" id="firstname" placeholder="FirstName" />
+										          <Input type="text" name="practiceName" id="practiceName" placeholder="Practice Name" />
 										        </Col>
 										      </FormGroup>
 
 										      <FormGroup row>
-										        <Label for="lastname" sm={5}>Last Name</Label>
+										        <Label for="contactName" sm={5}>Contact Name</Label>
 										        <Col sm={7}>
-										          <Input type="text" name="lastname" id="lastname" placeholder="LastName" />
+										          <Input type="text" name="contactName" id="contactName" placeholder="Contact Name" />
 										        </Col>
 										      </FormGroup>
 
 										      <FormGroup row>
-										        <Label for="dateofbirth" sm={5}>Date of Birth</Label>
+										        <Label for="specialty" sm={5}>Specialty</Label>
 										        <Col sm={7}>
-										          <Input type="date" name="dateofbirth" id="dateofbirth" placeholder="Date of Birth" />
+										          <Input type="text" name="specialty" id="specialty" placeholder="Specialty" />
 										        </Col>
 										      </FormGroup>
 
 										      <FormGroup row>
-										        <Label for="gender" sm={5}>Gender</Label>
+										        <Label for="website" sm={5}>Website</Label>
 										        <Col sm={7}>
-										          <Input type="select" name="gender" id="gender">
-										          	<option >Select Gender</option>
-										            <option>Male</option>
-										            <option>Female</option>
-										            <option>Dont want to say</option>
-										          </Input>
+										          <Input type="text" name="website" id="website" placeholder="Website" />
 										        </Col>
 										      </FormGroup>
 
+
 										      <FormGroup row>
-										        <Label for="number" sm={5}>Phone Number</Label>
+										        <Label for="mobileNo" sm={5}>Phone Number</Label>
 										        <Col sm={7}>
-										          <Input type="number" name="number" id="number" placeholder="Digits Only..." />
+										          <Input type="number" name="mobileNo" id="mobileNo" placeholder="Phone Number..." />
 										        </Col>
 										      </FormGroup>
 
 									      <FormGroup row>
-									        <Label for="exampleEmail" sm={5}>Email</Label>
+									        <Label for="email" sm={5}>Email</Label>
 									        <Col sm={7}>
-									          <Input type="email" name="email" id="exampleEmail" placeholder="email@host.com" />
+									          <Input type="email" name="email" id="email" placeholder="email@host.com" />
 									        </Col>
 									      </FormGroup>
 									      <FormGroup row>
-									        <Label for="examplePassword" sm={5}>Password</Label>
+									        <Label for="password" sm={5}>Password</Label>
 									        <Col sm={7}>
-									          <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+									          <Input type="password" name="password" id="password" placeholder="Enter password" />
 									        </Col>
 									      </FormGroup>
 									      
 									      
 									      <FormGroup row>
-									        <Label for="exampleText" sm={5}>Address</Label>
+									        <Label for="address" sm={5}>Address</Label>
 									        <Col sm={7}>
-									          <Input type="textarea" name="text" id="exampleText" />
+									          <Input type="textarea" name="address" id="address" />
 									        </Col>
 									      </FormGroup>
 
-									      	<FormGroup row>
-										        <Label for="maritalstatus" sm={5}>Marital Status</Label>
-										        <Col sm={7}>
-										          <Input type="select" name="maritalstatus" id="maritalstatus">
-										          	<option >...</option>
-										            <option>Married</option>
-										            <option>Single</option>
-										          </Input>
-										        </Col>
-										     </FormGroup>
+									      <FormGroup row>
+									        <Label for="description" sm={5}>Description</Label>
+									        <Col sm={7}>
+									          <Input type="textarea" name="description" id="description" />
+									        </Col>
+									      </FormGroup>
+
+									      	
 
 									      <FormGroup row>
-									      	<Label for="profilepic" sm={5}>Profile Pic</Label>
+									      	<Label for="logo" sm={5}>Practice Logo</Label>
 									        <Col sm={7}>
-									        <CustomInput type="file" id="profilepic" name="profilepic" label="Select picture!" />
+									        <CustomInput type="file" id="logo" name="logo" label="Select image!" />
 									      	<FormText color="muted">
-									            This is some placeholder block-level help text for the above input.
+									            Jpeg or png only. Size limit of 200kb.
 									         </FormText>
 									         </Col>
 									      </FormGroup>
@@ -136,17 +143,19 @@ export default function AddGroup() {
 									      	<FormGroup row>
 										        <Label for="location" sm={5}>Location</Label>
 										        <Col sm={7}>
-										          <Input type="text" name="location" id="location" placeholder="LastName" />
+										          <Input type="text" name="location" id="location" placeholder="Location" />
 										        </Col>
 										    </FormGroup>
 									      
 									    
 									      <FormGroup check row>
 									        <Col md={{ size: 7, offset: 5 }}>
-									          <Button>Submit</Button>
+									          <Button > Submit </Button>
 									        </Col>
 									      </FormGroup>
 									    </Form>
+
+									    
 
 									</Col>
 								</Row>

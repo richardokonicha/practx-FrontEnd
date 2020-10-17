@@ -28,7 +28,7 @@ const Titlebar = ({title, crumb}) => {
 
 					{crumb.map((page) => {
 						return (
-							<div className={styles.breadcrumbitem}>
+							<div className={styles.breadcrumbitem} key={page} >
 								{page === "Home" ? <Home size={14} style={{marginBottom: "3px"}}/> : <ArrowRight size={16} />}
 								<Link href="/">
 									<a>{page}</a>

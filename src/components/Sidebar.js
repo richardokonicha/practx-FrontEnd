@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import {useSelector, useDispatch} from "react-redux";
 import {useRouter} from "next/router";
+import {useSelector, useDispatch} from "react-redux";
+
 import { Dashboard, Email, Assignment, Person, Group, Accessibility, Alarm,
     Message, ArrowRight, ArrowDropDown,
 } from '@styled-icons/material';
@@ -15,14 +16,20 @@ import {Nav, Navbar, NavItem, Button,
 
 import Link from 'next/link';
 import styles from "./Sidebar.module.scss";
+import * as Actions from "../redux/auth/actions"; 
 
 const Sidebar = () => {
-	const dispatch = useDispatch();
-	const user = useSelector(state=>state.auth.user);
-	console.log(user);
+
+    const router = useRouter();
+    const dispatch = useDispatch();
+
+    const userdata = useSelector(store=>store.auth.user);
+    const [user, setUser] = useState({});
+
 	const logout = () => {
-		router.push("/")
-	}
+        dispatch(Actions.logoutSaga(router));
+    };
+
     const [messages, setMessages] = useState(0);
     const [appointments, setAppointments] = useState(0);
 
@@ -33,14 +40,21 @@ const Sidebar = () => {
     const [isOpenAppointment, setIsOpenAppointment] = useState(false);
     const toggleAppointment = () => setIsOpenAppointment(!isOpenAppointment);
 
-    const [isOpenGroup, setIsOpenGroup] = useState(false);
-    const toggleGroup = () => setIsOpenGroup(!isOpenGroup);
+    const [isPractice, setisPractice] = useState(false);
+    const toggleGroup = () => setisPractice(!isPractice);
 
     const [isOpenUser, setIsOpenUser] = useState(false);
     const toggleUser = () => setIsOpenUser(!isOpenUser);
 
     const [isOpenNotif, setIsOpenNotif] = useState(false);
     const toggleNotif = () => setIsOpenNotif(!isOpenNotif);
+
+
+    useEffect(()=>{
+
+        setUser(userdata.root)
+
+    },[user])
 
     return (
 
@@ -50,7 +64,7 @@ const Sidebar = () => {
                 <img src="/images/users/avatar-1.jpg" className={styles.profilepic} />
 
                 <div className={styles.profilestatus}>
-                    <p className={styles.username}> Dr Kirican Palma</p>
+                    <p className={styles.username}> {user ? `${user.firstname} ${user.lastname}`: "" } </p>
                     <span color="success" className={styles.badgestatus} > </span> <span>Online</span>
                 </div>
 
@@ -58,7 +72,7 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-            <Link href="/">
+            <Link href="/" passHref>
 
                 <Button className={styles.sidebarbutton} >
 
@@ -74,7 +88,7 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-            <Link href="/dashboard/chat">
+            <Link href="/dashboard/chat" passHref>
 
             <Button id="toggler" className={styles.sidebarbutton}>
                 <Email size={19} className={styles.sidebarIcon} />
@@ -92,7 +106,7 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-            <Link href="/dashboard/profile">
+            <Link href="/dashboard/profile" passHref>
 
                 <Button id="toggler" className={styles.sidebarbutton}>
                     <Email size={19} className={styles.sidebarIcon} />
@@ -111,7 +125,7 @@ const Sidebar = () => {
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
-            <Link href="/dashboard/notification">
+            <Link href="/dashboard/notification" passHref>
                 <Button className={styles.sidebarbutton} >
                     <Alarm size={19} className={styles.sidebarIcon} />
                     Notifications
@@ -143,7 +157,7 @@ const Sidebar = () => {
 
                 <ListGroup >
 
-                    <Link href="/dashboard/adduser">
+                    <Link href="/dashboard/adduser" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Add User
@@ -152,7 +166,7 @@ const Sidebar = () => {
                     </Link>
 
 
-                    <Link href="/dashboard/userslist">
+                    <Link href="/dashboard/userslist" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Users List
@@ -178,21 +192,21 @@ const Sidebar = () => {
             </Button>
             <Collapse isOpen={isOpenAppointment}>
                 <ListGroup >
-                <Link href="/dashboard/appointments">
+                <Link href="/dashboard/appointments" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Pending Appointments
 
                         </ListGroupItem>
                     </Link>
-                    <Link href="/dashboard/appointments-all">
+                    <Link href="/dashboard/appointments-all" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 All Appointments
 
                         </ListGroupItem>
                     </Link>
-                    <Link href="/dashboard/appointments-history">
+                    <Link href="/dashboard/appointments-history" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Appointments history
@@ -208,31 +222,32 @@ const Sidebar = () => {
 
             <Button id="toggler" className={styles.sidebarbutton} onClick={toggleGroup}>
                 <Group size={19} className={styles.sidebarIcon} />
-                Groups
+                    
+                    Practice
 
                 <div  className={styles.sidebarIcon2}>
 
-                {!isOpenGroup ? <ArrowRight size={20} className={styles.sidebarIcon2} />
+                {!isPractice ? <ArrowRight size={20} className={styles.sidebarIcon2} />
                     : <ArrowDropDown size={20} className={styles.sidebarIcon2} />}
 
                 </div>
             </Button>
-            <Collapse isOpen={isOpenGroup}>
+            <Collapse isOpen={isPractice}>
                 <ListGroup >
 
-                    <Link href="/dashboard/addgroup">
+                    <Link href="/dashboard/addgroup" passHref>
                         <ListGroupItem className={styles.listlist}>
 
-                                Add Group
+                                Add Practice
 
                         </ListGroupItem>
                     </Link>
 
 
-                    <Link href="/dashboard/grouplist">
+                    <Link href="/dashboard/grouplist" passHref>
                         <ListGroupItem className={styles.listlist}>
 
-                                All Groups List
+                                All Practice List
 
                         </ListGroupItem>
                     </Link>

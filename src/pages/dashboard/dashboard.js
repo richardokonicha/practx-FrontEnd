@@ -2,6 +2,7 @@ import Head from 'next/head';
 import {useEffect, useState} from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import {useRouter} from "next/router";
+
 import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, CardHeader, CardTitle, CardText, CardFooter,
 		Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon, Breadcrumb, BreadcrumbItem
 } from 'reactstrap';
@@ -23,12 +24,8 @@ import DoughnutChart from "../../components/DoughnutChart";
 import MyCardContainer from "../../components/MyCardContainer";
 
 
-function Dashboard() {
+function Dashboard(props) {
 
-	const dispatch = useDispatch();
-	const user = useSelector(state=>state.auth.user);
-	console.log(user);
-	
 	return (
 
 
@@ -90,18 +87,13 @@ function Dashboard() {
 	)
 }
 
-// export async function getStaticProps() {
-//   // Call an external API endpoint to get posts
-//   const res = await fetch('https://.../posts')
-//   const posts = await res.json()
-//
-//   // By returning { props: posts }, the Blog component
-//   // will receive `posts` as a prop at build time
-//   return {
-//     props: {
-//       posts,
-//     },
-//   }
-// }
+export async function getStaticProps({res, req}) {
+
+
+	return {
+		props: {}
+	}
+}
+
 
 export default Dashboard;

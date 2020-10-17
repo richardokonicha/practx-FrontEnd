@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, CardBody,Collapse,
         Label, InputGroup, InputGroupAddon, Nav, Navbar, NavItem,
         UncontrolledDropdown,DropdownToggle, DropdownMenu, DropdownItem,
         NavLink, NavbarBrand, NavbarToggler, NavbarText, } from 'reactstrap';
-import { connect } from 'react-redux';
+import {useSelector, useDispatch} from "react-redux";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Head from 'next/head';
@@ -16,6 +16,9 @@ import Sidebar from "../components/Sidebar";
 
 
 export default function DashboardLayout({ children }) {
+
+	const dispatch = useDispatch();
+    
 
     const [isOpen, setIsOpen] = useState(false);
 

@@ -2,6 +2,7 @@
 import {useEffect, useState} from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+import {useSelector, shallowEqual, useDispatch} from "react-redux";
 
 import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon } from 'reactstrap';
 
@@ -13,6 +14,9 @@ import styles from './login.module.scss';
 import utilStyles from '../../styles/utils.module.scss';
 
 import AuthLayout from "../../layouts/AuthLayout";
+
+
+import * as Actions from "../../redux/auth/actions";
 
 //redux store
 //import { loginUser, apiError } from '../../redux/actions';
@@ -26,8 +30,12 @@ import AuthLayout from "../../layouts/AuthLayout";
 
 export default function ForgotPassword(props) {
 
+	const dispatch = useDispatch()
+
+	const passwordStatus = useSelector(state => state.passwordResetStatus, shallowEqual)
+
 	const [passwordResetStatus, setPasswordResetStatus] = useState(false);
-	const [loginerror, setLoginError] = useState(false);
+
     
     const formik = useFormik({
         initialValues: {
@@ -37,8 +45,10 @@ export default function ForgotPassword(props) {
             email: Yup.string()
                 .required('Required')
         }),
-        onSubmit: values => {
-            props.forgetPassword(values.email);
+        onSubmit: async (values) => {
+
+            await dispatch(Actions.forgetPasswordRequestSaga(values.email));
+            setPasswordResetStatus(true)
         },
     });
   
@@ -64,12 +74,10 @@ export default function ForgotPassword(props) {
                             <Card>
 	                            <CardBody className="p-1">
 	                                <div className="p-3">
+
 	                                        {
-	                                            loginerror && <Alert variant="danger">{props.error}</Alert>
-	                                        }
-	                                        {
-	                                            passwordResetStatus ? <Alert variant="success" className="text-center mb-4">{props.passwordResetStatus}</Alert>
-	                                            : <Alert variant="success" className="text-center mb-4">Enter your Email and instructions will be sent to you!</Alert>
+	                                            passwordResetStatus ? <Alert variant="success" className="text-center mb-4">Check your email for reset directions</Alert>
+	                                            : <Alert variant="info" className="text-center mb-4">Enter your Email and instructions will be sent to you!</Alert>
 	                                        }
 	                                    <Form onSubmit={formik.handleSubmit}>
 	    
