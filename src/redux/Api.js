@@ -65,7 +65,7 @@ export const approvePractice = async (url, token) => {// -----------------------
     	method: 'PATCH',
     	headers: {"Authorization": token},
     	body:{
-			"approvalStatus": "approved"
+			approvalStatus: "approved"
 		}
     });
 
@@ -79,7 +79,7 @@ export const rejectPractice = async (url, token) => {// ----------------------- 
     	method: 'PATCH',
     	headers: {"Authorization": token},
     	body:{
-			"approvalStatus": "rejected"
+			approvalStatus: "rejected"
 		}
     });
 

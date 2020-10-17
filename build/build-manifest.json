@@ -24,15 +24,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/auth/forgot-password": [
+    "/dashboard/dashboard": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/auth/forgot-password.js"
+      "static/chunks/pages/dashboard/dashboard.js"
     ],
-    "/practice/auth/login": [
+    "/dashboard/grouplist": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/practice/auth/login.js"
+      "static/chunks/pages/dashboard/grouplist.js"
     ]
   },
   "ampFirstPages": []
