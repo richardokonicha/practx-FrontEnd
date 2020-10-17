@@ -30,13 +30,13 @@ function GroupList(props) {
 
 	const approvePractice = async (id) =>{
 		const url = "http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/" + id ;
-		
+		const approvedData = await Api.rejectPractice(url, props.user.token);
 		console.log("Trying to approve practice", url, approvedData)
 	}
 
 	const rejectPractice = async (id) =>{
 		const url = "http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/" + id ;
-
+		const rejectData = await Api.rejectPractice(url, props.user.token);
 		console.log("Rejected Practice ------------------", rejectData)
 	}
 

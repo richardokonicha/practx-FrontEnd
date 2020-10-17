@@ -6,7 +6,7 @@ import { Phone} from '@styled-icons/material';
 
 
 
-export default function UserComponent({practice, approve, reject}) {
+export default function UserComponent({practice, approve}) {
 
 
 	return (
@@ -36,7 +36,7 @@ export default function UserComponent({practice, approve, reject}) {
 							: (<Button color="danger" danger rounded onClick={()=>approve(practice.id)} > Click to Approve Practice </Button>)
 
 						}
-						<Button color="danger" danger rounded onClick={()=>reject(practice.id)} > Reject </Button>
+						
 					</p>
 
 

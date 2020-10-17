@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/dashboard/dashboard": "pages/dashboard/dashboard.js",
-  "/dashboard/grouplist": "pages/dashboard/grouplist.js"
+  "/auth/forgot-password": "pages/auth/forgot-password.js",
+  "/practice/auth/login": "pages/practice/auth/login.js"
 }
