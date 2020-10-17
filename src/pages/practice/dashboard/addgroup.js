@@ -11,9 +11,9 @@ import { 	Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText,
 
 import { Phone } from '@styled-icons/material';
 
-import DashboardLayout from "../../layouts/DashboardLayout";
-import Titlebar from "../../components/Titlebar";
-import UserComponent from "../../components/UserComponent";
+import DashboardLayout from "../../../layouts/DashboardLayout";
+import Titlebar from "../../../components/Titlebar";
+import UserComponent from "../../../components/UserComponent";
 
 
 

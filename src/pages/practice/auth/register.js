@@ -1,6 +1,4 @@
 import {useEffect, useState} from 'react';
-import {useSelector, useDispatch} from "react-redux";
-import {useRouter} from "next/router";
 import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon } from 'reactstrap';
 import { connect } from 'react-redux';
 import { useFormik } from 'formik';
@@ -8,76 +6,39 @@ import * as Yup from 'yup';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './login.module.scss';
-import utilStyles from '../../styles/utils.module.scss';
+import utilStyles from '../../../styles/utils.module.scss';
 
-import AuthLayout from "../../layouts/AuthLayout";
-import * as t from "../../redux/constants";
-import * as Api from '../../redux/Api.js';
+import AuthLayout from "../../../layouts/AuthLayout";
 
 
-//redux store
-//import { loginUser, apiError } from '../../redux/actions';
+
+
+
 
 export default function LogIn(props) {
 
-	const dispatch = useDispatch();
-	const user = useSelector(state=>state.auth.user);
-	const [isLoading, setIsLoading] = useState(false);
 
-	const router = useRouter();
-
+    const [user, setUser] = useState(false);
+    const [signUpError, setSignUpError] = useState(false);
+    
     const formik = useFormik({
         initialValues: {
+            username: '',
             email: '',
             password: ''
         },
         validationSchema: Yup.object({
-            email: Yup.string().required('Please Enter Your Username'),
-            password: Yup.string().required('Please Enter Your Password')
+            username: Yup.string().required('Required'),
+            email: Yup.string().email('Enter proper email').required('Required'),
+            password: Yup.string()
+                .required('Required')
         }),
-        onSubmit:async values => {
-			try{
-				await dispatch({type: "RLOGIN", payload:{
-					email:values.email,
-					password: values.password,
-					history: router
-				}});
-
-			}catch(e){
-				console.log(e, "HOO HOO HOO")
-			}
-
-
+        onSubmit: values => {
+            props.registerUser(values);
         },
     });
-
-
-
-    return isLoading?
-	(
-		<React.Fragment>
-
-			<div className="account-pages my-5 pt-sm-5">
-				<Container>
-					<Row className="justify-content-center">
-						<Col md={8} lg={6} xl={5} >
-							<div className="text-center mb-4">
-
-
-								Loading...
-
-							</div>
-
-
-
-						</Col>
-					</Row>
-				</Container>
-			</div>
-
-		</React.Fragment>
-	)
-	:(
+  
+    return (
 
         <React.Fragment>
 
@@ -90,22 +51,25 @@ export default function LogIn(props) {
                                     <img src="/images/practxLogo-dark.png" alt="Practx logo dark" height="100" className="logo logo-dark"/>
                                 </Link>
 
-                                <h4 className="mt-3">Sign in</h4>
+                                <h4 className="mt-3">Sign up</h4>
 
-                                <p className="text-muted mb-4"> Sign in to continue to Practx. </p>
-
+                                <p className="text-muted mb-4"> Get your Practx account now </p>
+                                
                             </div>
 
 
                             <Card>
                             <CardBody className="p-4">
                                         {
-                                            props.error && <Alert color="danger">{props.error}</Alert>
+                                            signUpError && <Alert color="danger">{props.error}</Alert>
+                                        }
+                                        {
+                                            user && <Alert variant="success">Thank You for registering with us!</Alert>
                                         }
                                 <div className="p-3">
-
+                                        
                                     <Form onSubmit={formik.handleSubmit}>
-
+    
                                         <FormGroup>
                                             <Label> Email </Label>
                                             <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
@@ -115,7 +79,7 @@ export default function LogIn(props) {
                                                     </span>
                                                 </InputGroupAddon>
                                                 <Input
-                                                    type="email"
+                                                    type="text"
                                                     id="email"
                                                     name="email"
                                                     className="form-control bg-soft-light border-light"
@@ -131,10 +95,32 @@ export default function LogIn(props) {
                                             </InputGroup>
                                         </FormGroup>
 
+                                        <FormGroup>
+                                            <Label> Username </Label>
+                                            <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
+                                                <InputGroupAddon addonType="prepend">
+                                                    <span className="input-group-text border-light text-muted">
+                                                        <i className="ri-user-2-line"></i>
+                                                    </span>
+                                                </InputGroupAddon>
+                                                <Input
+                                                    type="text"
+                                                    id="username"
+                                                    name="username"
+                                                    className="form-control bg-soft-light border-light"
+                                                    placeholder="Enter Username"
+                                                    onChange={formik.handleChange}
+                                                    onBlur={formik.handleBlur}
+                                                    value={formik.values.username}
+                                                    invalid={formik.touched.username && formik.errors.username ? true : false}
+                                                />
+                                                {formik.touched.username && formik.errors.username ? (
+                                                    <FormFeedback type="invalid">{formik.errors.username}</FormFeedback>
+                                                ) : null}
+                                            </InputGroup>
+                                        </FormGroup>
+
                                         <FormGroup className="mb-4">
-                                            <div className="float-right">
-                                                <Link href="/auth/forgot-password" passHref className="text-danger font-size-13"> Forgot password? </Link>
-                                            </div>
                                             <Label> Password </Label>
                                             <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
                                                 <InputGroupAddon addonType="prepend">
@@ -156,17 +142,16 @@ export default function LogIn(props) {
                                                 {formik.touched.password && formik.errors.password ? (
                                                     <FormFeedback type="invalid">{formik.errors.password}</FormFeedback>
                                                 ) : null}
-
+                                                
                                             </InputGroup>
                                         </FormGroup>
 
-                                        <div className="custom-control custom-checkbox mb-4">
-                                            <Input type="checkbox" className="custom-control-input" id="remember-check" />
-                                            <Label className="custom-control-label" htmlFor="remember-check"> Remember me </Label>
+                                        <div>
+                                            <Button color="primary" block className=" waves-effect waves-light" type="submit">Sign up</Button>
                                         </div>
 
-                                        <div>
-                                            <Button color="danger" block className=" waves-effect waves-light" type="submit"> Sign in </Button>
+                                        <div className="mt-4 text-center">
+                                            <p className="text-muted mb-0"> By registering you agree to the Practx <Link href="#" className="text-primary"> Terms of Use </Link></p>
                                         </div>
 
                                     </Form>
@@ -175,11 +160,11 @@ export default function LogIn(props) {
                         </Card>
 
                         <div className="mt-5 text-center">
-                            <p> Don't have an account? <Link href="/auth/register" className="font-weight-medium text-primary" passHref> Signup now </Link> </p>
-                            <p>© 2020 PRACTX. Crafted with <i className="mdi mdi-heart text-danger"></i> by ReverSoft </p>
+                            <p> Already have an account ? <Link href="/" className="font-weight-medium text-primary"> Signin </Link> </p>
+                            <p>©  2020 Practx.  Crafted with <i className="mdi mdi-heart text-danger"></i> by ReverSoftwares</p>
                         </div>
 
-
+                            
 
                         </Col>
                     </Row>

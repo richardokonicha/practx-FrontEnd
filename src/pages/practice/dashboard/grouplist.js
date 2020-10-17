@@ -4,15 +4,15 @@ import Link from 'next/link';
 import {useEffect, useState} from 'react';
 import { Container, Row, Col, Button, Spinner} from 'reactstrap';
 import useSWR from 'swr';
-import * as Api from '../../redux/Api.js';
+import * as Api from '../../../redux/Api.js';
 import {useSelector, connect} from 'react-redux';
 
 
 import { Phone } from '@styled-icons/material';
 
-import DashboardLayout from "../../layouts/DashboardLayout";
-import Titlebar from "../../components/Titlebar";
-import UserComponent from "../../components/UserComponent";
+import DashboardLayout from "../../../layouts/DashboardLayout";
+import Titlebar from "../../../components/Titlebar";
+import UserComponent from "../../../components/UserComponent";
 
 
 

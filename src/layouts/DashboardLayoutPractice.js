@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 import styles from "./DashboardLayout.module.scss";
 import TopNav from "../components/TopNav";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/SidebarPractice";
 
 
 export default function DashboardLayout({ children }) {

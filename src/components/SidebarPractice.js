@@ -238,7 +238,7 @@ const Sidebar = () => {
                     <Link href="/dashboard/addgroup" passHref>
                         <ListGroupItem className={styles.listlist}>
 
-                                Add Practice
+                                Add Staff
 
                         </ListGroupItem>
                     </Link>
@@ -247,7 +247,7 @@ const Sidebar = () => {
                     <Link href="/dashboard/grouplist" passHref>
                         <ListGroupItem className={styles.listlist}>
 
-                                All Practice List
+                                All Staffs List
 
                         </ListGroupItem>
                     </Link>

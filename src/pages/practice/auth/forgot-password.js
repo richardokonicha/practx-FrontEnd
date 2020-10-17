@@ -11,17 +11,12 @@ import * as Yup from 'yup';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './login.module.scss';
-import utilStyles from '../../styles/utils.module.scss';
+import utilStyles from '../../../styles/utils.module.scss';
 
-import AuthLayout from "../../layouts/AuthLayout";
+import AuthLayout from "../../../layouts/AuthLayout";
 
 
-import * as Actions from "../../redux/auth/actions";
-
-//redux store
-//import { loginUser, apiError } from '../../redux/actions';
-
-//Import Images
+import * as Actions from "../../../redux/auth/actions";
 
 
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { createStore, applyMiddleware } from "redux";
-import rootReducer from "./reducers";
+import rootReducer from "./rootReducer";
 import createSagaMiddleware from 'redux-saga'
-import mywatchLogin from "./saga/sagas"
+import rootSaga from "./saga"
 
 
 const saga = createSagaMiddleware();
@@ -10,7 +10,7 @@ const saga = createSagaMiddleware();
 const initialState = {};
 
 const store = createStore(rootReducer, initialState, applyMiddleware(saga));
-saga.run(mywatchLogin)
+saga.run(rootSaga)
 
 
 export default store;

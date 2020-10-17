@@ -16,12 +16,12 @@ import { Email, Assignment, Person, Group, Accessibility, Alarm,
     	Message, ArrowRight, ArrowDropDown, Home, Repeat, Close,
 } from '@styled-icons/material';
 
-import DashboardLayout from "../../layouts/DashboardLayout";
-import Titlebar from "../../components/Titlebar";
-import UsersList from "../../components/UsersList";
-import BarChart from "../../components/BarChart";
-import DoughnutChart from "../../components/DoughnutChart";
-import MyCardContainer from "../../components/MyCardContainer";
+import DashboardLayout from "../../../layouts/DashboardLayout";
+import Titlebar from "../../../components/Titlebar";
+import UsersList from "../../../components/UsersList";
+import BarChart from "../../../components/BarChart";
+import DoughnutChart from "../../../components/DoughnutChart";
+import MyCardContainer from "../../../components/MyCardContainer";
 
 
 function Dashboard(props) {

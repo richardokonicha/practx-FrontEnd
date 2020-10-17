@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import {useEffect, useState} from 'react';
-import useSWR from 'swr';
+import {useSelector, useDispatch} from "react-redux";
+import {useRouter} from "next/router";
 import { Container, Row, Col, Card, CardBody, FormGroup, Alert, Form, CardHeader, CardTitle, CardText, CardFooter,
 		Input, Button, FormFeedback, Label, InputGroup, InputGroupAddon, Breadcrumb, BreadcrumbItem
 } from 'reactstrap';
@@ -22,7 +23,8 @@ import DoughnutChart from "../../components/DoughnutChart";
 import MyCardContainer from "../../components/MyCardContainer";
 
 
-function Dashboard() {
+function Dashboard(props) {
+
 	return (
 
 
@@ -86,21 +88,15 @@ function Dashboard() {
 
 export async function getServerSideProps({params}) {
 
-	const {token} = params;
+	const token = params.token;
 
-  const { data, error } = useSWR('/api/user', fetch)
+	console.log("token is ------------------- token ----------".token)
+	
 
- if (error) return <div>failed to load</div>
- if (!data) return <div>loading...</div>
- return <div>hello {data.name}!</div>
-
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      posts,
-    },
-  }
+	return {
+		props: {}
+	}
 }
+
 
 export default Dashboard;
