@@ -32,15 +32,6 @@ export default function UsersList() {
 				<Row className={"mt-3"} sm="4">
 
 
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-
 						
 				</Row>
 			
