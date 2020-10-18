@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useRef} from 'react';
 import { Container, Row, Col} from 'reactstrap';
 
 
@@ -14,6 +14,7 @@ import UserComponent from "../../components/UserComponent";
 
 
 export default function UsersList() {
+
 	return (
 
 
@@ -30,17 +31,6 @@ export default function UsersList() {
 
 				
 				<Row className={"mt-3"} sm="4">
-
-
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-
 						
 				</Row>
 			
