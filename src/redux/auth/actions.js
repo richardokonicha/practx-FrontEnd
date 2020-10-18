@@ -96,7 +96,6 @@ export const loginPractice = (email, password, router) => {
 
 export const loginPracticeSuccess = (userData) => {
 
-    console.log("Reducer action for login called ")
 
     return {
         type: t.PRACTICE_USER_LOGIN,
@@ -157,10 +156,131 @@ export const practicePasswordResetWithKeySaga = (passwordResetKey, newPassword) 
 });
 
 
+/* --------------------------- PRACTICE ADD STAFF ---------------------------*/
+
+export const practiceAddStaffSaga = (newStaffData) => ({
+    type: t.PRACTICE_ADD_STAFF_WATCHER,
+    payload: newStaffData
+})
+
+export const practiceAddStaffSuccess = () =>{
+
+    return {
+        type: t.PRACTICE_ADD_STAFF_SUCCESS,
+    }
+    
+}
+
+export const addStaffStatusToEmpty = () =>{
+
+    return{
+        type: t.PRACTICE_ADD_STAFF_EMPTY
+    }
+    
+}
 
 
 
-export const apiError = (error) => ({
-    type: API_FAILED,
-    payload: error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------- USER / STAFF OR ADMIN USER -----------------------------------------*/
+
+/*--------------------------LOG IN USER ------------------------*/
+
+export const loginUserSaga = (email, password, router) => {
+
+    return {
+        type: t.USER_LOGIN_WATCHER,
+        payload: { email, password, router }
+    }
+    
+};
+
+export const loginUserSuccess = (userData) => {
+
+    return {
+        type: t.USER_LOGIN,
+        payload: userData    
+    }
+    
+};
+
+/*--------------------------LOGOUT USER ------------------------*/
+
+export const logoutStaffUser = () => {
+
+    return {
+        type: t.USER_LOGOUT
+    }
+};
+
+export const logoutStaffUserSaga = (router) => {
+
+    return {
+        type: t.USER_LOGOUT_WATCHER,
+        payload: router
+    }
+    
+};
+
+
+/* --------------------------- USER PASSWORD RESET ---------------------------*/
+
+
+export const userForgetPasswordRequestSaga = (email) => {
+    
+    return{
+        type: t.USER_PASSWORD_RESET_REQUEST_WATCHER,
+        payload: { email }
+    }
+    
+}
+
+export const userForgetPasswordRequest = (passwordResetStatus) => ({
+    type: t.USER_PASSWORD_RESET_REQUEST,
+    payload: passwordResetStatus
+});
+
+/*------------- USET PASSWORD RESET WITH KEY ACTIONS -----------------*/
+
+export const userPasswordResetWithKey = (passwordResetMessage) => ({
+    type: t.USER_PASSWORD_RESET_SUCCESSFUL,
+    payload: passwordResetMessage
+});
+
+export const userPasswordResetWithKeySaga = (passwordResetKey, newPassword) => ({
+    type: t.USER_PASSWORD_RESET_WATCHER,
+    payload: {
+        password: newPassword,
+        key: passwordResetKey
+    }
+});
+
+
+
+
+
+
+
+
+export const apiError = () => {
+    console.log("Api Action called -----------")
+    return {type: t.API_FAILED}
+};
+
+export const apiErrorReset = () => ({
+    type: t.API_ERROR_RESET
 });

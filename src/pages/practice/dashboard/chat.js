@@ -14,7 +14,7 @@ import { Email, Phone, Person, Group, Accessibility, Alarm, Search, MoreHoriz, M
         Message, ArrowRight, ArrowDropDown, Home, Repeat, Close, Send
 } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import ChatGroup from "../../../components/ChatGroup";
 import Messageblob from "../../../components/Messageblob";
 import RightSideProfile from "../../../components/RightSideProfile";
@@ -25,7 +25,7 @@ export default function Chat() {
     return (
 
 
-        <DashboardLayout>
+        <DashboardLayoutPractice>
             <React.Fragment>
 
                 <Row noGutters sm="3" >
@@ -144,7 +144,7 @@ export default function Chat() {
 
             </React.Fragment>
 
-        </DashboardLayout>
+        </DashboardLayoutPractice>
 
     )
 }

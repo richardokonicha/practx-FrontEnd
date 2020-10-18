@@ -29,18 +29,19 @@ export default function UserComponent({practice, approve}) {
 					<address> {practice.address} </address>
 
 					<Phone size={16} color="white"/> <span> {practice.mobileNo} </span> <br/>
-					<p className={"mt-2"}> 
+					<p className={"mt-2"}>
 
 						{
 							practice.approvalStatus === "approved" ? (<Button color="success" danger rounded> Approved </Button>)
-							: (<Button color="danger" danger rounded onClick={()=>approve(practice.id)} > Click to Approve Practice </Button>)
+							: (<Button color="info" danger rounded onClick={()=>approve(practice.id)} > Click to Approve Practice </Button>)
 
 						}
-						
+
 					</p>
+					<Button color="danger" danger rounded onClick={()=>approve(practice.id)} >Reject</Button>
 
 
-				</CardText>							
+				</CardText>
 
 			</CardBody>
 

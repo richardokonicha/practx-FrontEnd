@@ -45,9 +45,9 @@ export default function ForgotPassword(props) {
         }),
         onSubmit: async (values) => {
 
-            await dispatch(Actions.passwordResetWithKeySaga(passwordResetKey, values.password));
+            await dispatch(Actions.practicePasswordResetWithKeySaga(passwordResetKey, values.password));
             setPasswordResetStatus(true)
-            router.replace("/auth/reset-password")
+            router.replace("/practice/auth/reset-password")
         },
     });
   

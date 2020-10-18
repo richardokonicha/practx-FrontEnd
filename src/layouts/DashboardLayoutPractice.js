@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 import styles from "./DashboardLayout.module.scss";
 import TopNav from "../components/TopNav";
-import Sidebar from "../components/SidebarPractice";
+import SidebarPractice from "../components/SidebarPractice";
 
 
 export default function DashboardLayout({ children }) {
@@ -47,7 +47,7 @@ export default function DashboardLayout({ children }) {
             <Container fluid className={styles.container}>
                 <Row sm="2" noGutters>
 
-                    <Col sm="2"><Sidebar /></Col>
+                    <Col sm="2"><SidebarPractice /></Col>
 
 
                     <Col sm="10" style={{paddingTop: "12vh"}}>

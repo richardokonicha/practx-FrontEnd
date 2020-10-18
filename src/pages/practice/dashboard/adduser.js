@@ -1,27 +1,85 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import React, {useState, useEffect} from 'react';
+
 import styles from './adduser.module.scss';
 
-import {useEffect, useState} from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import {useSelector, useDispatch} from "react-redux";
+import {useRouter} from "next/router";
 
-import { 	Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText,
+import { 	Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText, FormFeedback, InputGroup, Alert,
 			Card, CardHeader, CardFooter, CardBody, CardTitle, CardText, CustomInput
 } from 'reactstrap';
 
 
 import { Phone } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 import UserComponent from "../../../components/UserComponent";
+import * as Actions from "../../../redux/auth/actions";
 
 
 
 export default function AddUser() {
+
+	const router = useRouter();
+    const dispatch = useDispatch();
+
+    const practiceData = useSelector(store=>store.auth.user);
+    const practiceAddStaff = useSelector(store=>store.auth.addStaff);
+
+    const [practice, setPractice] = useState({});
+    const [token, setToken] = useState();
+    const [errorAddStaff, setErrorAddStaff] = useState(true);
+
+
+	const formik = useFormik({
+
+        initialValues: {
+            email: '',
+            designation: ''
+        },
+
+        validationSchema: Yup.object({
+
+            email: Yup.string().required('Please Enter Your Username'),
+            designation: Yup.string().required('Select designation')
+
+        }),
+
+        onSubmit: values => {
+
+            dispatch(Actions.practiceAddStaffSaga({email:values.email, designation:values.designation, token: token}));
+            
+
+        },
+    });
+
+    const errorReset = () =>{
+
+    	setErrorAddStaff(!errorAddStaff)
+    	dispatch(Actions.apiErrorReset())
+    }
+
+
+
+    useEffect(()=>{
+
+        setPractice(practiceData.practice);
+        setToken(practiceData.token);
+
+        console.log("UseEffect called------------")
+        setErrorAddStaff(practiceData.error)
+
+    },[practiceAddStaff, errorAddStaff])
+
 	return (
 
 
-		<DashboardLayout>
+		<DashboardLayoutPractice>
 			<React.Fragment>
 
 				<Row>
@@ -44,106 +102,80 @@ export default function AddUser() {
 
 							<CardText className={"px-auto"}>
 
+								{errorAddStaff && 
+									<Row><Col>
+									<Alert color="success"> User added successfully... 
+										<Button onClick={errorReset} > Closs</Button>
+									</Alert>
+									</Col>
+									</Row>
+								}
+
 								<Row>
 									
 									<Col md={{size: 6, offset: 3}} >
 
 
-										<Form >
+										<Form onSubmit={formik.handleSubmit}>
 
 											<FormGroup row>
-										        <Label for="firstname" sm={5}>First Name</Label>
+										        <Label for="email" sm={5}> Email </Label>
 										        <Col sm={7}>
-										          <Input type="text" name="firstname" id="firstname" placeholder="FirstName" />
+										          
+										        	<Input
+                                                        type="email"
+                                                        id="email"
+                                                        name="email"
+                                                        className="form-control bg-soft-light border-light"
+                                                        placeholder="Enter email"
+                                                        onChange={formik.handleChange}
+                                                        onBlur={formik.handleBlur}
+                                                        value={formik.values.email}
+                                                        invalid={formik.touched.email && formik.errors.email ? true : false}
+                                                    />
+
+                                                        {formik.touched.email && formik.errors.email ? (
+                                                            <FormFeedback type="invalid">{formik.errors.email}</FormFeedback>
+                                                        ) : null}
+
+
 										        </Col>
 										      </FormGroup>
 
+										      
 										      <FormGroup row>
-										        <Label for="lastname" sm={5}>Last Name</Label>
-										        <Col sm={7}>
-										          <Input type="text" name="lastname" id="lastname" placeholder="LastName" />
-										        </Col>
-										      </FormGroup>
 
-										      <FormGroup row>
-										        <Label for="dateofbirth" sm={5}>Date of Birth</Label>
-										        <Col sm={7}>
-										          <Input type="date" name="dateofbirth" id="dateofbirth" placeholder="Date of Birth" />
-										        </Col>
-										      </FormGroup>
+										        <Label for="designation" sm={5}> Designation </Label>
 
-										      <FormGroup row>
-										        <Label for="gender" sm={5}>Gender</Label>
 										        <Col sm={7}>
-										          <Input type="select" name="gender" id="gender">
-										          	<option >Select Gender</option>
-										            <option>Male</option>
-										            <option>Female</option>
-										            <option>Dont want to say</option>
+
+										          <Input
+                                                        type="select"
+                                                        id="designation"
+                                                        name="designation"
+                                                        onChange={formik.handleChange}
+                                                        onBlur={formik.handleBlur}
+                                                        value={formik.values.designation}
+                                                        invalid={formik.touched.designation && formik.errors.designation ? true : false}
+                                                    >
+
+										          	<option >Select Designation</option>
+										            <option value="team lead">Team Lead</option>
+										            <option value="staff">Staff</option>
 										          </Input>
+
+										          	{formik.touched.designation && formik.errors.designation ? (
+                                                            <FormFeedback type="invalid">{formik.errors.designation}</FormFeedback>
+                                                        ) : null
+										          	} 
+
 										        </Col>
 										      </FormGroup>
 
-										      <FormGroup row>
-										        <Label for="number" sm={5}>Phone Number</Label>
-										        <Col sm={7}>
-										          <Input type="number" name="number" id="number" placeholder="Digits Only..." />
-										        </Col>
-										      </FormGroup>
-
-									      <FormGroup row>
-									        <Label for="exampleEmail" sm={5}>Email</Label>
-									        <Col sm={7}>
-									          <Input type="email" name="email" id="exampleEmail" placeholder="email@host.com" />
-									        </Col>
-									      </FormGroup>
-									      <FormGroup row>
-									        <Label for="examplePassword" sm={5}>Password</Label>
-									        <Col sm={7}>
-									          <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
-									        </Col>
-									      </FormGroup>
-									      
-									      
-									      <FormGroup row>
-									        <Label for="exampleText" sm={5}>Address</Label>
-									        <Col sm={7}>
-									          <Input type="textarea" name="text" id="exampleText" />
-									        </Col>
-									      </FormGroup>
-
-									      	<FormGroup row>
-										        <Label for="maritalstatus" sm={5}>Marital Status</Label>
-										        <Col sm={7}>
-										          <Input type="select" name="maritalstatus" id="maritalstatus">
-										          	<option >...</option>
-										            <option>Married</option>
-										            <option>Single</option>
-										          </Input>
-										        </Col>
-										     </FormGroup>
-
-									      <FormGroup row>
-									      	<Label for="profilepic" sm={5}>Profile Pic</Label>
-									        <Col sm={7}>
-									        <CustomInput type="file" id="profilepic" name="profilepic" label="Select picture!" />
-									      	<FormText color="muted">
-									            This is some placeholder block-level help text for the above input.
-									         </FormText>
-									         </Col>
-									      </FormGroup>
-
-									      	<FormGroup row>
-										        <Label for="location" sm={5}>Location</Label>
-										        <Col sm={7}>
-										          <Input type="text" name="location" id="location" placeholder="LastName" />
-										        </Col>
-										    </FormGroup>
-									      
-									    
+										      
 									      <FormGroup check row>
 									        <Col md={{ size: 7, offset: 5 }}>
-									          <Button>Submit</Button>
+									          <Button color="primary" className=" waves-effect waves-light" type="submit"> Add User </Button>
 									        </Col>
 									      </FormGroup>
 									    </Form>
@@ -163,7 +195,7 @@ export default function AddUser() {
 
 			</React.Fragment>
 
-		</DashboardLayout>
+		</DashboardLayoutPractice>
 
 	)
 }

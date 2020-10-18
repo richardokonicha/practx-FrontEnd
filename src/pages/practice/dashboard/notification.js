@@ -14,7 +14,7 @@ import { Email, Phone, Person, Group, Accessibility, Alarm,
         Message, ArrowRight, ArrowDropDown, Home, Repeat, Close,
 } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 
 
@@ -23,7 +23,7 @@ export default function Notification() {
     return (
 
 
-        <DashboardLayout>
+        <DashboardLayoutPractice>
             <React.Fragment>
 
 			<Row noGutters sm="3" >
@@ -52,7 +52,7 @@ export default function Notification() {
 
             </React.Fragment>
 
-        </DashboardLayout>
+        </DashboardLayoutPractice>
 
     )
 }

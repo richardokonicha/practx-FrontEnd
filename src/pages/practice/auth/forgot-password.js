@@ -42,8 +42,9 @@ export default function ForgotPassword(props) {
         }),
         onSubmit: async (values) => {
 
-            await dispatch(Actions.forgetPasswordRequestSaga(values.email));
-            setPasswordResetStatus(true)
+            await dispatch(Actions.practiceForgetPasswordRequestSaga(values.email));
+            setPasswordResetStatus(true);
+            
         },
     });
   

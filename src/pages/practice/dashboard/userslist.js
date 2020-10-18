@@ -7,7 +7,7 @@ import { Container, Row, Col} from 'reactstrap';
 
 import { Phone } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 import UserComponent from "../../../components/UserComponent";
 
@@ -17,7 +17,7 @@ export default function UsersList() {
 	return (
 
 
-		<DashboardLayout>
+		<DashboardLayoutPractice>
 			<React.Fragment>
 
 				<Row>
@@ -32,15 +32,7 @@ export default function UsersList() {
 				<Row className={"mt-3"} sm="4">
 
 
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-					<UserComponent />
-
+					
 						
 				</Row>
 			
@@ -51,7 +43,7 @@ export default function UsersList() {
 
 			</React.Fragment>
 
-		</DashboardLayout>
+		</DashboardLayoutPractice>
 
 	)
 }

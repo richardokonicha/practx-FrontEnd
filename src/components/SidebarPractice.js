@@ -18,16 +18,17 @@ import Link from 'next/link';
 import styles from "./Sidebar.module.scss";
 import * as Actions from "../redux/auth/actions"; 
 
-const Sidebar = () => {
+const SidebarPractice = () => {
 
     const router = useRouter();
     const dispatch = useDispatch();
 
     const userdata = useSelector(store=>store.auth.user);
     const [user, setUser] = useState({});
+    const [token, setToken] = useState();
 
 	const logout = () => {
-        dispatch(Actions.logoutSaga(router));
+        dispatch(Actions.logoutPracticeSaga(router));
     };
 
     const [messages, setMessages] = useState(0);
@@ -52,7 +53,8 @@ const Sidebar = () => {
 
     useEffect(()=>{
 
-        setUser(userdata.root)
+        setUser(userdata.practice)
+        setToken(userdata.token)
 
     },[user])
 
@@ -64,7 +66,7 @@ const Sidebar = () => {
                 <img src="/images/users/avatar-1.jpg" className={styles.profilepic} />
 
                 <div className={styles.profilestatus}>
-                    <p className={styles.username}> {user ? `${user.firstname} ${user.lastname}`: "" } </p>
+                    <p className={styles.username}> {user ? `${user.practiceName}`: "" } </p>
                     <span color="success" className={styles.badgestatus} > </span> <span>Online</span>
                 </div>
 
@@ -72,7 +74,7 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-            <Link href="/" passHref>
+            <Link href="/practice/dashboard/dashboard" passHref>
 
                 <Button className={styles.sidebarbutton} >
 
@@ -88,7 +90,7 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-            <Link href="/dashboard/chat" passHref>
+            <Link href="/practice/dashboard/chat" passHref>
 
             <Button id="toggler" className={styles.sidebarbutton}>
                 <Email size={19} className={styles.sidebarIcon} />
@@ -106,7 +108,7 @@ const Sidebar = () => {
 
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-            <Link href="/dashboard/profile" passHref>
+            <Link href="/practice/dashboard/profile" passHref>
 
                 <Button id="toggler" className={styles.sidebarbutton}>
                     <Email size={19} className={styles.sidebarIcon} />
@@ -125,7 +127,7 @@ const Sidebar = () => {
 
 {/* ----------------------------------------------- NEXT ITEM ----------------------- */}
 
-            <Link href="/dashboard/notification" passHref>
+            <Link href="/practice/dashboard/notification" passHref>
                 <Button className={styles.sidebarbutton} >
                     <Alarm size={19} className={styles.sidebarIcon} />
                     Notifications
@@ -157,7 +159,7 @@ const Sidebar = () => {
 
                 <ListGroup >
 
-                    <Link href="/dashboard/adduser" passHref>
+                    <Link href="/practice/dashboard/adduser" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Add User
@@ -166,7 +168,7 @@ const Sidebar = () => {
                     </Link>
 
 
-                    <Link href="/dashboard/userslist" passHref>
+                    <Link href="/practice/dashboard/userslist" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Users List
@@ -192,62 +194,24 @@ const Sidebar = () => {
             </Button>
             <Collapse isOpen={isOpenAppointment}>
                 <ListGroup >
-                <Link href="/dashboard/appointments" passHref>
+                <Link href="/practice/dashboard/appointments" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Pending Appointments
 
                         </ListGroupItem>
                     </Link>
-                    <Link href="/dashboard/appointments-all" passHref>
+                    <Link href="/practice/dashboard/appointments-all" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 All Appointments
 
                         </ListGroupItem>
                     </Link>
-                    <Link href="/dashboard/appointments-history" passHref>
+                    <Link href="/practice/dashboard/appointments-history" passHref>
                         <ListGroupItem className={styles.listlist}>
 
                                 Appointments history
-
-                        </ListGroupItem>
-                    </Link>
-                </ListGroup>
-            </Collapse>
-
-
-
-{/* ----------------------------------------------- NEXT ITEM ----------------------- */}
-
-            <Button id="toggler" className={styles.sidebarbutton} onClick={toggleGroup}>
-                <Group size={19} className={styles.sidebarIcon} />
-                    
-                    Practice
-
-                <div  className={styles.sidebarIcon2}>
-
-                {!isPractice ? <ArrowRight size={20} className={styles.sidebarIcon2} />
-                    : <ArrowDropDown size={20} className={styles.sidebarIcon2} />}
-
-                </div>
-            </Button>
-            <Collapse isOpen={isPractice}>
-                <ListGroup >
-
-                    <Link href="/dashboard/addgroup" passHref>
-                        <ListGroupItem className={styles.listlist}>
-
-                                Add Staff
-
-                        </ListGroupItem>
-                    </Link>
-
-
-                    <Link href="/dashboard/grouplist" passHref>
-                        <ListGroupItem className={styles.listlist}>
-
-                                All Staffs List
 
                         </ListGroupItem>
                     </Link>
@@ -275,4 +239,4 @@ const Sidebar = () => {
 
 }
 
-export default Sidebar;
+export default SidebarPractice;

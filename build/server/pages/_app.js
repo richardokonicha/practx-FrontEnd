@@ -88,238 +88,1127 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/nprogress/nprogress.css":
-/*!**********************************************!*\
-  !*** ./node_modules/nprogress/nprogress.css ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL25vZGVfbW9kdWxlcy9ucHJvZ3Jlc3MvbnByb2dyZXNzLmNzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/nprogress/nprogress.css\n");
-
-/***/ }),
-
-/***/ "./src/pages/_app.js":
-/*!***************************!*\
-  !*** ./src/pages/_app.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_scss_themes_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/scss/themes.scss */ \"./src/styles/scss/themes.scss\");\n/* harmony import */ var _styles_scss_themes_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_themes_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_globals_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/globals.scss */ \"./src/styles/globals.scss\");\n/* harmony import */ var _styles_globals_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/store */ \"./src/redux/store.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! nprogress */ \"nprogress\");\n/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! nprogress/nprogress.css */ \"./node_modules/nprogress/nprogress.css\");\n/* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_7__);\nvar _jsxFileName = \"/home/timiking/Apps/practx/practxweb/src/pages/_app.js\";\n\nvar __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\n\n\n\n\n\n //nprogress module\n\n //styles of nprogress\n//Binding events.\n\nnext_router__WEBPACK_IMPORTED_MODULE_5___default.a.events.on('routeChangeStart', () => nprogress__WEBPACK_IMPORTED_MODULE_6___default.a.start());\nnext_router__WEBPACK_IMPORTED_MODULE_5___default.a.events.on('routeChangeComplete', () => nprogress__WEBPACK_IMPORTED_MODULE_6___default.a.done());\nnext_router__WEBPACK_IMPORTED_MODULE_5___default.a.events.on('routeChangeError', () => nprogress__WEBPACK_IMPORTED_MODULE_6___default.a.done());\n\nfunction MyApp({\n  Component,\n  pageProps\n}) {\n  return __jsx(react_redux__WEBPACK_IMPORTED_MODULE_3__[\"Provider\"], {\n    store: _redux_store__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 18,\n      columnNumber: 3\n    }\n  }, __jsx(Component, _extends({}, pageProps, {\n    __self: this,\n    __source: {\n      fileName: _jsxFileName,\n      lineNumber: 19,\n      columnNumber: 4\n    }\n  })));\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (MyApp);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcGFnZXMvX2FwcC5qcz8yMjU0Il0sIm5hbWVzIjpbIlJvdXRlciIsImV2ZW50cyIsIm9uIiwiTlByb2dyZXNzIiwic3RhcnQiLCJkb25lIiwiTXlBcHAiLCJDb21wb25lbnQiLCJwYWdlUHJvcHMiLCJzdG9yZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Q0FDbUM7O0NBQ0Q7QUFFbEM7O0FBQ0FBLGtEQUFNLENBQUNDLE1BQVAsQ0FBY0MsRUFBZCxDQUFpQixrQkFBakIsRUFBcUMsTUFBTUMsZ0RBQVMsQ0FBQ0MsS0FBVixFQUEzQztBQUNBSixrREFBTSxDQUFDQyxNQUFQLENBQWNDLEVBQWQsQ0FBaUIscUJBQWpCLEVBQXdDLE1BQU1DLGdEQUFTLENBQUNFLElBQVYsRUFBOUM7QUFDQUwsa0RBQU0sQ0FBQ0MsTUFBUCxDQUFjQyxFQUFkLENBQWlCLGtCQUFqQixFQUFxQyxNQUFNQyxnREFBUyxDQUFDRSxJQUFWLEVBQTNDOztBQUdBLFNBQVNDLEtBQVQsQ0FBZTtBQUFFQyxXQUFGO0FBQWFDO0FBQWIsQ0FBZixFQUF5QztBQUN4QyxTQUNDLE1BQUMsb0RBQUQ7QUFBVSxTQUFLLEVBQUVDLG9EQUFqQjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0MsTUFBQyxTQUFELGVBQWVELFNBQWY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxLQURELENBREQ7QUFLQTs7QUFFY0Ysb0VBQWYiLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IFwiLi4vc3R5bGVzL3Njc3MvdGhlbWVzLnNjc3NcIjtcbmltcG9ydCAnLi4vc3R5bGVzL2dsb2JhbHMuc2Nzcyc7XG5pbXBvcnQge1Byb3ZpZGVyfSBmcm9tIFwicmVhY3QtcmVkdXhcIjtcbmltcG9ydCBzdG9yZSBmcm9tICcuLi9yZWR1eC9zdG9yZSc7XG5pbXBvcnQgUm91dGVyIGZyb20gJ25leHQvcm91dGVyJztcbmltcG9ydCBOUHJvZ3Jlc3MgZnJvbSAnbnByb2dyZXNzJzsgLy9ucHJvZ3Jlc3MgbW9kdWxlXG5pbXBvcnQgJ25wcm9ncmVzcy9ucHJvZ3Jlc3MuY3NzJzsgLy9zdHlsZXMgb2YgbnByb2dyZXNzXG5cbi8vQmluZGluZyBldmVudHMuXG5Sb3V0ZXIuZXZlbnRzLm9uKCdyb3V0ZUNoYW5nZVN0YXJ0JywgKCkgPT4gTlByb2dyZXNzLnN0YXJ0KCkpO1xuUm91dGVyLmV2ZW50cy5vbigncm91dGVDaGFuZ2VDb21wbGV0ZScsICgpID0+IE5Qcm9ncmVzcy5kb25lKCkpO1xuUm91dGVyLmV2ZW50cy5vbigncm91dGVDaGFuZ2VFcnJvcicsICgpID0+IE5Qcm9ncmVzcy5kb25lKCkpO1xuXG5cbmZ1bmN0aW9uIE15QXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfSkge1xuXHRyZXR1cm4gKFxuXHRcdDxQcm92aWRlciBzdG9yZT17c3RvcmV9PlxuXHRcdFx0PENvbXBvbmVudCB7Li4ucGFnZVByb3BzfSAvPlxuXHRcdDwvUHJvdmlkZXI+XG5cdClcbn1cblxuZXhwb3J0IGRlZmF1bHQgTXlBcHA7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/_app.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/Api.js":
-/*!**************************!*\
-  !*** ./src/redux/Api.js ***!
-  \**************************/
-/*! exports provided: loginRootUser, passwordReset, passwordResetWithKey, getPractice, approvePractice, rejectPractice, loginPractice, practicePasswordReset, practicePasswordResetWithKey, validateRootToken */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loginRootUser\", function() { return loginRootUser; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"passwordReset\", function() { return passwordReset; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"passwordResetWithKey\", function() { return passwordResetWithKey; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getPractice\", function() { return getPractice; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"approvePractice\", function() { return approvePractice; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"rejectPractice\", function() { return rejectPractice; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loginPractice\", function() { return loginPractice; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"practicePasswordReset\", function() { return practicePasswordReset; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"practicePasswordResetWithKey\", function() { return practicePasswordResetWithKey; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"validateRootToken\", function() { return validateRootToken; });\nconst loginRootUser = async payload => {\n  //--------------------------- LOGIN ROOT USER -------------\n  const res = await fetch(\"http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/auth/root/login\", {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      email: payload.email,\n      password: payload.password\n    })\n  });\n  const user = await res.json();\n  return user;\n};\nconst passwordReset = async email => {\n  // ----------------------- PASSWORD RESET REQUEST ----------------\n  const res = await fetch(\"http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/root/requestpasswordreset\", {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      email: email\n    })\n  });\n  const passwordResetStatus = await res.json();\n  return passwordResetStatus;\n};\nconst passwordResetWithKey = async payload => {\n  // ----------------------- PASSWORD RESET ----------------\n  const res = await fetch(`http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/root/resetpasword/${payload.key}`, {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      password: payload.password\n    })\n  });\n  const passwordResetStatus = await res.json();\n  return passwordResetStatus;\n};\nconst getPractice = async (url, token) => {\n  // ----------------------- PASSWORD RESET ----------------\n  const res = await fetch(url, {\n    method: 'GET',\n    headers: {\n      \"Authorization\": token\n    }\n  });\n  const data = await res.json();\n  return data;\n};\nconst approvePractice = async (url, token) => {\n  // ----------------------- APPROVE PRACTICE PATCH ----------------\n  const res = await fetch(url, {\n    method: 'PATCH',\n    headers: {\n      \"Authorization\": token\n    },\n    body: {\n      \"approvalStatus\": \"approved\"\n    }\n  });\n  const data = await res.json();\n  return data;\n};\nconst rejectPractice = async (url, token) => {\n  // ----------------------- REJECT PRACTICE PATCH ----------------\n  console.log(token);\n  const res = await fetch(url, {\n    method: 'PATCH',\n    headers: {\n      \"Authorization\": token\n    },\n    body: {\n      \"approvalStatus\": \"rejected\"\n    }\n  });\n  const data = await res.json();\n  return data;\n};\nconst loginPractice = async payload => {\n  //--------------------------- LOGIN PRACTICE -------------\n  const res = await fetch(\"http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/auth/practices/login\", {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      email: payload.email,\n      password: payload.password\n    })\n  });\n  const user = await res.json();\n  return user;\n};\nconst practicePasswordReset = async email => {\n  // ----------------------- PRACTICE PASSWORD RESET REQUEST ----------------\n  const res = await fetch(\"http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/requestpasswordreset\", {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      email: email\n    })\n  });\n  const passwordResetStatus = await res.json();\n  return passwordResetStatus;\n};\nconst practicePasswordResetWithKey = async payload => {\n  // ----------------------- PRACTICE PASSWORD RESET ----------------\n  const res = await fetch(`http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/resetpassword/${payload.key}`, {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json'\n    },\n    body: JSON.stringify({\n      password: payload.password\n    })\n  });\n  const passwordResetStatus = await res.json();\n  return passwordResetStatus;\n};\nconst validateRootToken = async token => {\n  //--------------------------VALIDATE TOKEN ---------------------\n  const res = await fetch(\"http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/root/checktoken\", {\n    method: 'GET',\n    headers: {\n      'Authorization': token\n    }\n  });\n  const user = await res.json();\n  return user;\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvQXBpLmpzPzE3ZmQiXSwibmFtZXMiOlsibG9naW5Sb290VXNlciIsInBheWxvYWQiLCJyZXMiLCJmZXRjaCIsIm1ldGhvZCIsImhlYWRlcnMiLCJib2R5IiwiSlNPTiIsInN0cmluZ2lmeSIsImVtYWlsIiwicGFzc3dvcmQiLCJ1c2VyIiwianNvbiIsInBhc3N3b3JkUmVzZXQiLCJwYXNzd29yZFJlc2V0U3RhdHVzIiwicGFzc3dvcmRSZXNldFdpdGhLZXkiLCJrZXkiLCJnZXRQcmFjdGljZSIsInVybCIsInRva2VuIiwiZGF0YSIsImFwcHJvdmVQcmFjdGljZSIsInJlamVjdFByYWN0aWNlIiwiY29uc29sZSIsImxvZyIsImxvZ2luUHJhY3RpY2UiLCJwcmFjdGljZVBhc3N3b3JkUmVzZXQiLCJwcmFjdGljZVBhc3N3b3JkUmVzZXRXaXRoS2V5IiwidmFsaWRhdGVSb290VG9rZW4iXSwibWFwcGluZ3MiOiJBQUdBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBTyxNQUFNQSxhQUFhLEdBQUcsTUFBT0MsT0FBUCxJQUFtQjtBQUFDO0FBRTdDLFFBQU1DLEdBQUcsR0FBRyxNQUFNQyxLQUFLLENBQUMsNEZBQUQsRUFBK0Y7QUFDeEhDLFVBQU0sRUFBRSxNQURnSDtBQUV4SEMsV0FBTyxFQUFFO0FBQUUsc0JBQWdCO0FBQWxCLEtBRitHO0FBR3hIQyxRQUFJLEVBQUVDLElBQUksQ0FBQ0MsU0FBTCxDQUFlO0FBQ3BCQyxXQUFLLEVBQUVSLE9BQU8sQ0FBQ1EsS0FESztBQUVwQkMsY0FBUSxFQUFFVCxPQUFPLENBQUNTO0FBRkUsS0FBZjtBQUhrSCxHQUEvRixDQUF2QjtBQVNBLFFBQU1DLElBQUksR0FBRyxNQUFNVCxHQUFHLENBQUNVLElBQUosRUFBbkI7QUFDSCxTQUFPRCxJQUFQO0FBQ0EsQ0FiTTtBQWlCQSxNQUFNRSxhQUFhLEdBQUcsTUFBT0osS0FBUCxJQUFp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RTtBQUFFLHVCQUFpQmM7QUFBbkI7QUFGUCxHQUR1QixDQUF2QjtBQU1BLFFBQU1SLElBQUksR0FBRyxNQUFNVCxHQUFHLENBQUNVLElBQUosRUFBbkI7QUFDSCxTQUFPRCxJQUFQO0FBQ0EsQ0FWTSIsImZpbGUiOiIuL3NyYy9yZWR1eC9BcGkuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuXG5leHBvcnQgY29uc3QgbG9naW5Sb290VXNlciA9IGFzeW5jIChwYXlsb2FkKSA9PiB7Ly8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gTE9HSU4gUk9PVCBVU0VSIC0tLS0tLS0tLS0tLS1cblx0XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goXCJodHRwOi8vcHJhY3R4YmVzdGFnaW5nLWVudi5lYmEtNm03cHV1NXcudXMtZWFzdC0yLmVsYXN0aWNiZWFuc3RhbGsuY29tL2FwaS9hdXRoL3Jvb3QvbG9naW5cIiwge1xuXHRcdG1ldGhvZDogJ1BPU1QnLFxuXHRcdGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LFxuXHRcdGJvZHk6IEpTT04uc3RyaW5naWZ5KHtcblx0XHRcdGVtYWlsOiBwYXlsb2FkLmVtYWlsLFxuXHRcdFx0cGFzc3dvcmQ6IHBheWxvYWQucGFzc3dvcmRcblx0IFx0fSlcblx0fSk7XG5cbiAgICBjb25zdCB1c2VyID0gYXdhaXQgcmVzLmpzb24oKTtcblx0cmV0dXJuIHVzZXI7XG59XG5cblxuXG5leHBvcnQgY29uc3QgcGFzc3dvcmRSZXNldCA9IGFzeW5jIChlbWFpbCkgPT4gey8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFBBU1NXT1JEIFJFU0VUIFJFUVVFU1QgLS0tLS0tLS0tLS0tLS0tLVxuXHRcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChcImh0dHA6Ly9wcmFjdHhiZXN0YWdpbmctZW52LmViYS02bTdwdXU1dy51cy1lYXN0LTIuZWxhc3RpY2JlYW5zdGFsay5jb20vYXBpL3Jvb3QvcmVxdWVzdHBhc3N3b3JkcmVzZXRcIiwge1xuXHRcdG1ldGhvZDogJ1BPU1QnLFxuXHRcdGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LFxuXHRcdGJvZHk6IEpTT04uc3RyaW5naWZ5KHtcblx0XHRcdGVtYWlsOiBlbWFpbFxuXHQgXHR9KVxuXHR9KTtcblxuICAgIGNvbnN0IHBhc3N3b3JkUmVzZXRTdGF0dXMgPSBhd2FpdCByZXMuanNvbigpO1xuXHRyZXR1cm4gcGFzc3dvcmRSZXNldFN0YXR1cztcbn1cblxuXG5leHBvcnQgY29uc3QgcGFzc3dvcmRSZXNldFdpdGhLZXkgPSBhc3luYyAocGF5bG9hZCkgPT4gey8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFBBU1NXT1JEIFJFU0VUIC0tLS0tLS0tLS0tLS0tLS1cblx0XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goYGh0dHA6Ly9wcmFjdHhiZXN0YWdpbmctZW52LmViYS02bTdwdXU1dy51cy1lYXN0LTIuZWxhc3RpY2JlYW5zdGFsay5jb20vYXBpL3Jvb3QvcmVzZXRwYXN3b3JkLyR7cGF5bG9hZC5rZXl9YCwge1xuXHRcdG1ldGhvZDogJ1BPU1QnLFxuXHRcdGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LFxuXHRcdGJvZHk6IEpTT04uc3RyaW5naWZ5KHtcblx0XHRcdHBhc3N3b3JkOiBwYXlsb2FkLnBhc3N3b3JkXG5cdCBcdH0pXG5cdH0pO1xuXG4gICAgY29uc3QgcGFzc3dvcmRSZXNldFN0YXR1cyA9IGF3YWl0IHJlcy5qc29uKCk7XG5cdHJldHVybiBwYXNzd29yZFJlc2V0U3RhdHVzO1xufVxuXG5cbmV4cG9ydCBjb25zdCBnZXRQcmFjdGljZSA9IGFzeW5jICh1cmwsIHRva2VuKSA9PiB7Ly8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gUEFTU1dPUkQgUkVTRVQgLS0tLS0tLS0tLS0tLS0tLVxuXHRcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCh1cmwse1xuICAgIFx0bWV0aG9kOiAnR0VUJyxcbiAgICBcdGhlYWRlcnM6IHtcIkF1dGhvcml6YXRpb25cIjogdG9rZW59XG4gICAgfSk7XG5cbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcblx0cmV0dXJuIGRhdGE7XG59XG5cbmV4cG9ydCBjb25zdCBhcHByb3ZlUHJhY3RpY2UgPSBhc3luYyAodXJsLCB0b2tlbikgPT4gey8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIEFQUFJPVkUgUFJBQ1RJQ0UgUEFUQ0ggLS0tLS0tLS0tLS0tLS0tLVxuXHRcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCh1cmwse1xuICAgIFx0bWV0aG9kOiAnUEFUQ0gnLFxuICAgIFx0aGVhZGVyczoge1wiQXV0aG9yaXphdGlvblwiOiB0b2tlbn0sXG4gICAgXHRib2R5Ontcblx0XHRcdFwiYXBwcm92YWxTdGF0dXNcIjogXCJhcHByb3ZlZFwiXG5cdFx0fVxuICAgIH0pO1xuXG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG5cdHJldHVybiBkYXRhO1xufVxuXG5leHBvcnQgY29uc3QgcmVqZWN0UHJhY3RpY2UgPSBhc3luYyAodXJsLCB0b2tlbikgPT4gey8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFJFSkVDVCBQUkFDVElDRSBQQVRDSCAtLS0tLS0tLS0tLS0tLS0tXG5cdGNvbnNvbGUubG9nKHRva2VuKVxuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKHVybCx7XG4gICAgXHRtZXRob2Q6ICdQQVRDSCcsXG4gICAgXHRoZWFkZXJzOiB7XCJBdXRob3JpemF0aW9uXCI6IHRva2VufSxcbiAgICBcdGJvZHk6e1xuXHRcdFx0XCJhcHByb3ZhbFN0YXR1c1wiOiBcInJlamVjdGVkXCJcblx0XHR9XG4gICAgfSk7XG5cbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcblx0cmV0dXJuIGRhdGE7XG59XG5cblxuXG5cblxuXG5leHBvcnQgY29uc3QgbG9naW5QcmFjdGljZSA9IGFzeW5jIChwYXlsb2FkKSA9PiB7Ly8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gTE9HSU4gUFJBQ1RJQ0UgLS0tLS0tLS0tLS0tLVxuXHRcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChcImh0dHA6Ly9wcmFjdHhiZXN0YWdpbmctZW52LmViYS02bTdwdXU1dy51cy1lYXN0LTIuZWxhc3RpY2JlYW5zdGFsay5jb20vYXBpL2F1dGgvcHJhY3RpY2VzL2xvZ2luXCIsIHtcblx0XHRtZXRob2Q6ICdQT1NUJyxcblx0XHRoZWFkZXJzOiB7ICdDb250ZW50LVR5cGUnOiAnYXBwbGljYXRpb24vanNvbicgfSxcblx0XHRib2R5OiBKU09OLnN0cmluZ2lmeSh7XG5cdFx0XHRlbWFpbDogcGF5bG9hZC5lbWFpbCxcblx0XHRcdHBhc3N3b3JkOiBwYXlsb2FkLnBhc3N3b3JkXG5cdCBcdH0pXG5cdH0pO1xuXG4gICAgY29uc3QgdXNlciA9IGF3YWl0IHJlcy5qc29uKCk7XG5cdHJldHVybiB1c2VyO1xufVxuXG5cbmV4cG9ydCBjb25zdCBwcmFjdGljZVBhc3N3b3JkUmVzZXQgPSBhc3luYyAoZW1haWwpID0+IHsvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBQUkFDVElDRSBQQVNTV09SRCBSRVNFVCBSRVFVRVNUIC0tLS0tLS0tLS0tLS0tLS1cblx0XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goXCJodHRwOi8vcHJhY3R4YmVzdGFnaW5nLWVudi5lYmEtNm03cHV1NXcudXMtZWFzdC0yLmVsYXN0aWNiZWFuc3RhbGsuY29tL2FwaS9wcmFjdGljZXMvcmVxdWVzdHBhc3N3b3JkcmVzZXRcIiwge1xuXHRcdG1ldGhvZDogJ1BPU1QnLFxuXHRcdGhlYWRlcnM6IHsgJ0NvbnRlbnQtVHlwZSc6ICdhcHBsaWNhdGlvbi9qc29uJyB9LFxuXHRcdGJvZHk6IEpTT04uc3RyaW5naWZ5KHtcblx0XHRcdGVtYWlsOiBlbWFpbFxuXHQgXHR9KVxuXHR9KTtcblxuICAgIGNvbnN0IHBhc3N3b3JkUmVzZXRTdGF0dXMgPSBhd2FpdCByZXMuanNvbigpO1xuXHRyZXR1cm4gcGFzc3dvcmRSZXNldFN0YXR1cztcbn1cblxuXG5leHBvcnQgY29uc3QgcHJhY3RpY2VQYXNzd29yZFJlc2V0V2l0aEtleSA9IGFzeW5jIChwYXlsb2FkKSA9PiB7Ly8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gUFJBQ1RJQ0UgUEFTU1dPUkQgUkVTRVQgLS0tLS0tLS0tLS0tLS0tLVxuXHRcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cDovL3ByYWN0eGJlc3RhZ2luZy1lbnYuZWJhLTZtN3B1dTV3LnVzLWVhc3QtMi5lbGFzdGljYmVhbnN0YWxrLmNvbS9hcGkvcHJhY3RpY2VzL3Jlc2V0cGFzc3dvcmQvJHtwYXlsb2FkLmtleX1gLCB7XG5cdFx0bWV0aG9kOiAnUE9TVCcsXG5cdFx0aGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sXG5cdFx0Ym9keTogSlNPTi5zdHJpbmdpZnkoe1xuXHRcdFx0cGFzc3dvcmQ6IHBheWxvYWQucGFzc3dvcmRcblx0IFx0fSlcblx0fSk7XG5cbiAgICBjb25zdCBwYXNzd29yZFJlc2V0U3RhdHVzID0gYXdhaXQgcmVzLmpzb24oKTtcblx0cmV0dXJuIHBhc3N3b3JkUmVzZXRTdGF0dXM7XG59XG5cblxuXG5cblxuXG5cblxuZXhwb3J0IGNvbnN0IHZhbGlkYXRlUm9vdFRva2VuID0gYXN5bmMgKHRva2VuKSA9PiB7Ly8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVZBTElEQVRFIFRPS0VOIC0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuXHRcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChcImh0dHA6Ly9wcmFjdHhiZXN0YWdpbmctZW52LmViYS02bTdwdXU1dy51cy1lYXN0LTIuZWxhc3RpY2JlYW5zdGFsay5jb20vYXBpL3Jvb3QvY2hlY2t0b2tlblwiLCBcbiAgICB7XG5cdFx0bWV0aG9kOiAnR0VUJyxcblx0XHRoZWFkZXJzOiB7ICdBdXRob3JpemF0aW9uJzogdG9rZW4gfVxuXHR9KTtcblxuICAgIGNvbnN0IHVzZXIgPSBhd2FpdCByZXMuanNvbigpO1xuXHRyZXR1cm4gdXNlcjtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/redux/Api.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/auth/actions.js":
-/*!***********************************!*\
-  !*** ./src/redux/auth/actions.js ***!
-  \***********************************/
-/*! exports provided: loginRootUser, loginRootUserSuccess, logoutUser, logoutSaga, forgetPasswordRequestSaga, forgetPasswordRequest, passwordResetWithKey, passwordResetWithKeySaga, loginPractice, loginPracticeSuccess, logoutPractice, logoutPracticeSaga, practiceForgetPasswordRequestSaga, practiceForgetPasswordRequest, practicePasswordResetWithKey, practicePasswordResetWithKeySaga, apiError */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loginRootUser\", function() { return loginRootUser; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loginRootUserSuccess\", function() { return loginRootUserSuccess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"logoutUser\", function() { return logoutUser; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"logoutSaga\", function() { return logoutSaga; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"forgetPasswordRequestSaga\", function() { return forgetPasswordRequestSaga; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"forgetPasswordRequest\", function() { return forgetPasswordRequest; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"passwordResetWithKey\", function() { return passwordResetWithKey; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"passwordResetWithKeySaga\", function() { return passwordResetWithKeySaga; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loginPractice\", function() { return loginPractice; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loginPracticeSuccess\", function() { return loginPracticeSuccess; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"logoutPractice\", function() { return logoutPractice; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"logoutPracticeSaga\", function() { return logoutPracticeSaga; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"practiceForgetPasswordRequestSaga\", function() { return practiceForgetPasswordRequestSaga; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"practiceForgetPasswordRequest\", function() { return practiceForgetPasswordRequest; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"practicePasswordResetWithKey\", function() { return practicePasswordResetWithKey; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"practicePasswordResetWithKeySaga\", function() { return practicePasswordResetWithKeySaga; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"apiError\", function() { return apiError; });\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ \"./src/redux/auth/constants.js\");\n\n/*--------------------------LOG IN ROOT USER ------------------------*/\n\nconst loginRootUser = (email, password, router) => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_LOGIN_WATCHER\"],\n    payload: {\n      email,\n      password,\n      router\n    }\n  };\n};\nconst loginRootUserSuccess = userData => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_LOGIN\"],\n    payload: userData\n  };\n};\n/*-------------------------- LOG OUT ROOT USER-------------------------------*/\n\nconst logoutUser = () => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_LOGOUT\"]\n  };\n};\nconst logoutSaga = router => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"LOGOUT_WATCHER\"],\n    payload: router\n  };\n};\n/* --------------------------- ROOT PASSWORD RESET ---------------------------*/\n\nconst forgetPasswordRequestSaga = email => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_PASSWORD_RESET_REQ_WATCHER\"],\n    payload: {\n      email\n    }\n  };\n};\nconst forgetPasswordRequest = passwordResetStatus => ({\n  type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_PASSWORD_RESET_REQ\"],\n  payload: passwordResetStatus\n});\n/*------------- ROOT PASSWORD RESET WITH KEY ACTIONS -----------------*/\n\nconst passwordResetWithKey = passwordResetMessage => ({\n  type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_PASSWORD_RESET\"],\n  payload: passwordResetMessage\n});\nconst passwordResetWithKeySaga = (passwordResetKey, newPassword) => ({\n  type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_PASSWORD_RESET_WATCHER\"],\n  payload: {\n    password: newPassword,\n    key: passwordResetKey\n  }\n});\n/*--------------------------LOG IN PRACTICE ------------------------*/\n\nconst loginPractice = (email, password, router) => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_LOGIN_WATCHER\"],\n    payload: {\n      email,\n      password,\n      router\n    }\n  };\n};\nconst loginPracticeSuccess = userData => {\n  console.log(\"Reducer action for login called \");\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_LOGIN\"],\n    payload: userData\n  };\n};\nconst logoutPractice = () => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_LOGOUT\"]\n  };\n};\nconst logoutPracticeSaga = router => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_LOGOUT_WATCHER\"],\n    payload: router\n  };\n};\n/* --------------------------- PRACTICE PASSWORD RESET ---------------------------*/\n\nconst practiceForgetPasswordRequestSaga = email => {\n  return {\n    type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER\"],\n    payload: {\n      email\n    }\n  };\n};\nconst practiceForgetPasswordRequest = passwordResetStatus => ({\n  type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_PASSWORD_RESET_REQ\"],\n  payload: passwordResetStatus\n});\n/*------------- PRACTICE PASSWORD RESET WITH KEY ACTIONS -----------------*/\n\nconst practicePasswordResetWithKey = passwordResetMessage => ({\n  type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_PASSWORD_RESET\"],\n  payload: passwordResetMessage\n});\nconst practicePasswordResetWithKeySaga = (passwordResetKey, newPassword) => ({\n  type: _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_PASSWORD_RESET_WATCHER\"],\n  payload: {\n    password: newPassword,\n    key: passwordResetKey\n  }\n});\nconst apiError = error => ({\n  type: API_FAILED,\n  payload: error\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvYXV0aC9hY3Rpb25zLmpzPzBiMGIiXSwibmFtZXMiOlsibG9naW5Sb290VXNlciIsImVtYWlsIiwicGFzc3dvcmQiLCJyb3V0ZXIiLCJ0eXBlIiwidCIsInBheWxvYWQiLCJsb2dpblJvb3RVc2VyU3VjY2VzcyIsInVzZXJEYXRhIiwibG9nb3V0VXNlciIsIlJPT1RfVVNFUl9MT0dPVVQiLCJsb2dvdXRTYWdhIiwiZm9yZ2V0UGFzc3dvcmRSZXF1ZXN0U2FnYSIsImZvcmdldFBhc3N3b3JkUmVxdWVzdCIsInBhc3N3b3JkUmVzZXRTdGF0dXMiLCJwYXNzd29yZFJlc2V0V2l0aEtleSIsInBhc3N3b3JkUmVzZXRNZXNzYWdlIiwicGFzc3dvcmRSZXNldFdpdGhLZXlTYWdhIiwicGFzc3dvcmRSZXNldEtleSIsIm5ld1Bhc3N3b3JkIiwia2V5IiwibG9naW5QcmFjdGljZSIsImxvZ2luUHJhY3RpY2VTdWNjZXNzIiwiY29uc29sZSIsImxvZyIsImxvZ291dFByYWN0aWNlIiwiUFJBQ1RJQ0VfVVNFUl9MT0dPVVQiLCJsb2dvdXRQcmFjdGljZVNhZ2EiLCJwcmFjdGljZUZvcmdldFBhc3N3b3JkUmVxdWVzdFNhZ2EiLCJwcmFjdGljZUZvcmdldFBhc3N3b3JkUmVxdWVzdCIsInByYWN0aWNlUGFzc3dvcmRSZXNldFdpdGhLZXkiLCJwcmFjdGljZVBhc3N3b3JkUmVzZXRXaXRoS2V5U2FnYSIsImFwaUVycm9yIiwiZXJyb3IiLCJBUElfRkFJTEVEIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBR0E7O0FBRU8sTUFBTUEsYUFBYSxHQUFHLENBQUNDLEtBQUQsRUFBUUMsUUFBUixFQUFrQkMsTUFBbEIsS0FBNkI7QUFFdEQsU0FBTTtBQUNGQyxRQUFJLEVBQUVD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LFdBREw7QUFFTEMsT0FBRyxFQUFFRjtBQUZBO0FBRnVFLENBQXBDLENBQXpDO0FBWUEsTUFBTWMsUUFBUSxHQUFJQyxLQUFELEtBQVk7QUFDaEM3QixNQUFJLEVBQUU4QixVQUQwQjtBQUVoQzVCLFNBQU8sRUFBRTJCO0FBRnVCLENBQVosQ0FBakIiLCJmaWxlIjoiLi9zcmMvcmVkdXgvYXV0aC9hY3Rpb25zLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgdCBmcm9tIFwiLi9jb25zdGFudHNcIjtcblxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tTE9HIElOIFJPT1QgVVNFUiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5leHBvcnQgY29uc3QgbG9naW5Sb290VXNlciA9IChlbWFpbCwgcGFzc3dvcmQsIHJvdXRlcikgPT4ge1xuXG4gICAgcmV0dXJue1xuICAgICAgICB0eXBlOiB0LlJPT1RfTE9HSU5fV0FUQ0hFUixcbiAgICAgICAgcGF5bG9hZDogeyBlbWFpbCwgcGFzc3dvcmQsIHJvdXRlciB9ICAgICBcbiAgICB9XG59O1xuXG5leHBvcnQgY29uc3QgbG9naW5Sb290VXNlclN1Y2Nlc3MgPSAodXNlckRhdGEpID0+IHtcbiAgICByZXR1cm57XG4gICAgICAgIHR5cGU6IHQuUk9PVF9VU0VSX0xPR0lOLFxuICAgICAgICBwYXlsb2FkOiB1c2VyRGF0YSAgIFxuICAgIH1cbn07XG5cblxuLyotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBMT0cgT1VUIFJPT1QgVVNFUi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5leHBvcnQgY29uc3QgbG9nb3V0VXNlciA9ICgpID0+IHtcblxuICAgIHJldHVybiB7XG4gICAgICAgIHR5cGU6IHQuUk9PVF9VU0VSX0xPR09VVFxuICAgIH1cbn07XG5cbmV4cG9ydCBjb25zdCBsb2dvdXRTYWdhID0gKHJvdXRlcikgPT4ge1xuXG4gICAgcmV0dXJuIHtcbiAgICAgICAgdHlwZTogdC5MT0dPVVRfV0FUQ0hFUixcbiAgICAgICAgcGF5bG9hZDogcm91dGVyXG4gICAgfVxuICAgIFxufTtcblxuLyogLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFJPT1QgUEFTU1dPUkQgUkVTRVQgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cblxuXG5leHBvcnQgY29uc3QgZm9yZ2V0UGFzc3dvcmRSZXF1ZXN0U2FnYSA9IChlbWFpbCkgPT4ge1xuICAgIFxuICAgIHJldHVybntcbiAgICAgICAgdHlwZTogdC5ST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRX1dBVENIRVIsXG4gICAgICAgIHBheWxvYWQ6IHsgZW1haWwgfVxuICAgIH1cbiAgICBcbn1cblxuZXhwb3J0IGNvbnN0IGZvcmdldFBhc3N3b3JkUmVxdWVzdCA9IChwYXNzd29yZFJlc2V0U3RhdHVzKSA9PiAoe1xuICAgIHR5cGU6IHQuUk9PVF9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUSxcbiAgICBwYXlsb2FkOiBwYXNzd29yZFJlc2V0U3RhdHVzXG59KTtcblxuLyotLS0tLS0tLS0tLS0tIFJPT1QgUEFTU1dPUkQgUkVTRVQgV0lUSCBLRVkgQUNUSU9OUyAtLS0tLS0tLS0tLS0tLS0tLSovXG5cbmV4cG9ydCBjb25zdCBwYXNzd29yZFJlc2V0V2l0aEtleSA9IChwYXNzd29yZFJlc2V0TWVzc2FnZSkgPT4gKHtcbiAgICB0eXBlOiB0LlJPT1RfVVNFUl9QQVNTV09SRF9SRVNFVCxcbiAgICBwYXlsb2FkOiBwYXNzd29yZFJlc2V0TWVzc2FnZVxufSk7XG5cbmV4cG9ydCBjb25zdCBwYXNzd29yZFJlc2V0V2l0aEtleVNhZ2EgPSAocGFzc3dvcmRSZXNldEtleSwgbmV3UGFzc3dvcmQpID0+ICh7XG4gICAgdHlwZTogdC5ST09UX1BBU1NXT1JEX1JFU0VUX1dBVENIRVIsXG4gICAgcGF5bG9hZDoge1xuICAgICAgICBwYXNzd29yZDogbmV3UGFzc3dvcmQsXG4gICAgICAgIGtleTogcGFzc3dvcmRSZXNldEtleVxuICAgIH1cbn0pO1xuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLyotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLUxPRyBJTiBQUkFDVElDRSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5leHBvcnQgY29uc3QgbG9naW5QcmFjdGljZSA9IChlbWFpbCwgcGFzc3dvcmQsIHJvdXRlcikgPT4ge1xuXG4gICAgcmV0dXJuIHtcbiAgICAgICAgdHlwZTogdC5QUkFDVElDRV9MT0dJTl9XQVRDSEVSLFxuICAgICAgICBwYXlsb2FkOiB7IGVtYWlsLCBwYXNzd29yZCwgcm91dGVyIH1cbiAgICB9XG4gICAgXG59O1xuXG5leHBvcnQgY29uc3QgbG9naW5QcmFjdGljZVN1Y2Nlc3MgPSAodXNlckRhdGEpID0+IHtcblxuICAgIGNvbnNvbGUubG9nKFwiUmVkdWNlciBhY3Rpb24gZm9yIGxvZ2luIGNhbGxlZCBcIilcblxuICAgIHJldHVybiB7XG4gICAgICAgIHR5cGU6IHQuUFJBQ1RJQ0VfVVNFUl9MT0dJTixcbiAgICAgICAgcGF5bG9hZDogdXNlckRhdGEgICAgXG4gICAgfVxuICAgIFxufTtcblxuXG5leHBvcnQgY29uc3QgbG9nb3V0UHJhY3RpY2UgPSAoKSA9PiB7XG5cbiAgICByZXR1cm4ge1xuICAgICAgICB0eXBlOiB0LlBSQUNUSUNFX1VTRVJfTE9HT1VUXG4gICAgfVxufTtcblxuZXhwb3J0IGNvbnN0IGxvZ291dFByYWN0aWNlU2FnYSA9IChyb3V0ZXIpID0+IHtcblxuICAgIHJldHVybiB7XG4gICAgICAgIHR5cGU6IHQuUFJBQ1RJQ0VfTE9HT1VUX1dBVENIRVIsXG4gICAgICAgIHBheWxvYWQ6IHJvdXRlclxuICAgIH1cbiAgICBcbn07XG5cblxuXG4vKiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gUFJBQ1RJQ0UgUEFTU1dPUkQgUkVTRVQgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cblxuXG5leHBvcnQgY29uc3QgcHJhY3RpY2VGb3JnZXRQYXNzd29yZFJlcXVlc3RTYWdhID0gKGVtYWlsKSA9PiB7XG4gICAgXG4gICAgcmV0dXJue1xuICAgICAgICB0eXBlOiB0LlBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRX1dBVENIRVIsXG4gICAgICAgIHBheWxvYWQ6IHsgZW1haWwgfVxuICAgIH1cbiAgICBcbn1cblxuZXhwb3J0IGNvbnN0IHByYWN0aWNlRm9yZ2V0UGFzc3dvcmRSZXF1ZXN0ID0gKHBhc3N3b3JkUmVzZXRTdGF0dXMpID0+ICh7XG4gICAgdHlwZTogdC5QUkFDVElDRV9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUSxcbiAgICBwYXlsb2FkOiBwYXNzd29yZFJlc2V0U3RhdHVzXG59KTtcblxuLyotLS0tLS0tLS0tLS0tIFBSQUNUSUNFIFBBU1NXT1JEIFJFU0VUIFdJVEggS0VZIEFDVElPTlMgLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5leHBvcnQgY29uc3QgcHJhY3RpY2VQYXNzd29yZFJlc2V0V2l0aEtleSA9IChwYXNzd29yZFJlc2V0TWVzc2FnZSkgPT4gKHtcbiAgICB0eXBlOiB0LlBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVQsXG4gICAgcGF5bG9hZDogcGFzc3dvcmRSZXNldE1lc3NhZ2Vcbn0pO1xuXG5leHBvcnQgY29uc3QgcHJhY3RpY2VQYXNzd29yZFJlc2V0V2l0aEtleVNhZ2EgPSAocGFzc3dvcmRSZXNldEtleSwgbmV3UGFzc3dvcmQpID0+ICh7XG4gICAgdHlwZTogdC5QUkFDVElDRV9QQVNTV09SRF9SRVNFVF9XQVRDSEVSLFxuICAgIHBheWxvYWQ6IHtcbiAgICAgICAgcGFzc3dvcmQ6IG5ld1Bhc3N3b3JkLFxuICAgICAgICBrZXk6IHBhc3N3b3JkUmVzZXRLZXlcbiAgICB9XG59KTtcblxuXG5cblxuXG5leHBvcnQgY29uc3QgYXBpRXJyb3IgPSAoZXJyb3IpID0+ICh7XG4gICAgdHlwZTogQVBJX0ZBSUxFRCxcbiAgICBwYXlsb2FkOiBlcnJvclxufSk7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/redux/auth/actions.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/auth/authReducer.js":
-/*!***************************************!*\
-  !*** ./src/redux/auth/authReducer.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return authReducer; });\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ \"./src/redux/auth/constants.js\");\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\nconst initialState = {\n  user: {},\n  passwordResetStatus: \"\"\n};\nfunction authReducer(state = initialState, action) {\n  switch (action.type) {\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_LOGIN\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        user: action.payload\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_LOGOUT\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        user: {}\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_PASSWORD_RESET_REQ\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        passwordResetStatus: action.payload\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"ROOT_USER_PASSWORD_RESET\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        passwordResetStatus: action.payload\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_LOGIN\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        user: action.payload\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_LOGOUT\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        user: {}\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_PASSWORD_RESET_REQ\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        passwordResetStatus: action.payload\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"PRACTICE_USER_PASSWORD_RESET\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        passwordResetStatus: action.payload\n      });\n      return state;\n\n    case _constants__WEBPACK_IMPORTED_MODULE_0__[\"API_FAILED\"]:\n      state = _objectSpread(_objectSpread({}, state), {}, {\n        error: action.payload\n      });\n      return state;\n\n    default:\n      return state;\n  }\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvYXV0aC9hdXRoUmVkdWNlci5qcz9iM2MwIl0sIm5hbWVzIjpbImluaXRpYWxTdGF0ZSIsInVzZXIiLCJwYXNzd29yZFJlc2V0U3RhdHVzIiwiYXV0aFJlZHVjZXIiLCJzdGF0ZSIsImFjdGlvbiIsInR5cGUiLCJ0IiwicGF5bG9hZCIsImVycm9yIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTtBQUtBLE1BQU1BLFlBQVksR0FBRztBQUNwQkMsTUFBSSxFQUFDLEVBRGU7QUFFcEJDLHFCQUFtQixFQUFDO0FBRkEsQ0FBckI7QUFLZSxTQUFTQyxXQUFULENBQXNCQyxLQUFLLEdBQUdKLFlBQTlCLEVBQTRDSyxNQUE1QyxFQUFtRDtBQUVqRSxVQUFPQSxNQUFNLENBQUNDLElBQWQ7QUFFQyxTQUFLQywwREFBTDtBQUVDSCxXQUFLLG1DQUFPQSxLQUFQO0FBQWNILFlBQUksRUFBQ0ksTUFBTSxDQUFDRztBQUExQixRQUFMO0FBRUEsYUFBT0osS0FBUDs7QUFFRCxTQUFLRywyREFBTDtBQUVDSCxXQUFLLG1DQUFPQSxLQUFQO0FBQWNILFlBQUksRUFBQztBQUFuQixRQUFMO0FBQ0EsYUFBT0csS0FBUDs7QUFHRCxTQUFLRyx1RUFBTDtBQUVDSCxXQUFLLG1DQUFPQSxLQUFQO0FBQWNGLDJCQUFtQixFQUFDRyxNQUFNLENBQUNHO0FBQXpDLFFBQUw7QUFDQSxhQUFPSixLQUFQOztBQUVELFNBQUtHLG1FQUFMO0FBRUNILFdBQUssbUNBQU9BLEtBQVA7QUFBY0YsMkJBQW1CLEVBQUNHLE1BQU0sQ0FBQ0c7QUFBekMsUUFBTDtBQUNBLGFBQU9KLEtBQVA7O0FBS0QsU0FBS0csOERBQUw7QUFFQ0gsV0FBSyxtQ0FBT0EsS0FBUDtBQUFjSCxZQUFJLEVBQUNJLE1BQU0sQ0FBQ0c7QUFBMUIsUUFBTDtBQUNBLGFBQU9KLEtBQVA7O0FBRUQsU0FBS0csK0RBQUw7QUFFQ0gsV0FBSyxtQ0FBT0EsS0FBUDtBQUFjSCxZQUFJLEVBQUM7QUFBbkIsUUFBTDtBQUNBLGFBQU9HLEtBQVA7O0FBR0QsU0FBS0csMkVBQUw7QUFFQ0gsV0FBSyxtQ0FBT0EsS0FBUDtBQUFjRiwyQkFBbUIsRUFBQ0csTUFBTSxDQUFDRztBQUF6QyxRQUFMO0FBQ0EsYUFBT0osS0FBUDs7QUFFRCxTQUFLRyx1RUFBTDtBQUVDSCxXQUFLLG1DQUFPQSxLQUFQO0FBQWNGLDJCQUFtQixFQUFDRyxNQUFNLENBQUNHO0FBQXpDLFFBQUw7QUFDQSxhQUFPSixLQUFQOztBQUVELFNBQUtHLHFEQUFMO0FBQ0NILFdBQUssbUNBQU9BLEtBQVA7QUFBY0ssYUFBSyxFQUFFSixNQUFNLENBQUNHO0FBQTVCLFFBQUw7QUFDQSxhQUFPSixLQUFQOztBQUdEO0FBQ0MsYUFBT0EsS0FBUDtBQXRERjtBQXlEQSIsImZpbGUiOiIuL3NyYy9yZWR1eC9hdXRoL2F1dGhSZWR1Y2VyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgdCBmcm9tIFwiLi9jb25zdGFudHNcIjtcblxuXG5cblxuY29uc3QgaW5pdGlhbFN0YXRlID0ge1xuXHR1c2VyOnt9LFxuXHRwYXNzd29yZFJlc2V0U3RhdHVzOlwiXCJcbn07XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGF1dGhSZWR1Y2VyIChzdGF0ZSA9IGluaXRpYWxTdGF0ZSwgYWN0aW9uKXtcblxuXHRzd2l0Y2goYWN0aW9uLnR5cGUpe1xuXG5cdFx0Y2FzZSB0LlJPT1RfVVNFUl9MT0dJTjpcblxuXHRcdFx0c3RhdGUgPSB7Li4uc3RhdGUsIHVzZXI6YWN0aW9uLnBheWxvYWR9O1xuXHRcdFx0XG5cdFx0XHRyZXR1cm4gc3RhdGU7XG5cblx0XHRjYXNlIHQuUk9PVF9VU0VSX0xPR09VVDpcblxuXHRcdFx0c3RhdGUgPSB7Li4uc3RhdGUsIHVzZXI6e319XG5cdFx0XHRyZXR1cm4gc3RhdGU7XG5cdFx0XHRcblxuXHRcdGNhc2UgdC5ST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVROlxuXG5cdFx0XHRzdGF0ZSA9IHsuLi5zdGF0ZSwgcGFzc3dvcmRSZXNldFN0YXR1czphY3Rpb24ucGF5bG9hZH1cblx0XHRcdHJldHVybiBzdGF0ZTtcblxuXHRcdGNhc2UgdC5ST09UX1VTRVJfUEFTU1dPUkRfUkVTRVQ6XG5cblx0XHRcdHN0YXRlID0gey4uLnN0YXRlLCBwYXNzd29yZFJlc2V0U3RhdHVzOmFjdGlvbi5wYXlsb2FkfVxuXHRcdFx0cmV0dXJuIHN0YXRlO1xuXG5cblxuXG5cdFx0Y2FzZSB0LlBSQUNUSUNFX1VTRVJfTE9HSU46XG5cblx0XHRcdHN0YXRlID0gey4uLnN0YXRlLCB1c2VyOmFjdGlvbi5wYXlsb2FkfTtcblx0XHRcdHJldHVybiBzdGF0ZTtcblxuXHRcdGNhc2UgdC5QUkFDVElDRV9VU0VSX0xPR09VVDpcblxuXHRcdFx0c3RhdGUgPSB7Li4uc3RhdGUsIHVzZXI6e319XG5cdFx0XHRyZXR1cm4gc3RhdGU7XG5cdFx0XHRcblxuXHRcdGNhc2UgdC5QUkFDVElDRV9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUTpcblxuXHRcdFx0c3RhdGUgPSB7Li4uc3RhdGUsIHBhc3N3b3JkUmVzZXRTdGF0dXM6YWN0aW9uLnBheWxvYWR9XG5cdFx0XHRyZXR1cm4gc3RhdGU7XG5cblx0XHRjYXNlIHQuUFJBQ1RJQ0VfVVNFUl9QQVNTV09SRF9SRVNFVDpcblxuXHRcdFx0c3RhdGUgPSB7Li4uc3RhdGUsIHBhc3N3b3JkUmVzZXRTdGF0dXM6YWN0aW9uLnBheWxvYWR9XG5cdFx0XHRyZXR1cm4gc3RhdGU7XG5cblx0XHRjYXNlIHQuQVBJX0ZBSUxFRDpcblx0XHRcdHN0YXRlID0gey4uLnN0YXRlLCBlcnJvcjogYWN0aW9uLnBheWxvYWR9XG5cdFx0XHRyZXR1cm4gc3RhdGU7XG5cblx0XHRcblx0XHRkZWZhdWx0OlxuXHRcdFx0cmV0dXJuIHN0YXRlO1xuXHRcdFx0XG5cdH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/redux/auth/authReducer.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/auth/constants.js":
-/*!*************************************!*\
-  !*** ./src/redux/auth/constants.js ***!
-  \*************************************/
-/*! exports provided: ROOT_USER_LOGIN, ROOT_LOGIN_WATCHER, ROOT_USER_LOGOUT, LOGOUT_WATCHER, ROOT_USER_PASSWORD_RESET_REQ, ROOT_USER_PASSWORD_RESET_REQ_WATCHER, ROOT_PASSWORD_RESET_WATCHER, ROOT_USER_PASSWORD_RESET, PRACTICE_USER_LOGIN, PRACTICE_LOGIN_WATCHER, PRACTICE_USER_LOGOUT, PRACTICE_LOGOUT_WATCHER, PRACTICE_USER_PASSWORD_RESET_REQ, PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER, PRACTICE_PASSWORD_RESET_WATCHER, PRACTICE_USER_PASSWORD_RESET, API_FAILED, IS_LOADING, LOADED, LOAD_FAILED */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_USER_LOGIN\", function() { return ROOT_USER_LOGIN; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_LOGIN_WATCHER\", function() { return ROOT_LOGIN_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_USER_LOGOUT\", function() { return ROOT_USER_LOGOUT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"LOGOUT_WATCHER\", function() { return LOGOUT_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_USER_PASSWORD_RESET_REQ\", function() { return ROOT_USER_PASSWORD_RESET_REQ; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_USER_PASSWORD_RESET_REQ_WATCHER\", function() { return ROOT_USER_PASSWORD_RESET_REQ_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_PASSWORD_RESET_WATCHER\", function() { return ROOT_PASSWORD_RESET_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ROOT_USER_PASSWORD_RESET\", function() { return ROOT_USER_PASSWORD_RESET; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_USER_LOGIN\", function() { return PRACTICE_USER_LOGIN; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_LOGIN_WATCHER\", function() { return PRACTICE_LOGIN_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_USER_LOGOUT\", function() { return PRACTICE_USER_LOGOUT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_LOGOUT_WATCHER\", function() { return PRACTICE_LOGOUT_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_USER_PASSWORD_RESET_REQ\", function() { return PRACTICE_USER_PASSWORD_RESET_REQ; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER\", function() { return PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_PASSWORD_RESET_WATCHER\", function() { return PRACTICE_PASSWORD_RESET_WATCHER; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PRACTICE_USER_PASSWORD_RESET\", function() { return PRACTICE_USER_PASSWORD_RESET; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"API_FAILED\", function() { return API_FAILED; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"IS_LOADING\", function() { return IS_LOADING; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"LOADED\", function() { return LOADED; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"LOAD_FAILED\", function() { return LOAD_FAILED; });\nconst ROOT_USER_LOGIN = \"ROOT_USER_LOGIN\";\nconst ROOT_LOGIN_WATCHER = \"ROOT_LOGIN_WATCHER\";\nconst ROOT_USER_LOGOUT = \"ROOT_USER_LOGOUT\";\nconst LOGOUT_WATCHER = \"LOGOUT_WATCHER\";\nconst ROOT_USER_PASSWORD_RESET_REQ = \"ROOT_USER_PASSWORD_RESET_REQ\";\nconst ROOT_USER_PASSWORD_RESET_REQ_WATCHER = \"ROOT_USER_PASSWORD_RESET_REQ_WATCHER\";\nconst ROOT_PASSWORD_RESET_WATCHER = \"ROOT_PASSWORD_RESET_WATCHER\";\nconst ROOT_USER_PASSWORD_RESET = \"ROOT_USER_PASSWORD_RESET\";\nconst PRACTICE_USER_LOGIN = \"PRACTICE_USER_LOGIN\";\nconst PRACTICE_LOGIN_WATCHER = \"PRACTICE_LOGIN_WATCHER\";\nconst PRACTICE_USER_LOGOUT = \"PRACTICE_USER_LOGOUT\";\nconst PRACTICE_LOGOUT_WATCHER = \"PRACTICE_LOGOUT_WATCHER\";\nconst PRACTICE_USER_PASSWORD_RESET_REQ = \"PRACTICE_USER_PASSWORD_RESET_REQ\";\nconst PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER = \"PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER\";\nconst PRACTICE_PASSWORD_RESET_WATCHER = \"PRACTICE_PASSWORD_RESET_WATCHER\";\nconst PRACTICE_USER_PASSWORD_RESET = \"PRACTICE_USER_PASSWORD_RESET\";\nconst API_FAILED = \"API_FAILED\";\nconst IS_LOADING = \"IS_LOADING\";\nconst LOADED = \"LOADED\";\nconst LOAD_FAILED = \"LOAD_FAILED\";//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvYXV0aC9jb25zdGFudHMuanM/ZjZjZiJdLCJuYW1lcyI6WyJST09UX1VTRVJfTE9HSU4iLCJST09UX0xPR0lOX1dBVENIRVIiLCJST09UX1VTRVJfTE9HT1VUIiwiTE9HT1VUX1dBVENIRVIiLCJST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRIiwiUk9PVF9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUV9XQVRDSEVSIiwiUk9PVF9QQVNTV09SRF9SRVNFVF9XQVRDSEVSIiwiUk9PVF9VU0VSX1BBU1NXT1JEX1JFU0VUIiwiUFJBQ1RJQ0VfVVNFUl9MT0dJTiIsIlBSQUNUSUNFX0xPR0lOX1dBVENIRVIiLCJQUkFDVElDRV9VU0VSX0xPR09VVCIsIlBSQUNUSUNFX0xPR09VVF9XQVRDSEVSIiwiUFJBQ1RJQ0VfVVNFUl9QQVNTV09SRF9SRVNFVF9SRVEiLCJQUkFDVElDRV9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUV9XQVRDSEVSIiwiUFJBQ1RJQ0VfUEFTU1dPUkRfUkVTRVRfV0FUQ0hFUiIsIlBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVQiLCJBUElfRkFJTEVEIiwiSVNfTE9BRElORyIsIkxPQURFRCIsIkxPQURfRkFJTEVEIl0sIm1hcHBpbmdzIjoiQUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBTyxNQUFNQSxlQUFlLEdBQUUsaUJBQXZCO0FBQ0EsTUFBTUMsa0JBQWtCLEdBQUUsb0JBQTFCO0FBRUEsTUFBTUMsZ0JBQWdCLEdBQUUsa0JBQXhCO0FBQ0EsTUFBTUMsY0FBYyxHQUFHLGdCQUF2QjtBQUVBLE1BQU1DLDRCQUE0QixHQUFHLDhCQUFyQztBQUNBLE1BQU1DLG9DQUFvQyxHQUFHLHNDQUE3QztBQUVBLE1BQU1DLDJCQUEyQixHQUFHLDZCQUFwQztBQUNBLE1BQU1DLHdCQUF3QixHQUFHLDBCQUFqQztBQVFBLE1BQU1DLG1CQUFtQixHQUFFLHFCQUEzQjtBQUNBLE1BQU1DLHNCQUFzQixHQUFFLHdCQUE5QjtBQUdBLE1BQU1DLG9CQUFvQixHQUFFLHNCQUE1QjtBQUNBLE1BQU1DLHVCQUF1QixHQUFHLHlCQUFoQztBQUVBLE1BQU1DLGdDQUFnQyxHQUFHLGtDQUF6QztBQUNBLE1BQU1DLHdDQUF3QyxHQUFHLDBDQUFqRDtBQUVBLE1BQU1DLCtCQUErQixHQUFHLGlDQUF4QztBQUNBLE1BQU1DLDRCQUE0QixHQUFHLDhCQUFyQztBQXNCQSxNQUFNQyxVQUFVLEdBQUcsWUFBbkI7QUFzQkEsTUFBTUMsVUFBVSxHQUFHLFlBQW5CO0FBQ0EsTUFBTUMsTUFBTSxHQUFHLFFBQWY7QUFDQSxNQUFNQyxXQUFXLEdBQUcsYUFBcEIiLCJmaWxlIjoiLi9zcmMvcmVkdXgvYXV0aC9jb25zdGFudHMuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmV4cG9ydCBjb25zdCBST09UX1VTRVJfTE9HSU49IFwiUk9PVF9VU0VSX0xPR0lOXCI7XG5leHBvcnQgY29uc3QgUk9PVF9MT0dJTl9XQVRDSEVSPSBcIlJPT1RfTE9HSU5fV0FUQ0hFUlwiO1xuXG5leHBvcnQgY29uc3QgUk9PVF9VU0VSX0xPR09VVCA9XCJST09UX1VTRVJfTE9HT1VUXCI7XG5leHBvcnQgY29uc3QgTE9HT1VUX1dBVENIRVIgPSBcIkxPR09VVF9XQVRDSEVSXCI7XG5cbmV4cG9ydCBjb25zdCBST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRID0gXCJST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRXCI7XG5leHBvcnQgY29uc3QgUk9PVF9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUV9XQVRDSEVSID0gXCJST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRX1dBVENIRVJcIjtcblxuZXhwb3J0IGNvbnN0IFJPT1RfUEFTU1dPUkRfUkVTRVRfV0FUQ0hFUiA9IFwiUk9PVF9QQVNTV09SRF9SRVNFVF9XQVRDSEVSXCI7XG5leHBvcnQgY29uc3QgUk9PVF9VU0VSX1BBU1NXT1JEX1JFU0VUID0gXCJST09UX1VTRVJfUEFTU1dPUkRfUkVTRVRcIjtcblxuXG5cblxuXG5cblxuZXhwb3J0IGNvbnN0IFBSQUNUSUNFX1VTRVJfTE9HSU49IFwiUFJBQ1RJQ0VfVVNFUl9MT0dJTlwiO1xuZXhwb3J0IGNvbnN0IFBSQUNUSUNFX0xPR0lOX1dBVENIRVI9IFwiUFJBQ1RJQ0VfTE9HSU5fV0FUQ0hFUlwiO1xuXG5cbmV4cG9ydCBjb25zdCBQUkFDVElDRV9VU0VSX0xPR09VVCA9XCJQUkFDVElDRV9VU0VSX0xPR09VVFwiO1xuZXhwb3J0IGNvbnN0IFBSQUNUSUNFX0xPR09VVF9XQVRDSEVSID0gXCJQUkFDVElDRV9MT0dPVVRfV0FUQ0hFUlwiO1xuXG5leHBvcnQgY29uc3QgUFJBQ1RJQ0VfVVNFUl9QQVNTV09SRF9SRVNFVF9SRVEgPSBcIlBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRXCI7XG5leHBvcnQgY29uc3QgUFJBQ1RJQ0VfVVNFUl9QQVNTV09SRF9SRVNFVF9SRVFfV0FUQ0hFUiA9IFwiUFJBQ1RJQ0VfVVNFUl9QQVNTV09SRF9SRVNFVF9SRVFfV0FUQ0hFUlwiO1xuXG5leHBvcnQgY29uc3QgUFJBQ1RJQ0VfUEFTU1dPUkRfUkVTRVRfV0FUQ0hFUiA9IFwiUFJBQ1RJQ0VfUEFTU1dPUkRfUkVTRVRfV0FUQ0hFUlwiO1xuZXhwb3J0IGNvbnN0IFBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVQgPSBcIlBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVRcIjtcblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbmV4cG9ydCBjb25zdCBBUElfRkFJTEVEID0gXCJBUElfRkFJTEVEXCI7XG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5leHBvcnQgY29uc3QgSVNfTE9BRElORyA9IFwiSVNfTE9BRElOR1wiO1xuZXhwb3J0IGNvbnN0IExPQURFRCA9IFwiTE9BREVEXCI7XG5leHBvcnQgY29uc3QgTE9BRF9GQUlMRUQgPSBcIkxPQURfRkFJTEVEXCI7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/redux/auth/constants.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/auth/sagas.js":
-/*!*********************************!*\
-  !*** ./src/redux/auth/sagas.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ \"redux-saga/effects\");\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ \"./src/redux/auth/constants.js\");\n/* harmony import */ var _Api_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Api.js */ \"./src/redux/Api.js\");\n/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./actions */ \"./src/redux/auth/actions.js\");\n\n\n\n\n/*------------------------LOGIN SAGA --------------------------------*/\n\nfunction* loginRootUser(action) {\n  try {\n    const user = yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(_Api_js__WEBPACK_IMPORTED_MODULE_2__[\"loginRootUser\"], action.payload);\n\n    if (user.message === \"Login successful!\") {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"loginRootUserSuccess\"](user));\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(() => {\n        action.payload.router.push({\n          pathname: \"/dashboard/dashboard\"\n        });\n      });\n    } else {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(() => {\n        action.payload.router.push({\n          pathname: \"/\"\n        });\n      });\n    }\n  } catch (e) {\n    console.log(e, \"Can not login from saggaggaggag,\");\n  }\n}\n\nfunction* rootLoginWatcher() {\n  /* --------------- LOGIN WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"ROOT_LOGIN_WATCHER\"], loginRootUser);\n}\n/*------------------------LOGOUT SAGA --------------------------------*/\n\n\nfunction* logoutUser(action) {\n  try {\n    yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"logoutUser\"]());\n    yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(() => action.payload.push(\"/\"));\n  } catch (e) {\n    console.log(\"Error Trying to LogOut\");\n  }\n}\n\nfunction* logoutWatcher() {\n  /* --------------- LOGOUT WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"LOGOUT_WATCHER\"], logoutUser);\n}\n/*-------------------------------------------- ROOT PASSWORD RESET ------------------------------------*/\n\n\nfunction* passwordReset(action) {\n  const {\n    message\n  } = yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(_Api_js__WEBPACK_IMPORTED_MODULE_2__[\"passwordReset\"], action.payload.email);\n\n  try {\n    yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"forgetPasswordRequest\"](message));\n  } catch (e) {\n    console.log(\"password reset request error\", e);\n  }\n}\n\nfunction* passwordResetWatcher() {\n  /* --------------- PASSWORD RESET REQUEST WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"ROOT_USER_PASSWORD_RESET_REQ_WATCHER\"], passwordReset);\n}\n\nfunction* passwordResetWithKey(action) {\n  /*-------------------------- MAIN PASSWORD RESET WITH KEY FROM EMAIL -----------------*/\n  console.log(\"----------------------ho ho ho ---------------\", action.payload);\n\n  try {\n    const {\n      message\n    } = yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(_Api_js__WEBPACK_IMPORTED_MODULE_2__[\"passwordResetWithKey\"], action.payload);\n\n    if (message === \"Password changed successfully!\") {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"passwordResetWithKey\"](message));\n    } else {\n      console.log(\"message is:::\", message);\n    }\n  } catch (e) {\n    console.log(\"password reset error\", e);\n  }\n}\n\nfunction* passwordResetWithKeyWatcher() {\n  /* --------------- PASSWORD RESET WITH KEY WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"ROOT_PASSWORD_RESET_WATCHER\"], passwordResetWithKey);\n}\n/*------------------------PRACTICE LOGIN SAGA --------------------------------*/\n\n\nfunction* loginPractice(action) {\n  try {\n    const user = yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(_Api_js__WEBPACK_IMPORTED_MODULE_2__[\"loginPractice\"], action.payload);\n\n    if (user.message === \"Login successful!\") {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"loginPracticeSuccess\"](user));\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(() => {\n        action.payload.router.push({\n          pathname: \"/practice/dashboard/dashboard\"\n        });\n      });\n    } else {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(() => {\n        action.payload.router.push({\n          pathname: \"/practice/auth/login\"\n        });\n      });\n    }\n  } catch (e) {\n    console.log(e, \"Can not login from saggaggaggag\");\n  }\n}\n\nfunction* practiceLoginWatcher() {\n  /* --------------- PRACTIVE LOGIN WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"PRACTICE_LOGIN_WATCHER\"], loginPractice);\n}\n/*------------------------LOGOUT PRACTICE --------------------------------*/\n\n\nfunction* logoutPractice(action) {\n  try {\n    yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"logoutPractice\"]());\n    yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(() => action.payload.push(\"/\"));\n  } catch (e) {\n    console.log(\"Error Trying to LogOut\");\n  }\n}\n\nfunction* logoutPracticeSaga() {\n  /* --------------- LOGOUT PRACTICE WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"LOGOUT_WATCHER\"], logoutPractice);\n}\n/*-------------------------------------------- PRACTICE PASSWORD RESET ------------------------------------*/\n\n\nfunction* passwordResetPractice(action) {\n  try {\n    const {\n      message\n    } = yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(_Api_js__WEBPACK_IMPORTED_MODULE_2__[\"passwordReset\"], action.payload.email);\n\n    if (message) {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"practiceForgetPasswordRequest\"](message));\n    }\n  } catch (e) {\n    console.log(\"password reset request error\", e);\n  }\n}\n\nfunction* passwordResetPracticeWatcher() {\n  /* --------------- PRACTICE PASSWORD RESET REQUEST WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER\"], passwordResetPractice);\n}\n\nfunction* passwordResetPracticeWithKey(action) {\n  /*-------------------------- PRACTICE MAIN PASSWORD RESET WITH KEY FROM EMAIL -----------------*/\n  try {\n    const {\n      message\n    } = yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"call\"])(_Api_js__WEBPACK_IMPORTED_MODULE_2__[\"passwordResetWithKey\"], action.payload);\n\n    if (message === \"Password changed successfully!\") {\n      yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"put\"])(_actions__WEBPACK_IMPORTED_MODULE_3__[\"practicePasswordResetWithKey\"](message));\n    } else {\n      console.log(\"message is:::\", message);\n    }\n  } catch (e) {\n    console.log(\"password reset error\", e);\n  }\n}\n\nfunction* passwordResetWithKeyPracticeWatcher() {\n  /* --------------- PRACTICE PASSWORD RESET WITH KEY WATCHER ---------------------------*/\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"takeLatest\"])(_constants__WEBPACK_IMPORTED_MODULE_1__[\"PRACTICE_PASSWORD_RESET_WATCHER\"], passwordResetPracticeWithKey);\n}\n\nfunction* authSaga() {\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"all\"])([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(rootLoginWatcher), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(logoutWatcher), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(passwordResetWatcher), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(passwordResetWithKeyWatcher), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(practiceLoginWatcher), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(passwordResetPracticeWatcher), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"fork\"])(passwordResetWithKeyPracticeWatcher)]);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (authSaga);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvYXV0aC9zYWdhcy5qcz84NTc0Il0sIm5hbWVzIjpbImxvZ2luUm9vdFVzZXIiLCJhY3Rpb24iLCJ1c2VyIiwiY2FsbCIsIkFwaSIsInBheWxvYWQiLCJtZXNzYWdlIiwicHV0IiwiQWN0aW9ucyIsInJvdXRlciIsInB1c2giLCJwYXRobmFtZSIsImUiLCJjb25zb2xlIiwibG9nIiwicm9vdExvZ2luV2F0Y2hlciIsInRha2VMYXRlc3QiLCJ0IiwibG9nb3V0VXNlciIsImxvZ291dFdhdGNoZXIiLCJwYXNzd29yZFJlc2V0IiwiZW1haWwiLCJwYXNzd29yZFJlc2V0V2F0Y2hlciIsInBhc3N3b3JkUmVzZXRXaXRoS2V5IiwicGFzc3dvcmRSZXNldFdpdGhLZXlXYXRjaGVyIiwibG9naW5QcmFjdGljZSIsInByYWN0aWNlTG9naW5XYXRjaGVyIiwibG9nb3V0UHJhY3RpY2UiLCJsb2dvdXRQcmFjdGljZVNhZ2EiLCJwYXNzd29yZFJlc2V0UHJhY3RpY2UiLCJwYXNzd29yZFJlc2V0UHJhY3RpY2VXYXRjaGVyIiwicGFzc3dvcmRSZXNldFByYWN0aWNlV2l0aEtleSIsInBhc3N3b3JkUmVzZXRXaXRoS2V5UHJhY3RpY2VXYXRjaGVyIiwiYXV0aFNhZ2EiLCJhbGwiLCJmb3JrIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUlBOztBQUVBLFVBQVVBLGFBQVYsQ0FBd0JDLE1BQXhCLEVBQWdDO0FBRTdCLE1BQUk7QUFFTCxVQUFNQyxJQUFJLEdBQUcsTUFBTUMsK0RBQUksQ0FBQ0MscURBQUQsRUFBb0JILE1BQU0sQ0FBQ0ksT0FBM0IsQ0FBdkI7O0FBRUUsUUFBSUgsSUFBSSxDQUFDSSxPQUFMLEtBQWlCLG1CQUFyQixFQUF5QztBQUdyQyxZQUFNQyw4REFBRyxDQUFDQyw2REFBQSxDQUE2Qk4sSUFBN0IsQ0FBRCxDQUFUO0FBRUEsWUFBTUMsK0RB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QiwrREFBSSxDQUFDYixvQkFBRCxDQUhFLEVBSU5hLCtEQUFJLENBQUNYLDJCQUFELENBSkUsRUFLTlcsK0RBQUksQ0FBQ1Qsb0JBQUQsQ0FMRSxFQU1OUywrREFBSSxDQUFDTCw0QkFBRCxDQU5FLEVBT05LLCtEQUFJLENBQUNILG1DQUFELENBUEUsQ0FBRCxDQUFUO0FBU0g7O0FBR2NDLHVFQUFmIiwiZmlsZSI6Ii4vc3JjL3JlZHV4L2F1dGgvc2FnYXMuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjYWxsLCBwdXQsIHRha2VFdmVyeSwgdGFrZUxhdGVzdCwgYWxsLCBmb3JrfSBmcm9tICdyZWR1eC1zYWdhL2VmZmVjdHMnO1xuaW1wb3J0ICogYXMgdCBmcm9tIFwiLi9jb25zdGFudHNcIjtcbmltcG9ydCAqIGFzIEFwaSBmcm9tICcuLi9BcGkuanMnO1xuaW1wb3J0ICogYXMgQWN0aW9ucyBmcm9tIFwiLi9hY3Rpb25zXCI7XG5cblxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLUxPR0lOIFNBR0EgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5mdW5jdGlvbiogbG9naW5Sb290VXNlcihhY3Rpb24pIHtcblxuICAgdHJ5IHtcblxuXHRcdGNvbnN0IHVzZXIgPSB5aWVsZCBjYWxsKEFwaS5sb2dpblJvb3RVc2VyLCBhY3Rpb24ucGF5bG9hZCk7XG5cbiAgICBpZiAodXNlci5tZXNzYWdlID09PSBcIkxvZ2luIHN1Y2Nlc3NmdWwhXCIpe1xuXG5cbiAgICAgICAgeWllbGQgcHV0KEFjdGlvbnMubG9naW5Sb290VXNlclN1Y2Nlc3ModXNlcikpO1xuXG4gICAgICAgIHlpZWxkIGNhbGwoKCk9PntcblxuICAgICAgICAgICAgICAgIGFjdGlvbi5wYXlsb2FkLnJvdXRlci5wdXNoKHtcbiAgICAgICAgICAgICAgICAgIHBhdGhuYW1lOlwiL2Rhc2hib2FyZC9kYXNoYm9hcmRcIlxuICAgICAgICAgICAgICAgIH0pXG5cbiAgICAgICAgICAgIH1cbiAgICAgICAgKTtcblxuICAgICAgfWVsc2V7XG5cbiAgICAgICAgICB5aWVsZCBjYWxsKCgpPT57XG5cbiAgICAgICAgICAgICAgICAgIGFjdGlvbi5wYXlsb2FkLnJvdXRlci5wdXNoKHtcbiAgICAgICAgICAgICAgICAgICAgcGF0aG5hbWU6XCIvXCJcbiAgICAgICAgICAgICAgICAgIH0pXG5cbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICk7XG4gICAgICB9XG4gICAgXHRcblxuICAgfSBjYXRjaCAoZSkge1xuXHQgICBjb25zb2xlLmxvZyhlLCBcIkNhbiBub3QgbG9naW4gZnJvbSBzYWdnYWdnYWdnYWcsXCIpXG4gICB9XG59XG5cbmZ1bmN0aW9uKiByb290TG9naW5XYXRjaGVyKCkgeyAvKiAtLS0tLS0tLS0tLS0tLS0gTE9HSU4gV0FUQ0hFUiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5cbiAgeWllbGQgdGFrZUxhdGVzdCh0LlJPT1RfTE9HSU5fV0FUQ0hFUiwgbG9naW5Sb290VXNlcik7XG5cbn1cblxuXG5cblxuXG5cblxuXG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tTE9HT1VUIFNBR0EgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5cbmZ1bmN0aW9uKiBsb2dvdXRVc2VyKGFjdGlvbil7XG4gIFxuICB0cnl7XG4gICAgeWllbGQgcHV0KEFjdGlvbnMubG9nb3V0VXNlcigpKTtcbiAgICB5aWVsZCBjYWxsKCgpPT5hY3Rpb24ucGF5bG9hZC5wdXNoKFwiL1wiKSk7XG5cbiAgfWNhdGNoKGUpe1xuICAgIGNvbnNvbGUubG9nKFwiRXJyb3IgVHJ5aW5nIHRvIExvZ091dFwiKVxuICB9XG4gIFxufVxuXG5mdW5jdGlvbiogbG9nb3V0V2F0Y2hlcigpIHsgLyogLS0tLS0tLS0tLS0tLS0tIExPR09VVCBXQVRDSEVSIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG5cbiAgeWllbGQgdGFrZUxhdGVzdCh0LkxPR09VVF9XQVRDSEVSLCBsb2dvdXRVc2VyKTtcblxufVxuXG5cblxuXG5cblxuXG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gUk9PVCBQQVNTV09SRCBSRVNFVCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5cbmZ1bmN0aW9uKiBwYXNzd29yZFJlc2V0KGFjdGlvbil7XG5cbiAgY29uc3Qge21lc3NhZ2V9ID0geWllbGQgY2FsbChBcGkucGFzc3dvcmRSZXNldCwgYWN0aW9uLnBheWxvYWQuZW1haWwpO1xuICBcbiAgdHJ5e1xuXG4gICAgeWllbGQgcHV0KEFjdGlvbnMuZm9yZ2V0UGFzc3dvcmRSZXF1ZXN0KG1lc3NhZ2UpKTtcblxuICB9Y2F0Y2goZSl7XG4gICAgY29uc29sZS5sb2coXCJwYXNzd29yZCByZXNldCByZXF1ZXN0IGVycm9yXCIgLCBlKVxuICB9XG4gIFxufVxuXG5mdW5jdGlvbiogcGFzc3dvcmRSZXNldFdhdGNoZXIoKSB7IC8qIC0tLS0tLS0tLS0tLS0tLSBQQVNTV09SRCBSRVNFVCBSRVFVRVNUIFdBVENIRVIgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cblxuICB5aWVsZCB0YWtlTGF0ZXN0KHQuUk9PVF9VU0VSX1BBU1NXT1JEX1JFU0VUX1JFUV9XQVRDSEVSLCBwYXNzd29yZFJlc2V0KTtcblxufVxuXG5cblxuXG5mdW5jdGlvbiogcGFzc3dvcmRSZXNldFdpdGhLZXkoYWN0aW9uKXsvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIE1BSU4gUEFTU1dPUkQgUkVTRVQgV0lUSCBLRVkgRlJPTSBFTUFJTCAtLS0tLS0tLS0tLS0tLS0tLSovXG5cbiAgXG4gIGNvbnNvbGUubG9nKFwiLS0tLS0tLS0tLS0tLS0tLS0tLS0tLWhvIGhvIGhvIC0tLS0tLS0tLS0tLS0tLVwiLGFjdGlvbi5wYXlsb2FkKVxuICBcbiAgdHJ5e1xuXG4gICAgY29uc3Qge21lc3NhZ2V9ID0geWllbGQgY2FsbChBcGkucGFzc3dvcmRSZXNldFdpdGhLZXksIGFjdGlvbi5wYXlsb2FkKTtcblxuICAgIGlmKG1lc3NhZ2UgPT09IFwiUGFzc3dvcmQgY2hhbmdlZCBzdWNjZXNzZnVsbHkhXCIpe1xuICAgICAgeWllbGQgcHV0KEFjdGlvbnMucGFzc3dvcmRSZXNldFdpdGhLZXkobWVzc2FnZSkpO1xuICAgIH1lbHNle1xuICAgICAgY29uc29sZS5sb2coXCJtZXNzYWdlIGlzOjo6XCIsIG1lc3NhZ2UpXG4gICAgfVxuICAgIFxuXG4gIH1jYXRjaChlKXtcbiAgICBjb25zb2xlLmxvZyhcInBhc3N3b3JkIHJlc2V0IGVycm9yXCIgLCBlKVxuICB9XG4gIFxufVxuXG5cbmZ1bmN0aW9uKiBwYXNzd29yZFJlc2V0V2l0aEtleVdhdGNoZXIoKSB7IC8qIC0tLS0tLS0tLS0tLS0tLSBQQVNTV09SRCBSRVNFVCBXSVRIIEtFWSBXQVRDSEVSIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4gIFxuICB5aWVsZCB0YWtlTGF0ZXN0KHQuUk9PVF9QQVNTV09SRF9SRVNFVF9XQVRDSEVSLCBwYXNzd29yZFJlc2V0V2l0aEtleSk7XG5cbn1cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tUFJBQ1RJQ0UgTE9HSU4gU0FHQSAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG5cbmZ1bmN0aW9uKiBsb2dpblByYWN0aWNlKGFjdGlvbikge1xuXG4gICB0cnkge1xuXG4gICAgY29uc3QgdXNlciA9IHlpZWxkIGNhbGwoQXBpLmxvZ2luUHJhY3RpY2UsIGFjdGlvbi5wYXlsb2FkKTtcblxuXG4gICAgaWYgKHVzZXIubWVzc2FnZSA9PT0gXCJMb2dpbiBzdWNjZXNzZnVsIVwiKXtcblxuXG4gICAgICAgIHlpZWxkIHB1dChBY3Rpb25zLmxvZ2luUHJhY3RpY2VTdWNjZXNzKHVzZXIpKTtcblxuICAgICAgICB5aWVsZCBjYWxsKCgpPT57XG5cbiAgICAgICAgICAgICAgICBhY3Rpb24ucGF5bG9hZC5yb3V0ZXIucHVzaCh7XG4gICAgICAgICAgICAgICAgICBwYXRobmFtZTpcIi9wcmFjdGljZS9kYXNoYm9hcmQvZGFzaGJvYXJkXCJcbiAgICAgICAgICAgICAgICB9KVxuXG4gICAgICAgICAgICB9XG4gICAgICAgICk7XG5cbiAgICAgIH1lbHNle1xuXG4gICAgICAgICAgeWllbGQgY2FsbCgoKT0+e1xuXG4gICAgICAgICAgICAgICAgICBhY3Rpb24ucGF5bG9hZC5yb3V0ZXIucHVzaCh7XG4gICAgICAgICAgICAgICAgICAgIHBhdGhuYW1lOlwiL3ByYWN0aWNlL2F1dGgvbG9naW5cIlxuICAgICAgICAgICAgICAgICAgfSlcblxuICAgICAgICAgICAgICB9XG4gICAgICAgICAgKTtcbiAgICAgIH1cbiAgICAgIFxuXG4gICB9IGNhdGNoIChlKSB7XG4gICAgIGNvbnNvbGUubG9nKGUsIFwiQ2FuIG5vdCBsb2dpbiBmcm9tIHNhZ2dhZ2dhZ2dhZ1wiKVxuICAgfVxufVxuXG5mdW5jdGlvbiogcHJhY3RpY2VMb2dpbldhdGNoZXIoKSB7IC8qIC0tLS0tLS0tLS0tLS0tLSBQUkFDVElWRSBMT0dJTiBXQVRDSEVSIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG5cbiAgeWllbGQgdGFrZUxhdGVzdCh0LlBSQUNUSUNFX0xPR0lOX1dBVENIRVIsIGxvZ2luUHJhY3RpY2UpO1xuXG59XG5cblxuLyotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1MT0dPVVQgUFJBQ1RJQ0UgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5cbmZ1bmN0aW9uKiBsb2dvdXRQcmFjdGljZShhY3Rpb24pe1xuICBcbiAgdHJ5e1xuICAgIHlpZWxkIHB1dChBY3Rpb25zLmxvZ291dFByYWN0aWNlKCkpO1xuICAgIHlpZWxkIGNhbGwoKCk9PmFjdGlvbi5wYXlsb2FkLnB1c2goXCIvXCIpKTtcblxuICB9Y2F0Y2goZSl7XG4gICAgY29uc29sZS5sb2coXCJFcnJvciBUcnlpbmcgdG8gTG9nT3V0XCIpXG4gIH1cbiAgXG59XG5cbmZ1bmN0aW9uKiBsb2dvdXRQcmFjdGljZVNhZ2EoKSB7IC8qIC0tLS0tLS0tLS0tLS0tLSBMT0dPVVQgUFJBQ1RJQ0UgV0FUQ0hFUiAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG4gIHlpZWxkIHRha2VMYXRlc3QodC5MT0dPVVRfV0FUQ0hFUiwgbG9nb3V0UHJhY3RpY2UpO1xuXG59XG5cblxuLyotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBQUkFDVElDRSBQQVNTV09SRCBSRVNFVCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0qL1xuXG5cbmZ1bmN0aW9uKiBwYXNzd29yZFJlc2V0UHJhY3RpY2UoYWN0aW9uKXtcblxuICBcbiAgXG4gIHRyeXtcblxuICAgIGNvbnN0IHttZXNzYWdlfSA9IHlpZWxkIGNhbGwoQXBpLnBhc3N3b3JkUmVzZXQsIGFjdGlvbi5wYXlsb2FkLmVtYWlsKTtcblxuICAgIGlmKG1lc3NhZ2Upe1xuICAgICAgICB5aWVsZCBwdXQoQWN0aW9ucy5wcmFjdGljZUZvcmdldFBhc3N3b3JkUmVxdWVzdChtZXNzYWdlKSk7XG4gICAgfVxuXG4gIH1jYXRjaChlKXtcbiAgICBjb25zb2xlLmxvZyhcInBhc3N3b3JkIHJlc2V0IHJlcXVlc3QgZXJyb3JcIiAsIGUpXG4gIH1cbiAgXG59XG5cbmZ1bmN0aW9uKiBwYXNzd29yZFJlc2V0UHJhY3RpY2VXYXRjaGVyKCkgeyAvKiAtLS0tLS0tLS0tLS0tLS0gUFJBQ1RJQ0UgUEFTU1dPUkQgUkVTRVQgUkVRVUVTVCBXQVRDSEVSIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG5cbiAgeWllbGQgdGFrZUxhdGVzdCh0LlBSQUNUSUNFX1VTRVJfUEFTU1dPUkRfUkVTRVRfUkVRX1dBVENIRVIsIHBhc3N3b3JkUmVzZXRQcmFjdGljZSk7XG5cbn1cblxuXG5cblxuZnVuY3Rpb24qIHBhc3N3b3JkUmVzZXRQcmFjdGljZVdpdGhLZXkoYWN0aW9uKXsvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFBSQUNUSUNFIE1BSU4gUEFTU1dPUkQgUkVTRVQgV0lUSCBLRVkgRlJPTSBFTUFJTCAtLS0tLS0tLS0tLS0tLS0tLSovXG4gIFxuICB0cnl7XG5cbiAgICBjb25zdCB7bWVzc2FnZX0gPSB5aWVsZCBjYWxsKEFwaS5wYXNzd29yZFJlc2V0V2l0aEtleSwgYWN0aW9uLnBheWxvYWQpO1xuXG4gICAgaWYobWVzc2FnZSA9PT0gXCJQYXNzd29yZCBjaGFuZ2VkIHN1Y2Nlc3NmdWxseSFcIil7XG4gICAgICB5aWVsZCBwdXQoQWN0aW9ucy5wcmFjdGljZVBhc3N3b3JkUmVzZXRXaXRoS2V5KG1lc3NhZ2UpKTtcbiAgICB9ZWxzZXtcbiAgICAgIGNvbnNvbGUubG9nKFwibWVzc2FnZSBpczo6OlwiLCBtZXNzYWdlKVxuICAgIH1cbiAgICBcblxuICB9Y2F0Y2goZSl7XG4gICAgY29uc29sZS5sb2coXCJwYXNzd29yZCByZXNldCBlcnJvclwiICwgZSlcbiAgfVxuICBcbn1cblxuXG5mdW5jdGlvbiogcGFzc3dvcmRSZXNldFdpdGhLZXlQcmFjdGljZVdhdGNoZXIoKSB7IC8qIC0tLS0tLS0tLS0tLS0tLSBQUkFDVElDRSBQQVNTV09SRCBSRVNFVCBXSVRIIEtFWSBXQVRDSEVSIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4gIFxuICB5aWVsZCB0YWtlTGF0ZXN0KHQuUFJBQ1RJQ0VfUEFTU1dPUkRfUkVTRVRfV0FUQ0hFUiwgcGFzc3dvcmRSZXNldFByYWN0aWNlV2l0aEtleSk7XG5cbn1cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbmZ1bmN0aW9uKiBhdXRoU2FnYSgpIHtcbiAgICB5aWVsZCBhbGwoW1xuICAgICAgICBmb3JrKHJvb3RMb2dpbldhdGNoZXIpLFxuICAgICAgICBmb3JrKGxvZ291dFdhdGNoZXIpLFxuICAgICAgICBmb3JrKHBhc3N3b3JkUmVzZXRXYXRjaGVyKSxcbiAgICAgICAgZm9yayhwYXNzd29yZFJlc2V0V2l0aEtleVdhdGNoZXIpLFxuICAgICAgICBmb3JrKHByYWN0aWNlTG9naW5XYXRjaGVyKSxcbiAgICAgICAgZm9yayhwYXNzd29yZFJlc2V0UHJhY3RpY2VXYXRjaGVyKSxcbiAgICAgICAgZm9yayhwYXNzd29yZFJlc2V0V2l0aEtleVByYWN0aWNlV2F0Y2hlciksXG4gICAgXSk7XG59XG5cblxuZXhwb3J0IGRlZmF1bHQgYXV0aFNhZ2E7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/redux/auth/sagas.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/rootReducer.js":
-/*!**********************************!*\
-  !*** ./src/redux/rootReducer.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"redux\");\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _auth_authReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth/authReducer */ \"./src/redux/auth/authReducer.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  auth: _auth_authReducer__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n}));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvcm9vdFJlZHVjZXIuanM/YWFmNSJdLCJuYW1lcyI6WyJjb21iaW5lUmVkdWNlcnMiLCJhdXRoIiwiYXV0aFJlZHVjZXIiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFFQTtBQUtlQSw0SEFBZSxDQUFDO0FBQzlCQyxNQUFJLEVBQUVDLHlEQUFXQTtBQURhLENBQUQsQ0FBOUIiLCJmaWxlIjoiLi9zcmMvcmVkdXgvcm9vdFJlZHVjZXIuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2NvbWJpbmVSZWR1Y2Vyc30gZnJvbSBcInJlZHV4XCI7XG5cbmltcG9ydCBhdXRoUmVkdWNlciBmcm9tIFwiLi9hdXRoL2F1dGhSZWR1Y2VyXCI7XG5cblxuXG5cbmV4cG9ydCBkZWZhdWx0IGNvbWJpbmVSZWR1Y2Vycyh7XG5cdGF1dGg6IGF1dGhSZWR1Y2VyLFxufSkiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/redux/rootReducer.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/saga.js":
-/*!***************************!*\
-  !*** ./src/redux/saga.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return rootSaga; });\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-saga/effects */ \"redux-saga/effects\");\n/* harmony import */ var redux_saga_effects__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _auth_sagas__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth/sagas */ \"./src/redux/auth/sagas.js\");\n\n\nfunction* rootSaga(getState) {\n  yield Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_0__[\"all\"])([Object(_auth_sagas__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()]);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvc2FnYS5qcz9iNjMzIl0sIm5hbWVzIjpbInJvb3RTYWdhIiwiZ2V0U3RhdGUiLCJhbGwiLCJhdXRoU2FnYSJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFHZSxVQUFVQSxRQUFWLENBQW1CQyxRQUFuQixFQUE2QjtBQUN4QyxRQUFNQyw4REFBRyxDQUFDLENBQ05DLDJEQUFRLEVBREYsQ0FBRCxDQUFUO0FBR0giLCJmaWxlIjoiLi9zcmMvcmVkdXgvc2FnYS5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGFsbCB9IGZyb20gJ3JlZHV4LXNhZ2EvZWZmZWN0cyc7XG5pbXBvcnQgYXV0aFNhZ2EgZnJvbSAnLi9hdXRoL3NhZ2FzJztcblxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiogcm9vdFNhZ2EoZ2V0U3RhdGUpIHtcbiAgICB5aWVsZCBhbGwoW1xuICAgICAgICBhdXRoU2FnYSgpLFxuICAgIF0pO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/redux/saga.js\n");
-
-/***/ }),
-
-/***/ "./src/redux/store.js":
-/*!****************************!*\
-  !*** ./src/redux/store.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ \"redux\");\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _rootReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./rootReducer */ \"./src/redux/rootReducer.js\");\n/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-saga */ \"redux-saga\");\n/* harmony import */ var redux_saga__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(redux_saga__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _saga__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./saga */ \"./src/redux/saga.js\");\n\n\n\n\n\nconst saga = redux_saga__WEBPACK_IMPORTED_MODULE_3___default()();\nconst initialState = {};\nconst store = Object(redux__WEBPACK_IMPORTED_MODULE_1__[\"createStore\"])(_rootReducer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_1__[\"applyMiddleware\"])(saga));\nsaga.run(_saga__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\n/* harmony default export */ __webpack_exports__[\"default\"] = (store);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvcmVkdXgvc3RvcmUuanM/N2QzMSJdLCJuYW1lcyI6WyJzYWdhIiwiY3JlYXRlU2FnYU1pZGRsZXdhcmUiLCJpbml0aWFsU3RhdGUiLCJzdG9yZSIsImNyZWF0ZVN0b3JlIiwicm9vdFJlZHVjZXIiLCJhcHBseU1pZGRsZXdhcmUiLCJydW4iLCJyb290U2FnYSJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUdBLE1BQU1BLElBQUksR0FBR0MsaURBQW9CLEVBQWpDO0FBRUEsTUFBTUMsWUFBWSxHQUFHLEVBQXJCO0FBRUEsTUFBTUMsS0FBSyxHQUFHQyx5REFBVyxDQUFDQyxvREFBRCxFQUFjSCxZQUFkLEVBQTRCSSw2REFBZSxDQUFDTixJQUFELENBQTNDLENBQXpCO0FBQ0FBLElBQUksQ0FBQ08sR0FBTCxDQUFTQyw2Q0FBVDtBQUdlTCxvRUFBZiIsImZpbGUiOiIuL3NyYy9yZWR1eC9zdG9yZS5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IGNyZWF0ZVN0b3JlLCBhcHBseU1pZGRsZXdhcmUgfSBmcm9tIFwicmVkdXhcIjtcbmltcG9ydCByb290UmVkdWNlciBmcm9tIFwiLi9yb290UmVkdWNlclwiO1xuaW1wb3J0IGNyZWF0ZVNhZ2FNaWRkbGV3YXJlIGZyb20gJ3JlZHV4LXNhZ2EnXG5pbXBvcnQgcm9vdFNhZ2EgZnJvbSBcIi4vc2FnYVwiXG5cblxuY29uc3Qgc2FnYSA9IGNyZWF0ZVNhZ2FNaWRkbGV3YXJlKCk7XG5cbmNvbnN0IGluaXRpYWxTdGF0ZSA9IHt9O1xuXG5jb25zdCBzdG9yZSA9IGNyZWF0ZVN0b3JlKHJvb3RSZWR1Y2VyLCBpbml0aWFsU3RhdGUsIGFwcGx5TWlkZGxld2FyZShzYWdhKSk7XG5zYWdhLnJ1bihyb290U2FnYSlcblxuXG5leHBvcnQgZGVmYXVsdCBzdG9yZTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/redux/store.js\n");
-
-/***/ }),
-
-/***/ "./src/styles/globals.scss":
-/*!*********************************!*\
-  !*** ./src/styles/globals.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3NyYy9zdHlsZXMvZ2xvYmFscy5zY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/styles/globals.scss\n");
-
-/***/ }),
-
-/***/ "./src/styles/scss/themes.scss":
-/*!*************************************!*\
-  !*** ./src/styles/scss/themes.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3NyYy9zdHlsZXMvc2Nzcy90aGVtZXMuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/styles/scss/themes.scss\n");
-
-/***/ }),
-
-/***/ 0:
-/*!****************************************!*\
-  !*** multi private-next-pages/_app.js ***!
-  \****************************************/
-/*! no static exports found */
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./src/pages/_app.js");
+module.exports = __webpack_require__("IlR1");
 
 
 /***/ }),
 
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
+/***/ "1fKG":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"next/router\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJuZXh0L3JvdXRlclwiP2Q4M2UiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoibmV4dC9yb3V0ZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJuZXh0L3JvdXRlclwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///next/router\n");
+module.exports = require("redux-saga");
 
 /***/ }),
 
-/***/ "nprogress":
-/*!****************************!*\
-  !*** external "nprogress" ***!
-  \****************************/
-/*! no static exports found */
+/***/ "4Q3z":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"nprogress\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJucHJvZ3Jlc3NcIj8xNTViIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Im5wcm9ncmVzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIm5wcm9ncmVzc1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///nprogress\n");
+module.exports = require("next/router");
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
-/*! no static exports found */
+/***/ "6w4r":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"react\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdFwiPzU4OGUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react\n");
+
 
 /***/ }),
 
-/***/ "react-redux":
-/*!******************************!*\
-  !*** external "react-redux" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "9s+x":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = require(\"react-redux\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWFjdC1yZWR1eFwiPzc4Y2QiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVhY3QtcmVkdXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWFjdC1yZWR1eFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///react-redux\n");
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return ROOT_USER_LOGIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return ROOT_LOGIN_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return ROOT_USER_LOGOUT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return LOGOUT_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return ROOT_USER_PASSWORD_RESET_REQ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return ROOT_USER_PASSWORD_RESET_REQ_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return ROOT_PASSWORD_RESET_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return ROOT_USER_PASSWORD_RESET; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return PRACTICE_USER_LOGIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return PRACTICE_LOGIN_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return PRACTICE_USER_LOGOUT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return PRACTICE_LOGOUT_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return PRACTICE_USER_PASSWORD_RESET_REQ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return PRACTICE_PASSWORD_RESET_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return PRACTICE_USER_PASSWORD_RESET; });
+/* unused harmony export PRACTICE_ADD_STAFF */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return PRACTICE_ADD_STAFF_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return PRACTICE_ADD_STAFF_SUCCESS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return PRACTICE_ADD_STAFF_EMPTY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return USER_LOGIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return USER_LOGIN_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return USER_LOGOUT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return USER_LOGOUT_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return USER_PASSWORD_RESET_REQUEST; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return USER_PASSWORD_RESET_REQUEST_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return USER_PASSWORD_RESET_SUCCESSFUL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return USER_PASSWORD_RESET_WATCHER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return API_FAILED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return API_ERROR_RESET; });
+/* unused harmony export IS_LOADING */
+/* unused harmony export LOADED */
+/* unused harmony export LOAD_FAILED */
+const ROOT_USER_LOGIN = "ROOT_USER_LOGIN";
+const ROOT_LOGIN_WATCHER = "ROOT_LOGIN_WATCHER";
+const ROOT_USER_LOGOUT = "ROOT_USER_LOGOUT";
+const LOGOUT_WATCHER = "LOGOUT_WATCHER";
+const ROOT_USER_PASSWORD_RESET_REQ = "ROOT_USER_PASSWORD_RESET_REQ";
+const ROOT_USER_PASSWORD_RESET_REQ_WATCHER = "ROOT_USER_PASSWORD_RESET_REQ_WATCHER";
+const ROOT_PASSWORD_RESET_WATCHER = "ROOT_PASSWORD_RESET_WATCHER";
+const ROOT_USER_PASSWORD_RESET = "ROOT_USER_PASSWORD_RESET";
+const PRACTICE_USER_LOGIN = "PRACTICE_USER_LOGIN";
+const PRACTICE_LOGIN_WATCHER = "PRACTICE_LOGIN_WATCHER";
+const PRACTICE_USER_LOGOUT = "PRACTICE_USER_LOGOUT";
+const PRACTICE_LOGOUT_WATCHER = "PRACTICE_LOGOUT_WATCHER";
+const PRACTICE_USER_PASSWORD_RESET_REQ = "PRACTICE_USER_PASSWORD_RESET_REQ";
+const PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER = "PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER";
+const PRACTICE_PASSWORD_RESET_WATCHER = "PRACTICE_PASSWORD_RESET_WATCHER";
+const PRACTICE_USER_PASSWORD_RESET = "PRACTICE_USER_PASSWORD_RESET";
+const PRACTICE_ADD_STAFF = "PRACTICE_ADD_STAFF";
+const PRACTICE_ADD_STAFF_WATCHER = "PRACTICE_ADD_STAFF_WATCHER";
+const PRACTICE_ADD_STAFF_SUCCESS = "PRACTICE_ADD_STAFF_SUCCESS";
+const PRACTICE_ADD_STAFF_EMPTY = "PRACTICE_ADD_STAFF_EMPTY";
+const USER_LOGIN = "USER_LOGIN";
+const USER_LOGIN_WATCHER = "USER_LOGIN_WATCHER";
+const USER_LOGOUT = "USER_LOGOUT";
+const USER_LOGOUT_WATCHER = "USER_LOGOUT_WATCHER";
+const USER_PASSWORD_RESET_REQUEST = "USER_PASSWORD_RESET_REQUEST";
+const USER_PASSWORD_RESET_REQUEST_WATCHER = "USER_PASSWORD_RESET_REQUEST_WATCHER";
+const USER_PASSWORD_RESET_SUCCESSFUL = "USER_PASSWORD_RESET_SUCCESSFUL";
+const USER_PASSWORD_RESET_WATCHER = "USER_PASSWORD_RESET_WATCHER";
+const API_FAILED = "API_FAILED";
+const API_ERROR_RESET = "API_ERROR_RESET";
+const IS_LOADING = "IS_LOADING";
+const LOADED = "LOADED";
+const LOAD_FAILED = "LOAD_FAILED";
 
 /***/ }),
 
-/***/ "redux":
-/*!************************!*\
-  !*** external "redux" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "Cwtw":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = require(\"redux\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eFwiP2QzMjUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoicmVkdXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IHJlcXVpcmUoXCJyZWR1eFwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux\n");
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return loginRootUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return loginRootUserSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return logoutUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return logoutSaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return forgetPasswordRequestSaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return forgetPasswordRequest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return passwordResetWithKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return passwordResetWithKeySaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return loginPractice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return loginPracticeSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return logoutPractice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return logoutPracticeSaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return practiceForgetPasswordRequestSaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return practiceForgetPasswordRequest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return practicePasswordResetWithKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return practicePasswordResetWithKeySaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return practiceAddStaffSaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return practiceAddStaffSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addStaffStatusToEmpty; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return loginUserSaga; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return loginUserSuccess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return logoutStaffUser; });
+/* unused harmony export logoutStaffUserSaga */
+/* unused harmony export userForgetPasswordRequestSaga */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return userForgetPasswordRequest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return userPasswordResetWithKey; });
+/* unused harmony export userPasswordResetWithKeySaga */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return apiError; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return apiErrorReset; });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("9s+x");
+
+/*--------------------------LOG IN ROOT USER ------------------------*/
+
+const loginRootUser = (email, password, router) => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_LOGIN_WATCHER */ "o"],
+    payload: {
+      email,
+      password,
+      router
+    }
+  };
+};
+const loginRootUserSuccess = userData => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_USER_LOGIN */ "q"],
+    payload: userData
+  };
+};
+/*-------------------------- LOG OUT ROOT USER-------------------------------*/
+
+const logoutUser = () => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_USER_LOGOUT */ "r"]
+  };
+};
+const logoutSaga = router => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* LOGOUT_WATCHER */ "c"],
+    payload: router
+  };
+};
+/* --------------------------- ROOT PASSWORD RESET ---------------------------*/
+
+const forgetPasswordRequestSaga = email => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_USER_PASSWORD_RESET_REQ_WATCHER */ "u"],
+    payload: {
+      email
+    }
+  };
+};
+const forgetPasswordRequest = passwordResetStatus => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_USER_PASSWORD_RESET_REQ */ "t"],
+  payload: passwordResetStatus
+});
+/*------------- ROOT PASSWORD RESET WITH KEY ACTIONS -----------------*/
+
+const passwordResetWithKey = passwordResetMessage => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_USER_PASSWORD_RESET */ "s"],
+  payload: passwordResetMessage
+});
+const passwordResetWithKeySaga = (passwordResetKey, newPassword) => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* ROOT_PASSWORD_RESET_WATCHER */ "p"],
+  payload: {
+    password: newPassword,
+    key: passwordResetKey
+  }
+});
+/*--------------------------LOG IN PRACTICE ------------------------*/
+
+const loginPractice = (email, password, router) => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_LOGIN_WATCHER */ "g"],
+    payload: {
+      email,
+      password,
+      router
+    }
+  };
+};
+const loginPracticeSuccess = userData => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_USER_LOGIN */ "j"],
+    payload: userData
+  };
+};
+const logoutPractice = () => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_USER_LOGOUT */ "k"]
+  };
+};
+const logoutPracticeSaga = router => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_LOGOUT_WATCHER */ "h"],
+    payload: router
+  };
+};
+/* --------------------------- PRACTICE PASSWORD RESET ---------------------------*/
+
+const practiceForgetPasswordRequestSaga = email => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER */ "n"],
+    payload: {
+      email
+    }
+  };
+};
+const practiceForgetPasswordRequest = passwordResetStatus => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_USER_PASSWORD_RESET_REQ */ "m"],
+  payload: passwordResetStatus
+});
+/*------------- PRACTICE PASSWORD RESET WITH KEY ACTIONS -----------------*/
+
+const practicePasswordResetWithKey = passwordResetMessage => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_USER_PASSWORD_RESET */ "l"],
+  payload: passwordResetMessage
+});
+const practicePasswordResetWithKeySaga = (passwordResetKey, newPassword) => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_PASSWORD_RESET_WATCHER */ "i"],
+  payload: {
+    password: newPassword,
+    key: passwordResetKey
+  }
+});
+/* --------------------------- PRACTICE ADD STAFF ---------------------------*/
+
+const practiceAddStaffSaga = newStaffData => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_ADD_STAFF_WATCHER */ "f"],
+  payload: newStaffData
+});
+const practiceAddStaffSuccess = () => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_ADD_STAFF_SUCCESS */ "e"]
+  };
+};
+const addStaffStatusToEmpty = () => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* PRACTICE_ADD_STAFF_EMPTY */ "d"]
+  };
+};
+/*----------------------------- USER / STAFF OR ADMIN USER -----------------------------------------*/
+
+/*--------------------------LOG IN USER ------------------------*/
+
+const loginUserSaga = (email, password, router) => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_LOGIN_WATCHER */ "w"],
+    payload: {
+      email,
+      password,
+      router
+    }
+  };
+};
+const loginUserSuccess = userData => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_LOGIN */ "v"],
+    payload: userData
+  };
+};
+/*--------------------------LOGOUT USER ------------------------*/
+
+const logoutStaffUser = () => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_LOGOUT */ "x"]
+  };
+};
+const logoutStaffUserSaga = router => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_LOGOUT_WATCHER */ "y"],
+    payload: router
+  };
+};
+/* --------------------------- USER PASSWORD RESET ---------------------------*/
+
+const userForgetPasswordRequestSaga = email => {
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_PASSWORD_RESET_REQUEST_WATCHER */ "A"],
+    payload: {
+      email
+    }
+  };
+};
+const userForgetPasswordRequest = passwordResetStatus => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_PASSWORD_RESET_REQUEST */ "z"],
+  payload: passwordResetStatus
+});
+/*------------- USET PASSWORD RESET WITH KEY ACTIONS -----------------*/
+
+const userPasswordResetWithKey = passwordResetMessage => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_PASSWORD_RESET_SUCCESSFUL */ "B"],
+  payload: passwordResetMessage
+});
+const userPasswordResetWithKeySaga = (passwordResetKey, newPassword) => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* USER_PASSWORD_RESET_WATCHER */ "C"],
+  payload: {
+    password: newPassword,
+    key: passwordResetKey
+  }
+});
+const apiError = () => {
+  console.log("Api Action called -----------");
+  return {
+    type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* API_FAILED */ "b"]
+  };
+};
+const apiErrorReset = () => ({
+  type: _constants__WEBPACK_IMPORTED_MODULE_0__[/* API_ERROR_RESET */ "a"]
+});
 
 /***/ }),
 
-/***/ "redux-saga":
-/*!*****************************!*\
-  !*** external "redux-saga" ***!
-  \*****************************/
-/*! no static exports found */
+/***/ "DS9K":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"redux-saga\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eC1zYWdhXCI/Mzg3YyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJyZWR1eC1zYWdhLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKFwicmVkdXgtc2FnYVwiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux-saga\n");
+
 
 /***/ }),
 
-/***/ "redux-saga/effects":
-/*!*************************************!*\
-  !*** external "redux-saga/effects" ***!
-  \*************************************/
-/*! no static exports found */
+/***/ "F/3x":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return loginRootUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return passwordReset; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return passwordResetWithKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getPractice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return approvePractice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return rejectPractice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return loginPractice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return practicePasswordReset; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return practicePasswordResetWithKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return practiceAddStaff; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return loginStaffUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return userPasswordReset; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return userPasswordResetWithKey; });
+/* unused harmony export validateRootToken */
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("zr5I");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+const loginRootUser = async payload => {
+  //--------------------------- LOGIN ROOT USER -------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/auth/root/login", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: payload.email,
+      password: payload.password
+    })
+  });
+  const user = await res.json();
+  return user;
+};
+const passwordReset = async email => {
+  // ----------------------- PASSWORD RESET REQUEST ----------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/root/requestpasswordreset", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: email
+    })
+  });
+  const passwordResetStatus = await res.json();
+  return passwordResetStatus;
+};
+const passwordResetWithKey = async payload => {
+  // ----------------------- PASSWORD RESET ----------------
+  const res = await fetch(`http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/root/resetpasword/${payload.key}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      password: payload.password
+    })
+  });
+  const passwordResetStatus = await res.json();
+  return passwordResetStatus;
+};
+const getPractice = async (url, token) => {
+  // ----------------------- PASSWORD RESET ----------------
+  const res = await fetch(url, {
+    method: 'GET',
+    headers: {
+      "Authorization": token
+    }
+  });
+  const data = await res.json();
+  return data;
+};
+const approvePractice = async (url, token) => {
+  // ----------------------- APPROVE PRACTICE PATCH ----------------
+  const res = await fetch(url, {
+    method: 'PATCH',
+    headers: [['Authorization', token], ["Content-Type", "application/json"]],
+    body: {
+      approvalStatus: 'approved'
+    }
+  });
+  const data = await res.json();
+  return data;
+};
+const rejectPractice = async (url, token) => {
+  // ----------------------- REJECT PRACTICE PATCH ----------------
+  const res = await fetch(url, {
+    method: 'PATCH',
+    headers: [['Authorization', token], ["Content-Type", "application/json"]],
+    body: {
+      approvalStatus: "rejected"
+    }
+  });
+  const data = await res.json();
+  return data;
+};
+const loginPractice = async payload => {
+  //--------------------------- LOGIN PRACTICE -------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/auth/practices/login", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: payload.email,
+      password: payload.password
+    })
+  });
+  const user = await res.json();
+  return user;
+};
+const practicePasswordReset = async email => {
+  // ----------------------- PRACTICE PASSWORD RESET REQUEST ----------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/requestpasswordreset", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: email
+    })
+  });
+  const passwordResetStatus = await res.json();
+  return passwordResetStatus;
+};
+const practicePasswordResetWithKey = async payload => {
+  // ----------------------- PRACTICE PASSWORD RESET ----------------
+  const res = await fetch(`http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/resetpassword/${payload.key}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      password: payload.password
+    })
+  });
+  const passwordResetStatus = await res.json();
+  return passwordResetStatus;
+};
+const practiceAddStaff = async ({
+  email,
+  designation,
+  token
+}) => {
+  //----------------------- ADD STAFF ACCOUNT BY PRACTICE ------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/staffs", {
+    method: 'POST',
+    headers: [['Authorization', token], ["Content-Type", "application/json"]],
+    body: JSON.stringify({
+      email,
+      designation
+    })
+  });
+  const message = await res.json();
+  return message;
+};
+/*------------------------------USER API CALLS --------------------------------------------*/
+
+const loginStaffUser = async payload => {
+  //--------------------------- LOGIN USER -------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/auth/practices/staffs/login", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: payload.email,
+      password: payload.password
+    })
+  });
+  const user = await res.json();
+  return user;
+};
+const userPasswordReset = async email => {
+  // ----------------------- USER PASSWORD RESET REQUEST ----------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/staffs/requestpasswordreset", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      email: email
+    })
+  });
+  const passwordResetStatus = await res.json();
+  return passwordResetStatus;
+};
+const userPasswordResetWithKey = async payload => {
+  // ----------------------- USER PASSWORD RESET ----------------
+  const res = await fetch(`http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/staffs/resetpassword/${payload.key}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      password: payload.password
+    })
+  });
+  const passwordResetStatus = await res.json();
+  return passwordResetStatus;
+};
+const validateRootToken = async token => {
+  //--------------------------VALIDATE TOKEN ---------------------
+  const res = await fetch("http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/root/checktoken", {
+    method: 'GET',
+    headers: {
+      'Authorization': token
+    }
+  });
+  const user = await res.json();
+  return user;
+};
+
+/***/ }),
+
+/***/ "GvLQ":
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"redux-saga/effects\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJyZWR1eC1zYWdhL2VmZmVjdHNcIj80MGI3Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6InJlZHV4LXNhZ2EvZWZmZWN0cy5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcInJlZHV4LXNhZ2EvZWZmZWN0c1wiKTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///redux-saga/effects\n");
+module.exports = require("nprogress");
+
+/***/ }),
+
+/***/ "IlR1":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: ./src/styles/scss/themes.scss
+var themes = __webpack_require__("DS9K");
+
+// EXTERNAL MODULE: ./src/styles/globals.scss
+var globals = __webpack_require__("6w4r");
+
+// EXTERNAL MODULE: external "react-redux"
+var external_react_redux_ = __webpack_require__("h74D");
+
+// EXTERNAL MODULE: external "redux"
+var external_redux_ = __webpack_require__("rKB8");
+
+// EXTERNAL MODULE: ./src/redux/auth/constants.js
+var constants = __webpack_require__("9s+x");
+
+// CONCATENATED MODULE: ./src/redux/auth/authReducer.js
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+const initialState = {
+  user: {},
+  passwordResetStatus: "",
+  addStaff: "",
+  error: false
+};
+function authReducer(state = initialState, action) {
+  switch (action.type) {
+    case constants["q" /* ROOT_USER_LOGIN */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        user: action.payload
+      });
+      return state;
+
+    case constants["r" /* ROOT_USER_LOGOUT */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        user: {}
+      });
+      return state;
+
+    case constants["t" /* ROOT_USER_PASSWORD_RESET_REQ */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        passwordResetStatus: action.payload
+      });
+      return state;
+
+    case constants["s" /* ROOT_USER_PASSWORD_RESET */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        passwordResetStatus: action.payload
+      });
+      return state;
+
+    case constants["j" /* PRACTICE_USER_LOGIN */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        user: action.payload
+      });
+      return state;
+
+    case constants["k" /* PRACTICE_USER_LOGOUT */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        user: {}
+      });
+      return state;
+
+    case constants["m" /* PRACTICE_USER_PASSWORD_RESET_REQ */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        passwordResetStatus: action.payload
+      });
+      return state;
+
+    case constants["l" /* PRACTICE_USER_PASSWORD_RESET */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        passwordResetStatus: action.payload
+      });
+      return state;
+
+    case constants["e" /* PRACTICE_ADD_STAFF_SUCCESS */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        addStaff: true
+      });
+      return state;
+
+    case constants["d" /* PRACTICE_ADD_STAFF_EMPTY */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        addStaff: false
+      });
+      return state;
+
+    case constants["v" /* USER_LOGIN */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        user: {}
+      });
+      return state;
+
+    case constants["x" /* USER_LOGOUT */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        user: {}
+      });
+      return state;
+
+    case constants["z" /* USER_PASSWORD_RESET_REQUEST */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        passwordResetStatus: action.payload
+      });
+      return state;
+
+    case constants["B" /* USER_PASSWORD_RESET_SUCCESSFUL */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        passwordResetStatus: action.payload
+      });
+      return state;
+
+    case constants["b" /* API_FAILED */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        error: true
+      });
+      return state;
+
+    case constants["a" /* API_ERROR_RESET */]:
+      state = _objectSpread(_objectSpread({}, state), {}, {
+        error: false
+      });
+      console.log("----------- Error -----------", state.error);
+      return state;
+
+    default:
+      return state;
+  }
+}
+// CONCATENATED MODULE: ./src/redux/rootReducer.js
+
+
+/* harmony default export */ var rootReducer = (Object(external_redux_["combineReducers"])({
+  auth: authReducer
+}));
+// EXTERNAL MODULE: external "redux-saga"
+var external_redux_saga_ = __webpack_require__("1fKG");
+var external_redux_saga_default = /*#__PURE__*/__webpack_require__.n(external_redux_saga_);
+
+// EXTERNAL MODULE: external "redux-saga/effects"
+var effects_ = __webpack_require__("RmXt");
+
+// EXTERNAL MODULE: ./src/redux/Api.js
+var Api = __webpack_require__("F/3x");
+
+// EXTERNAL MODULE: ./src/redux/auth/actions.js
+var actions = __webpack_require__("Cwtw");
+
+// CONCATENATED MODULE: ./src/redux/auth/sagas.js
+
+
+
+
+/*------------------------LOGIN SAGA --------------------------------*/
+
+function* loginRootUser(action) {
+  try {
+    const user = yield Object(effects_["call"])(Api["d" /* loginRootUser */], action.payload);
+
+    if (user.message === "Login successful!") {
+      yield Object(effects_["put"])(actions["i" /* loginRootUserSuccess */](user));
+      yield Object(effects_["call"])(() => {
+        action.payload.router.push({
+          pathname: "/dashboard/dashboard"
+        });
+      });
+    } else {
+      yield Object(effects_["call"])(() => {
+        action.payload.router.push({
+          pathname: "/"
+        });
+      });
+    }
+  } catch (e) {
+    console.log(e, "Can not login from saggaggaggag,");
+  }
+}
+
+function* rootLoginWatcher() {
+  /* --------------- LOGIN WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["o" /* ROOT_LOGIN_WATCHER */], loginRootUser);
+}
+/*------------------------LOGOUT SAGA --------------------------------*/
+
+
+function* logoutUser(action) {
+  try {
+    yield Object(effects_["put"])(actions["p" /* logoutUser */]());
+    yield Object(effects_["call"])(() => action.payload.push("/"));
+  } catch (e) {
+    console.log("Error Trying to LogOut");
+  }
+}
+
+function* logoutWatcher() {
+  /* --------------- LOGOUT WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["c" /* LOGOUT_WATCHER */], logoutUser);
+}
+/*-------------------------------------------- ROOT PASSWORD RESET ------------------------------------*/
+
+
+function* passwordReset(action) {
+  const {
+    message
+  } = yield Object(effects_["call"])(Api["f" /* passwordReset */], action.payload.email);
+
+  try {
+    yield Object(effects_["put"])(actions["d" /* forgetPasswordRequest */](message));
+  } catch (e) {
+    console.log("password reset request error", e);
+  }
+}
+
+function* passwordResetWatcher() {
+  /* --------------- PASSWORD RESET REQUEST WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["u" /* ROOT_USER_PASSWORD_RESET_REQ_WATCHER */], passwordReset);
+}
+
+function* passwordResetWithKey(action) {
+  /*-------------------------- MAIN PASSWORD RESET WITH KEY FROM EMAIL -----------------*/
+  try {
+    const {
+      message
+    } = yield Object(effects_["call"])(Api["g" /* passwordResetWithKey */], action.payload);
+
+    if (message === "Password changed successfully!") {
+      yield Object(effects_["put"])(actions["q" /* passwordResetWithKey */](message));
+    } else {
+      console.log("message is:::", message);
+    }
+  } catch (e) {
+    console.log("password reset error", e);
+  }
+}
+
+function* passwordResetWithKeyWatcher() {
+  /* --------------- PASSWORD RESET WITH KEY WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["p" /* ROOT_PASSWORD_RESET_WATCHER */], passwordResetWithKey);
+}
+/*------------------------PRACTICE LOGIN SAGA --------------------------------*/
+
+
+function* loginPractice(action) {
+  try {
+    const user = yield Object(effects_["call"])(Api["c" /* loginPractice */], action.payload);
+
+    if (user.message === "Login successful!") {
+      yield Object(effects_["put"])(actions["g" /* loginPracticeSuccess */](user));
+      yield Object(effects_["call"])(() => {
+        action.payload.router.push({
+          pathname: "/practice/dashboard/dashboard"
+        });
+      });
+    } else {
+      yield Object(effects_["call"])(() => {
+        action.payload.router.push({
+          pathname: "/practice/auth/login"
+        });
+      });
+    }
+  } catch (e) {
+    console.log(e, "Can not login PRACTICE from saggaggaggag");
+  }
+}
+
+function* practiceLoginWatcher() {
+  /* --------------- PRACTIVE LOGIN WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["g" /* PRACTICE_LOGIN_WATCHER */], loginPractice);
+}
+/*------------------------LOGOUT PRACTICE --------------------------------*/
+
+
+function* logoutPractice(action) {
+  yield Object(effects_["put"])(actions["l" /* logoutPractice */]());
+  yield Object(effects_["call"])(() => action.payload.push("/practice/auth/login"));
+}
+
+function* logoutPracticeSaga() {
+  /* --------------- LOGOUT PRACTICE WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["h" /* PRACTICE_LOGOUT_WATCHER */], logoutPractice);
+}
+/*-------------------------------------------- PRACTICE PASSWORD RESET ------------------------------------*/
+
+
+function* passwordResetPractice(action) {
+  try {
+    const {
+      message
+    } = yield Object(effects_["call"])(Api["i" /* practicePasswordReset */], action.payload.email);
+
+    if (message === "A link to reset your password has been sent to your mail. Please note that the link is only valid for one hour.") {
+      yield Object(effects_["put"])(actions["u" /* practiceForgetPasswordRequest */](message));
+    }
+  } catch (e) {
+    console.log("password reset request error", e);
+  }
+}
+
+function* passwordResetPracticeWatcher() {
+  /* --------------- PRACTICE PASSWORD RESET REQUEST WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["n" /* PRACTICE_USER_PASSWORD_RESET_REQ_WATCHER */], passwordResetPractice);
+}
+
+function* passwordResetPracticeWithKey(action) {
+  /*-------------------------- PRACTICE MAIN PASSWORD RESET WITH KEY FROM EMAIL -----------------*/
+  try {
+    const {
+      message
+    } = yield Object(effects_["call"])(Api["j" /* practicePasswordResetWithKey */], action.payload);
+
+    if (message === "Password changed successfully!") {
+      yield Object(effects_["put"])(actions["w" /* practicePasswordResetWithKey */](message));
+    } else {
+      console.log("message is:::", message);
+    }
+  } catch (e) {
+    console.log("password reset error", e);
+  }
+}
+
+function* passwordResetWithKeyPracticeWatcher() {
+  /* --------------- PRACTICE PASSWORD RESET WITH KEY WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["i" /* PRACTICE_PASSWORD_RESET_WATCHER */], passwordResetPracticeWithKey);
+}
+
+function* practiceAddStaff(action) {
+  // -------------- PRACTICE ASS STAFF -------
+  try {
+    const addStaff = yield Object(effects_["call"])(Api["h" /* practiceAddStaff */], action.payload);
+
+    if (addStaff.message === "User has been added successfully, they will get a mail with a link to set up their account.") {
+      yield Object(effects_["put"])(actions["t" /* practiceAddStaffSuccess */]());
+    } else {
+      console.log("Error in saga-----------");
+      yield Object(effects_["put"])(actions["b" /* apiError */]());
+    }
+  } catch (e) {}
+
+  yield Object(effects_["put"])(actions["a" /* addStaffStatusToEmpty */]());
+}
+
+function* practiceAddStaffWatcher() {
+  yield Object(effects_["takeLatest"])(constants["f" /* PRACTICE_ADD_STAFF_WATCHER */], practiceAddStaff);
+}
+/*------------------------ USER LOGIN SAGA --------------------------------*/
+
+
+function* loginStaffUser(action) {
+  console.log(action.payload);
+
+  try {
+    const user = yield Object(effects_["call"])(Api["e" /* loginStaffUser */], action.payload);
+
+    if (user.message === "Login successful!") {
+      yield Object(effects_["put"])(actions["k" /* loginUserSuccess */](user));
+      yield Object(effects_["call"])(() => {
+        action.payload.router.push({
+          pathname: "/user/dashboard/dashboard"
+        });
+      });
+    } else {
+      yield Object(effects_["call"])(() => {
+        action.payload.router.push({
+          pathname: "/user/auth/login"
+        });
+      });
+    }
+  } catch (e) {
+    console.log(e, "Can not login user from saggaggaggag");
+  }
+}
+
+function* userLoginWatcher() {
+  /* --------------- USER LOGIN WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["w" /* USER_LOGIN_WATCHER */], loginStaffUser);
+}
+/*------------------------LOGOUT USER --------------------------------*/
+
+
+function* logoutStaffUser(action) {
+  yield Object(effects_["put"])(actions["o" /* logoutStaffUser */]());
+  yield Object(effects_["call"])(() => action.payload.push("/user/auth/login"));
+}
+
+function* logoutUserSaga() {
+  /* --------------- LOGOUT USER WATCHER ---------------------------*/
+  yield Object(effects_["takeLatest"])(constants["y" /* USER_LOGOUT_WATCHER */], logoutStaffUser);
+}
+/*-------------------------------------------- USER PASSWORD RESET REQUEST ------------------------------------*/
+
+
+function* passwordResetUser(action) {
+  try {
+    const {
+      message
+    } = yield Object(effects_["call"])(Api["l" /* userPasswordReset */], action.payload.email);
+
+    if (message === "A link to reset your password has been sent to your mail. Please note that the link is only valid for one hour.") {
+      yield Object(effects_["put"])(actions["y" /* userForgetPasswordRequest */](message));
+    }
+  } catch (e) {
+    console.log("password reset request error", e);
+  }
+}
+
+function* passwordResetUserWatcher() {
+  yield Object(effects_["takeLatest"])(constants["A" /* USER_PASSWORD_RESET_REQUEST_WATCHER */], passwordResetUser);
+}
+
+function* passwordResetUserWithKey(action) {
+  try {
+    const {
+      message
+    } = yield Object(effects_["call"])(Api["m" /* userPasswordResetWithKey */], action.payload);
+
+    if (message === "Password changed successfully!") {
+      yield Object(effects_["put"])(actions["z" /* userPasswordResetWithKey */](message));
+    } else {
+      console.log("message is:::", message);
+    }
+  } catch (e) {
+    console.log("password reset error", e);
+  }
+}
+
+function* passwordResetWithKeyUserWatcher() {
+  yield Object(effects_["takeLatest"])(constants["C" /* USER_PASSWORD_RESET_WATCHER */], passwordResetUserWithKey);
+}
+
+function* authSaga() {
+  yield Object(effects_["all"])([Object(effects_["fork"])(rootLoginWatcher), Object(effects_["fork"])(logoutWatcher), Object(effects_["fork"])(passwordResetWatcher), Object(effects_["fork"])(passwordResetWithKeyWatcher), Object(effects_["fork"])(practiceLoginWatcher), Object(effects_["fork"])(logoutPracticeSaga), Object(effects_["fork"])(passwordResetPracticeWatcher), Object(effects_["fork"])(passwordResetWithKeyPracticeWatcher), Object(effects_["fork"])(practiceAddStaffWatcher), Object(effects_["fork"])(userLoginWatcher), Object(effects_["fork"])(logoutUserSaga), Object(effects_["fork"])(passwordResetUserWatcher), Object(effects_["fork"])(passwordResetWithKeyUserWatcher)]);
+}
+
+/* harmony default export */ var sagas = (authSaga);
+// CONCATENATED MODULE: ./src/redux/saga.js
+
+
+function* rootSaga(getState) {
+  yield Object(effects_["all"])([sagas()]);
+}
+// CONCATENATED MODULE: ./src/redux/store.js
+
+
+
+
+
+const saga = external_redux_saga_default()();
+const store_initialState = {};
+const store = Object(external_redux_["createStore"])(rootReducer, store_initialState, Object(external_redux_["applyMiddleware"])(saga));
+saga.run(rootSaga);
+/* harmony default export */ var redux_store = (store);
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__("4Q3z");
+var router_default = /*#__PURE__*/__webpack_require__.n(router_);
+
+// EXTERNAL MODULE: external "nprogress"
+var external_nprogress_ = __webpack_require__("GvLQ");
+var external_nprogress_default = /*#__PURE__*/__webpack_require__.n(external_nprogress_);
+
+// EXTERNAL MODULE: ./node_modules/nprogress/nprogress.css
+var nprogress = __webpack_require__("pdi6");
+
+// CONCATENATED MODULE: ./src/pages/_app.js
+
+var __jsx = external_react_default.a.createElement;
+
+
+
+
+
+ //nprogress module
+
+ //styles of nprogress
+//Binding events.
+
+router_default.a.events.on('routeChangeStart', () => external_nprogress_default.a.start());
+router_default.a.events.on('routeChangeComplete', () => external_nprogress_default.a.done());
+router_default.a.events.on('routeChangeError', () => external_nprogress_default.a.done());
+
+function MyApp({
+  Component,
+  pageProps
+}) {
+  return __jsx(external_react_redux_["Provider"], {
+    store: redux_store
+  }, __jsx(Component, pageProps));
+}
+
+/* harmony default export */ var _app = __webpack_exports__["default"] = (MyApp);
+
+/***/ }),
+
+/***/ "RmXt":
+/***/ (function(module, exports) {
+
+module.exports = require("redux-saga/effects");
+
+/***/ }),
+
+/***/ "cDcd":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "h74D":
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "pdi6":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "rKB8":
+/***/ (function(module, exports) {
+
+module.exports = require("redux");
+
+/***/ }),
+
+/***/ "zr5I":
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ })
 

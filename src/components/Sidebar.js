@@ -53,6 +53,7 @@ const Sidebar = () => {
     useEffect(()=>{
 
         setUser(userdata.root)
+        console.log(userdata.token)
 
     },[user])
 
