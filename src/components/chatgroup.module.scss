@@ -1,0 +1,43 @@
+.mediabox{
+	padding: 10px 0px 10px 10px;
+}
+.mediabox:hover, .mediabox:active, .mediabox:focus{
+	background-color: #434d5d;
+	border-radius: 10px 0 0 10px;
+	cursor: pointer;
+}
+
+.mediaImage{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	align-self: flex-end;
+	margin-right:10px;
+}
+
+.mediaheading{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 20px;
+
+	h5{
+		font-size: 14px;
+		color: white ;
+		display: inline-block;
+	}
+
+	span{
+		font-size: 11px;
+		alignSelf: center
+	}
+
+	.text{
+		width:95%;
+		font-size: 13px
+	}
+
+	.badge{
+		height: 20px;
+		align-self: center;
+	}
+}

@@ -1,0 +1,21 @@
+.navTab{
+	display: flex; 
+	justify-content: center;
+	margin-top: -30px;
+	margin-bottom: 20px;
+
+	a{
+		color: gray;
+	}
+
+	a:hover{
+		color: #333;
+	}
+}
+
+
+.activeTab{
+	border: 2px solid gray;
+
+	
+}
