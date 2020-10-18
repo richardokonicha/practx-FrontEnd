@@ -14,7 +14,7 @@ import { Email, Phone, Person, Group, Accessibility, Alarm,
         Message, ArrowRight, ArrowDropDown, Home, Repeat, Close,
 } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 
 
@@ -23,7 +23,7 @@ export default function Profile() {
     return (
 
 
-        <DashboardLayout>
+        <DashboardLayoutPractice>
             <React.Fragment>
 
                 <Row>
@@ -211,7 +211,7 @@ export default function Profile() {
 
             </React.Fragment>
 
-        </DashboardLayout>
+        </DashboardLayoutPractice>
 
     )
 }

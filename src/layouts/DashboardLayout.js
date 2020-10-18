@@ -18,7 +18,7 @@ import Sidebar from "../components/Sidebar";
 export default function DashboardLayout({ children }) {
 
 	const dispatch = useDispatch();
-    
+
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -50,7 +50,7 @@ export default function DashboardLayout({ children }) {
                     <Col sm="2"><Sidebar /></Col>
 
 
-                    <Col sm="10" style={{paddingTop: "12vh"}}>
+                    <Col sm="10" style={{paddingTop: "9vh"}}>
                     <main className={styles.maincontent} >
 
                         {children}

@@ -11,7 +11,7 @@ import { 	Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText,
 
 import { Phone } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 import UserComponent from "../../../components/UserComponent";
 
@@ -30,7 +30,7 @@ export default function AddGroup() {
 	return (
 
 
-		<DashboardLayout>
+		<DashboardLayoutPractice>
 			<React.Fragment>
 
 				<Row>
@@ -172,7 +172,7 @@ export default function AddGroup() {
 
 			</React.Fragment>
 
-		</DashboardLayout>
+		</DashboardLayoutPractice>
 
 	)
 }

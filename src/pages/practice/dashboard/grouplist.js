@@ -10,7 +10,7 @@ import {useSelector, connect} from 'react-redux';
 
 import { Phone } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 import UserComponent from "../../../components/UserComponent";
 
@@ -29,16 +29,20 @@ function GroupList(props) {
 	if (error) return <div>failed to load</div>
 
 	const approvePractice = async (id) =>{
+
 		const url = "http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/" + id ;
-		const approvedData = await Api.rejectPractice(url, props.user.token);
-		console.log("Trying to approve practice", url, approvedData)
+		const approvedData = await Api.approvePractice(url, props.user.token);
+
 	}
 
 	const rejectPractice = async (id) =>{
+
 		const url = "http://practxbestaging-env.eba-6m7puu5w.us-east-2.elasticbeanstalk.com/api/practices/" + id ;
 		const rejectData = await Api.rejectPractice(url, props.user.token);
-		console.log("Rejected Practice ------------------", rejectData)
+	
 	}
+
+
 
 
 	const approvedPractices = ()=>{
@@ -66,7 +70,7 @@ function GroupList(props) {
 	return (
 
 
-		<DashboardLayout>
+		<DashboardLayoutPractice>
 		{
 			!data ? (
 				<Spinner color="light" 
@@ -132,7 +136,7 @@ function GroupList(props) {
 		}
 			
 
-		</DashboardLayout>
+		</DashboardLayoutPractice>
 
 	)
 }

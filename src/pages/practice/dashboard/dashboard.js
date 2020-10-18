@@ -16,7 +16,7 @@ import { Email, Assignment, Person, Group, Accessibility, Alarm,
     	Message, ArrowRight, ArrowDropDown, Home, Repeat, Close,
 } from '@styled-icons/material';
 
-import DashboardLayout from "../../../layouts/DashboardLayout";
+import DashboardLayoutPractice from "../../../layouts/DashboardLayoutPractice";
 import Titlebar from "../../../components/Titlebar";
 import UsersList from "../../../components/UsersList";
 import BarChart from "../../../components/BarChart";
@@ -29,7 +29,7 @@ function Dashboard(props) {
 	return (
 
 
-		<DashboardLayout>
+		<DashboardLayoutPractice>
 			<React.Fragment>
 
 				<Row >
@@ -82,7 +82,7 @@ function Dashboard(props) {
 
 			</React.Fragment>
 
-		</DashboardLayout>
+		</DashboardLayoutPractice>
 
 	)
 }
